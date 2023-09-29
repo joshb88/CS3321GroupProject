@@ -10,12 +10,13 @@ class User
 
     public:
         User();
+        User(std::string, std::string, unsigned int);
         void setUserLogin(std::string);
         void setUserPassword(std::string);
-        std::string getUserLogin() const { return user_login; } 
-        std::string getUserPassword() const { return user_password;}
+        std::string getUserLogin() const;
+        std::string getUserPassword() const;
         void setIdNumber(unsigned int);
-        unsigned int getId() const { return id_number; }
+        unsigned int getId() const;
 };
 
 // class Client : public User
