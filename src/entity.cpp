@@ -45,3 +45,51 @@ unsigned int User::getId() const
 {
     return id_number;
 }
+
+Client::Client() : User()
+{
+    date_of_birth = 19000101;
+    has_insurance = false;
+    insurance_provider = "enter_insurance";
+}
+
+Client::Client(std::string name, std::string pass, unsigned int idnum, unsigned int dob, bool insurance, std::string provider)
+{
+    setUserLogin(name);
+    setUserPassword(pass);
+    setIdNumber(idnum);
+    date_of_birth = dob;
+    has_insurance = insurance;
+    insurance_provider = provider;
+}
+
+void Client::setDateOfBirth(unsigned int dob)
+{
+    //YYYYMMDD
+    date_of_birth = dob;
+}
+
+void Client::setHasInsurance(bool ins)
+{
+    has_insurance = ins;
+}
+
+void Client::setInsuranceProvider(std::string prov)
+{
+    insurance_provider = prov;
+}
+
+unsigned int Client::getDateOfBirth() const
+{
+    return date_of_birth;
+}
+
+bool Client::getHasInsurance() const
+{
+    return has_insurance;
+}
+
+std::string Client::getInsuranceProvider() const
+{
+    return insurance_provider;
+}

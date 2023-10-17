@@ -19,7 +19,20 @@ class User
         unsigned int getId() const;
 };
 
-// class Client : public User
-// {
-//     int date_of_birth;
-// };
+class Client : virtual public User
+{
+    private:
+        unsigned int date_of_birth;
+        bool has_insurance;
+        std::string insurance_provider;
+        //Room::room_number
+    public:
+        Client();
+        Client(std::string, std::string, unsigned int, unsigned int, bool, std::string);
+        void setDateOfBirth(unsigned int);
+        void setHasInsurance(bool);
+        void setInsuranceProvider(std::string);
+        unsigned int getDateOfBirth() const;
+        bool getHasInsurance() const;
+        std::string getInsuranceProvider() const;
+};
