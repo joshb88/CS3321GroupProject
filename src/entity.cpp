@@ -7,7 +7,7 @@ User::User()
 {
     // A default constructor to set the the user name, password, and id number to nothing.
     user_login = "assign_login";
-    user_password = "password";
+    user_password = "assign_password";
     id_number = 0;
 }
 
