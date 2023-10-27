@@ -1,7 +1,8 @@
 #include <iomanip>
 #include <iostream>
 #include <string>
-#include ".\headers\entity.h"
+//#include ".\headers\entity.h"     // windows
+#include "./headers/entity.h"      // mac
 
 int main()
 {   
@@ -31,5 +32,7 @@ int main()
     std::cout 
     << testClient.getUserLogin() << '\n' 
     << testClient.getUserPassword() << std::endl;
+
+    std::cout << "ty for work" << std::endl;
     return 0;
 };

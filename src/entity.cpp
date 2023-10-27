@@ -1,4 +1,5 @@
-#include "..\headers\entity.h"
+//#include "..\headers\entity.h"
+#include "../headers/entity.h"
 #include <cstdlib>
 #include <string>
 

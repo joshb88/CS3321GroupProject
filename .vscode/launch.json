@@ -1,6 +1,14 @@
 {
     "configurations": [
         {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Launch",
+            "program": "${fileDirname}/main",
+            "args": [],
+            "cwd": "${fileDirname}"
+        },
+        {
             "name": "C/C++: g++.exe build and debug active file",
             "type": "cppdbg",
             "request": "launch",
