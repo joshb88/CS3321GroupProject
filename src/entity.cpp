@@ -1,19 +1,18 @@
-//#include "..\headers\entity.h"
-#include "../headers/entity.h"
+//#include "..\headers\entity.h"    //windows
+#include "../headers/entity.h"      //mac
 #include <cstdlib>
 #include <string>
 
-// Default Constructor
+// User Class Default Constructor
 User::User()
 {
-    // A default constructor to set the the user login, password, names, and id number to nothing
     user_login = "";
     user_password = "";
     last_name = "";
     first_name = "";
     date_of_birth = 19000101;
 }
-// Parameterized Constructor used to initialize the class
+// User Class Parameterized Constructor
 User::User(std::string login, std::string pass, std::string last, std::string first, unsigned int dob)
 {
     user_login = login;
@@ -22,6 +21,8 @@ User::User(std::string login, std::string pass, std::string last, std::string fi
     first_name = first;
     date_of_birth = dob;
 }
+
+// User Class Setters
 void User::setUserLogin(std::string login)
 {
     user_login = login;
@@ -43,6 +44,8 @@ void User::setDateOfBirth(unsigned int dob)
     //YYYYMMDD
     date_of_birth = dob;
 }
+
+// User Class Getters
 std::string User::getUserLogin() const
 {
     return user_login;
@@ -64,13 +67,13 @@ unsigned int User::getDateOfBirth() const
     return date_of_birth;
 }
 
+// Patient Class Default Constructor
 Patient::Patient() : User()
 {
-    date_of_birth = 19000101;
     has_insurance = false;
     insurance_provider = "N/A";
 }
-
+// Patient Class Parameterized Constructor
 Patient::Patient(std::string name, std::string pass, std::string last, std::string first, unsigned int dob, bool insurance, std::string provider)
 {
     setUserLogin(name);
@@ -82,26 +85,27 @@ Patient::Patient(std::string name, std::string pass, std::string last, std::stri
     insurance_provider = provider;
 }
 
+// Patient Class Setters
 void Patient::setHasInsurance(bool ins)
 {
     has_insurance = ins;
 }
-
 void Patient::setInsuranceProvider(std::string prov)
 {
     insurance_provider = prov;
 }
 
+// Patient Class Getters
 bool Patient::getHasInsurance() const
 {
     return has_insurance;
 }
-
 std::string Patient::getInsuranceProvider() const
 {
     return insurance_provider;
 }
 
+// Staff Class Default Constructor
 Staff::Staff() : User()
 {
     id_number = 0;
@@ -110,6 +114,7 @@ Staff::Staff() : User()
     date_of_hire = 19000101;
 }
 
+// Staff Class Parameterized Constructor
 Staff::Staff(std::string name, std::string pass, std::string last, std::string first, unsigned int dob, unsigned int idnumber, short clearance, std::string jobtitle, unsigned int doh)
 {
     setUserLogin(name);
@@ -117,32 +122,44 @@ Staff::Staff(std::string name, std::string pass, std::string last, std::string f
     setLastName(last);
     setFirstName(first);
     setDateOfBirth(dob);
+    setIdNumber(idnumber);
     setClearanceLevel(clearance);
     setJobTitle(jobtitle);
     setDateOfHire(doh);
 }
+
+// Staff Class Setters
 void Staff::setIdNumber(unsigned int id)
 {
     id_number = id;
 }
+void Staff::setClearanceLevel(short clearancelevel)
+{
+    clearance_level = clearancelevel;
+}
+void Staff::setJobTitle(std::string title)
+{
+    job_title = title;
+}
+void Staff::setDateOfHire(unsigned int doh)
+{
+    date_of_hire = doh;
+}
+
+// Staff Class Getters
 unsigned int Staff::getIdNumber() const
 {
     return id_number;
 }
-// class Staff : virtual User
-// {
-//     public:
-//         enum Clearance { entry, janitorial, nursing, medical, admin };
-//     private:
-//         unsigned int id_number;
-//         short clearance_level;
-//         std::string job_title;
-//         unsigned int date_of_hire;
-//     public:
-//         void setClearanceLevel(short);
-//         void setJobTitle(std::string);
-//         void setHireDate(unsigned int);
-//         unsigned int getHireDate() const;
-//         short getClearanceLevel() const;
-//         std::string getJobTitle() const;
-// };
+unsigned int Staff::getDateOfHire() const
+{
+    return date_of_hire;
+}
+short Staff::getClearanceLevel() const
+{
+    return clearance_level;
+}
+std::string Staff::getJobTitle() const
+{
+    return job_title;
+}
