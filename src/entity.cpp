@@ -6,34 +6,43 @@
 // Default Constructor
 User::User()
 {
-    // A default constructor to set the the user name, password, and id number to nothing.
-    user_login = "assign_login";
-    user_password = "assign_password";
-    id_number = 0;
+    // A default constructor to set the the user login, password, names, and id number to nothing
+    user_login = "";
+    user_password = "";
+    last_name = "";
+    first_name = "";
+    date_of_birth = 19000101;
 }
-
-User::User(std::string name, std::string pass, unsigned int idnum)
+// Parameterized Constructor used to initialize the class
+User::User(std::string login, std::string pass, std::string last, std::string first, unsigned int dob)
 {
-    user_login = name;
+    user_login = login;
     user_password = pass;
-    id_number = idnum;
+    last_name = last;
+    first_name = first;
+    date_of_birth = dob;
 }
-
 void User::setUserLogin(std::string login)
 {
     user_login = login;
 }
-
 void User::setUserPassword(std::string password)
 {
     user_password = password;
 }
-
-void User::setIdNumber(unsigned int id)
+void User::setLastName(std::string last)
 {
-    id_number = id;
+    last_name = last;
 }
-
+void User::setFirstName(std::string first)
+{
+    first_name = first;
+}
+void User::setDateOfBirth(unsigned int dob)
+{
+    //YYYYMMDD
+    date_of_birth = dob;
+}
 std::string User::getUserLogin() const
 {
     return user_login;
@@ -42,55 +51,98 @@ std::string User::getUserPassword() const
 {
     return user_password;
 }
-unsigned int User::getId() const
+std::string User::getLastName() const
 {
-    return id_number;
+    return last_name;
+}
+std::string User::getFirstName() const
+{
+    return first_name;
+}
+unsigned int User::getDateOfBirth() const
+{
+    return date_of_birth;
 }
 
-Client::Client() : User()
+Patient::Patient() : User()
 {
     date_of_birth = 19000101;
     has_insurance = false;
-    insurance_provider = "enter_insurance";
+    insurance_provider = "N/A";
 }
 
-Client::Client(std::string name, std::string pass, unsigned int idnum, unsigned int dob, bool insurance, std::string provider)
+Patient::Patient(std::string name, std::string pass, std::string last, std::string first, unsigned int dob, bool insurance, std::string provider)
 {
     setUserLogin(name);
     setUserPassword(pass);
-    setIdNumber(idnum);
+    setLastName(last);
+    setFirstName(first);
     date_of_birth = dob;
     has_insurance = insurance;
     insurance_provider = provider;
 }
 
-void Client::setDateOfBirth(unsigned int dob)
-{
-    //YYYYMMDD
-    date_of_birth = dob;
-}
-
-void Client::setHasInsurance(bool ins)
+void Patient::setHasInsurance(bool ins)
 {
     has_insurance = ins;
 }
 
-void Client::setInsuranceProvider(std::string prov)
+void Patient::setInsuranceProvider(std::string prov)
 {
     insurance_provider = prov;
 }
 
-unsigned int Client::getDateOfBirth() const
-{
-    return date_of_birth;
-}
-
-bool Client::getHasInsurance() const
+bool Patient::getHasInsurance() const
 {
     return has_insurance;
 }
 
-std::string Client::getInsuranceProvider() const
+std::string Patient::getInsuranceProvider() const
 {
     return insurance_provider;
 }
+
+Staff::Staff() : User()
+{
+    id_number = 0;
+    clearance_level = entry;
+    job_title = "";
+    date_of_hire = 19000101;
+}
+
+Staff::Staff(std::string name, std::string pass, std::string last, std::string first, unsigned int dob, unsigned int idnumber, short clearance, std::string jobtitle, unsigned int doh)
+{
+    setUserLogin(name);
+    setUserPassword(pass);
+    setLastName(last);
+    setFirstName(first);
+    setDateOfBirth(dob);
+    setClearanceLevel(clearance);
+    setJobTitle(jobtitle);
+    setDateOfHire(doh);
+}
+void Staff::setIdNumber(unsigned int id)
+{
+    id_number = id;
+}
+unsigned int Staff::getIdNumber() const
+{
+    return id_number;
+}
+// class Staff : virtual User
+// {
+//     public:
+//         enum Clearance { entry, janitorial, nursing, medical, admin };
+//     private:
+//         unsigned int id_number;
+//         short clearance_level;
+//         std::string job_title;
+//         unsigned int date_of_hire;
+//     public:
+//         void setClearanceLevel(short);
+//         void setJobTitle(std::string);
+//         void setHireDate(unsigned int);
+//         unsigned int getHireDate() const;
+//         short getClearanceLevel() const;
+//         std::string getJobTitle() const;
+// };
