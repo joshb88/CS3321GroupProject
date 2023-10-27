@@ -7,8 +7,8 @@
 int main()
 {   
     User newcomer;
-    Client testClient;
-    // Client testClient("josh","pass", 8884, 19880814, false, "");
+    Patient testPatient;
+    // Patient testPatient("josh","pass", 8884, 19880814, false, "");
 
     std::cout 
     << newcomer.getUserLogin() << '\n' 
@@ -23,15 +23,15 @@ int main()
     std::cout << "Hello World. \nThis is a test." << std::endl;
 
     std::cout
-    << testClient.getUserLogin() << '\n' << testClient.getUserPassword() << std::endl;
+    << testPatient.getUserLogin() << '\n' << testPatient.getUserPassword() << std::endl;
 
-    std::cout << testClient.getDateOfBirth() << std::endl;
-    testClient.setUserLogin("test-client");
-    testClient.setUserPassword("test-password");
+    std::cout << testPatient.getDateOfBirth() << std::endl;
+    testPatient.setUserLogin("test-Patient");
+    testPatient.setUserPassword("test-password");
 
     std::cout 
-    << testClient.getUserLogin() << '\n' 
-    << testClient.getUserPassword() << std::endl;
+    << testPatient.getUserLogin() << '\n' 
+    << testPatient.getUserPassword() << std::endl;
 
     std::cout << "ty for work" << std::endl;
     return 0;
