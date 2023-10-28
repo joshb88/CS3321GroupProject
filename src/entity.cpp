@@ -163,3 +163,42 @@ std::string Staff::getJobTitle() const
 {
     return job_title;
 }
+
+// Room Class Default Constructor
+Room::Room() : room_number(0), room_floor_number(0), room_available(true) {}
+
+// Room Class Parameterized Constructor
+Room::Room(unsigned int roomnum, short floorno, bool roomavail)
+{
+    room_number = roomnum;
+    room_floor_number = floorno;
+    room_available = roomavail;
+}
+
+// Room Setters
+void Room::setRoomNumber(unsigned int roomno)
+{
+    room_number = roomno;
+}
+void Room::setRoomFloorNumber(short floorno)
+{
+    room_floor_number = floorno;
+}
+void Room::setRoomAvailability(bool availability)
+{
+    room_available = availability;
+}
+
+// Room Getters
+unsigned int Room::getRoomNumber() const
+{
+    return room_number;
+}
+short Room::getRoomFloor() const
+{
+    return room_floor_number;
+}
+bool Room::getRoomAvailability() const
+{
+    return room_available;
+}

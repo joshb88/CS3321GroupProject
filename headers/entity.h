@@ -35,7 +35,7 @@ class Patient : virtual public User
     private:
         bool has_insurance;
         std::string insurance_provider;
-        //Room::room_number
+        //Room room_number;
 
     public:
         // Constructors
@@ -76,4 +76,48 @@ class Staff : virtual User
         unsigned int getDateOfHire() const;
         short getClearanceLevel() const;
         std::string getJobTitle() const;
+};
+
+class Room
+{
+    private:
+        unsigned int room_number;
+        short room_floor_number;
+        bool room_available;
+    public:
+        //Constructors
+        Room();
+        Room(unsigned int, short, bool);
+
+        // Setters
+        void setRoomNumber(unsigned int);
+        void setRoomFloorNumber(short);
+        void setRoomAvailability(bool);
+
+        // Getters
+        unsigned int getRoomNumber() const;
+        short getRoomFloor() const;
+        bool getRoomAvailability() const;
+};
+
+class Inventory
+{
+    private:
+        std::string item_name;
+        unsigned int item_count;
+        unsigned int item_threshold;
+    public:
+        // Constructors
+        Inventory();
+        Inventory(std::string, unsigned int, unsigned int);
+        
+        // Setters
+        void setItemName(std::string);
+        void setItemCount(unsigned int);
+        void setItemThreshold(unsigned int);
+        
+        // Getters
+        std::string getItemName() const;
+        unsigned int getItemCount() const;
+        unsigned int getItemThreshold() const;
 };
