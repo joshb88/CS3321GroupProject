@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 
+
 class User
 {
     protected:
@@ -30,12 +31,35 @@ class User
         unsigned int getDateOfBirth() const;
 };
 
+class Room
+{
+    friend class Modify_Room_Availability;
+    private:
+        unsigned int room_number;
+        short room_floor_number;
+        bool room_available;
+    public:
+        //Constructors
+        Room();
+        Room(unsigned int, short, bool);
+
+        // Setters
+        void setRoomNumber(unsigned int);
+        void setRoomFloorNumber(short);
+        void setRoomAvailability(bool);
+
+        // Getters
+        unsigned int getRoomNumber() const;
+        short getRoomFloor() const;
+        bool getRoomAvailability() const;
+};
+
 class Patient : virtual public User
 {
     private:
         bool has_insurance;
         std::string insurance_provider;
-        //Room room_number;
+        // Room room;
 
     public:
         // Constructors
@@ -76,28 +100,6 @@ class Staff : virtual User
         unsigned int getDateOfHire() const;
         short getClearanceLevel() const;
         std::string getJobTitle() const;
-};
-
-class Room
-{
-    private:
-        unsigned int room_number;
-        short room_floor_number;
-        bool room_available;
-    public:
-        //Constructors
-        Room();
-        Room(unsigned int, short, bool);
-
-        // Setters
-        void setRoomNumber(unsigned int);
-        void setRoomFloorNumber(short);
-        void setRoomAvailability(bool);
-
-        // Getters
-        unsigned int getRoomNumber() const;
-        short getRoomFloor() const;
-        bool getRoomAvailability() const;
 };
 
 class Inventory
