@@ -175,9 +175,9 @@ class Schedule
         // There will also be implementation of control classes to modify these members.
 
         // Getters
-        TimePoint getTime() const;
-        Staff getStaffer() const;
-        Patient getPatient() const;
-        Room getRoom() const;
-        Procedure getProcedure() const;
+        const TimePoint getTime() const;
+        const Staff getStaffer() const;
+        const Patient getPatient() const;
+        const Room getRoom() const;
+        const Procedure getProcedure() const;
 };

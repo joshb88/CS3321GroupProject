@@ -312,23 +312,23 @@ void Schedule::setRoom(Room& roomno)
 }
 
 // Schedule Class Getters
-TimePoint Schedule::getTime() const
+const TimePoint Schedule::getTime() const
 {
     return time;    
 }
-Staff Schedule::getStaffer() const
+const Staff Schedule::getStaffer() const
 {
     return staffer;
 }
-Patient Schedule::getPatient() const
+const Patient Schedule::getPatient() const
 {
     return patient;
 }
-Room Schedule::getRoom() const
+const Room Schedule::getRoom() const
 {
     return room;
 }
-Procedure Schedule::getProcedure() const
+const Procedure Schedule::getProcedure() const
 {
     return procedure;
 }
