@@ -8,6 +8,7 @@ int main()
 {   
     User newcomer;
     Patient testPatient;
+    Room R101(101, 5, true);
     // Patient testPatient("josh","pass", 8884, 19880814, false, "");
 
     std::cout 
@@ -34,5 +35,8 @@ int main()
     << testPatient.getUserPassword() << std::endl;
 
     std::cout << "ty for work" << std::endl;
+
+    newcomer.setUserLogin("can i change this?");
+    std::cout << newcomer.getUserLogin() << std::endl;
     return 0;
 };
