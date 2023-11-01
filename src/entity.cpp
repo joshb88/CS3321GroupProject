@@ -3,6 +3,9 @@
 #include <cstdlib>
 #include <string>
 
+using TimePoint = std::chrono::system_clock::time_point;
+
+// USER CLASS
 // User Class Default Constructor
 User::User()
 {
@@ -11,15 +14,18 @@ User::User()
     last_name = "";
     first_name = "";
     date_of_birth = 19000101;
+    gender = 'X';
 }
 // User Class Parameterized Constructor
-User::User(std::string login, std::string pass, std::string last, std::string first, unsigned int dob)
+User::User(const std::string& login, std::string pass, std::string last, std::string first, unsigned int dob, unsigned char gend)
 {
     user_login = login;
     user_password = pass;
     last_name = last;
     first_name = first;
     date_of_birth = dob;
+    gender = gend;
+
 }
 
 // User Class Setters
@@ -44,6 +50,11 @@ void User::setDateOfBirth(unsigned int dob)
     //YYYYMMDD
     date_of_birth = dob;
 }
+void User::setGender(unsigned char gend)
+{
+    //if (std::toupper(gend) == 'M' || std::toupper(gend) == 'F' || std::toupper(gend) == 'X')
+    gender = gend;
+}
 
 // User Class Getters
 std::string User::getUserLogin() const
@@ -66,11 +77,17 @@ unsigned int User::getDateOfBirth() const
 {
     return date_of_birth;
 }
+unsigned char User::getGender() const
+{
+    return gender;
+}
 
+// ROOM CLASS
 // Room Class Default Constructor
 Room::Room() : room_number(0), room_floor_number(0), room_available(false) {}
 
 // Room Class Parameterized Constructor
+// Room number, floor number, room availability
 Room::Room(unsigned int roomnum, short floorno, bool roomavail)
 {
     room_number = roomnum;
@@ -106,6 +123,7 @@ bool Room::getRoomAvailability() const
     return room_available;
 }
 
+// PATIENT CLASS
 // Patient Class Default Constructor
 Patient::Patient() : User()
 {
@@ -113,13 +131,14 @@ Patient::Patient() : User()
     insurance_provider = "N/A";
 }
 // Patient Class Parameterized Constructor
-Patient::Patient(std::string name, std::string pass, std::string last, std::string first, unsigned int dob, bool insurance, std::string provider)
+Patient::Patient(std::string name, std::string pass, std::string last, std::string first, unsigned int dob, unsigned char gender, bool insurance, std::string provider)
 {
-    setUserLogin(name);
-    setUserPassword(pass);
-    setLastName(last);
-    setFirstName(first);
+    user_login = name;
+    user_password = pass;
+    last_name = last;
+    first_name = first;
     date_of_birth = dob;
+    this->gender = gender;
     has_insurance = insurance;
     insurance_provider = provider;
 }
@@ -144,6 +163,7 @@ std::string Patient::getInsuranceProvider() const
     return insurance_provider;
 }
 
+// STAFF CLASS
 // Staff Class Default Constructor
 Staff::Staff() : User()
 {
@@ -154,17 +174,18 @@ Staff::Staff() : User()
 }
 
 // Staff Class Parameterized Constructor
-Staff::Staff(std::string name, std::string pass, std::string last, std::string first, unsigned int dob, unsigned int idnumber, short clearance, std::string jobtitle, unsigned int doh)
+Staff::Staff(std::string name, std::string pass, std::string last, std::string first, unsigned int dob, unsigned char gender, unsigned int idnumber, short clearance, std::string jobtitle, unsigned int doh)
 {
-    setUserLogin(name);
-    setUserPassword(pass);
-    setLastName(last);
-    setFirstName(first);
-    setDateOfBirth(dob);
-    setIdNumber(idnumber);
-    setClearanceLevel(clearance);
-    setJobTitle(jobtitle);
-    setDateOfHire(doh);
+    user_login = name;
+    user_password = pass;
+    last_name = last;
+    first_name = first;
+    date_of_birth = dob;
+    this->gender = gender;
+    id_number = idnumber;
+    clearance_level = clearance;
+    job_title = jobtitle;
+    date_of_hire = doh;
 }
 
 // Staff Class Setters
@@ -203,10 +224,9 @@ std::string Staff::getJobTitle() const
     return job_title;
 }
 
-// Inventory Default Constructor
+// INVENTORY CLASS
+// Inventory Class Constructors
 Inventory::Inventory() : item_name(""), item_count(0), item_threshold(0) {}
-
-// Inventory Parameterized Constructor
 Inventory::Inventory(std::string name, unsigned int count, unsigned int threshold)
 {
     item_name = name;
@@ -232,3 +252,83 @@ void Inventory::setItemThreshold(unsigned int threshold)
 std::string Inventory::getItemName() const { return item_name; }
 unsigned int Inventory::getItemCount() const { return item_count; }
 unsigned int Inventory::getItemThreshold() const { return item_threshold; }
+
+// PROCEDURE CLASS
+// Procedure Class Constructors
+Procedure::Procedure() : procedure_name(""), cost(0.0), items_used() {}
+Procedure::Procedure(std::string name, float cost, std::vector<Inventory>& items_used) : 
+procedure_name(name), cost(cost), items_used(items_used) {}
+
+// Procedure Class Setters
+void Procedure::setProcedureName(std::string proc_name)
+{
+    procedure_name = proc_name;
+}
+void Procedure::setCost(float cost)
+{
+    this->cost = cost;
+}
+void Procedure::setItemsUsed(std::vector<Inventory>& items_used)
+{
+    this->items_used = items_used;
+}
+
+// Procedure Class Getters
+std::string Procedure::getProcedureName() const
+{
+    return procedure_name;
+}
+float Procedure::getCost() const
+{
+    return cost;
+}
+const std::vector<Inventory>& Procedure::getItemsUsed() const
+{
+    return items_used;
+}
+
+// SCHEDULE CLASS
+// Schedule Class Constructors
+Schedule::Schedule() : time(TimePoint::clock::now()) {}
+Schedule::Schedule(const TimePoint& appointment_time, const Staff& staff, const Patient& patient, const Room& room, const Procedure& proc)
+: time(appointment_time), staffer(staff), patient(patient), room(room), procedure(proc) {}
+
+// Schedule Class Setters
+void Schedule::setTime(TimePoint& apt_time)
+{
+    time = apt_time;
+}
+void Schedule::setStaffer(Staff& staffer)
+{
+    this->staffer = staffer;
+}
+void Schedule::setPatient(Patient& patient)
+{
+    this->patient = patient;
+}
+void Schedule::setRoom(Room& roomno)
+{
+    this->room = roomno;
+}
+
+// Schedule Class Getters
+TimePoint Schedule::getTime() const
+{
+    return time;    
+}
+Staff Schedule::getStaffer() const
+{
+    return staffer;
+}
+Patient Schedule::getPatient() const
+{
+    return patient;
+}
+Room Schedule::getRoom() const
+{
+    return room;
+}
+Procedure Schedule::getProcedure() const
+{
+    return procedure;
+}
