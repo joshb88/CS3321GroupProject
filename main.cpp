@@ -7,10 +7,13 @@
 int main()
 {   
     User newcomer;
-    Room testroom(101, 3, true);
+    Room testroom(101, 5, true);
     Patient testPatient;
     std::cout << testPatient.getRoom().getRoomFloorNumber() << std::endl;
     testPatient.getRoom().setRoomFloorNumber(3);
+    std::cout << testPatient.getRoom().getRoomNumber() << std::endl;
+    std::cout << testPatient.getRoom().getRoomFloorNumber() << std::endl;
+    testPatient.setRoom(testroom);
     std::cout << testPatient.getRoom().getRoomNumber() << std::endl;
     std::cout << testPatient.getRoom().getRoomFloorNumber();
     // Room R101(101, 5, true);

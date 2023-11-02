@@ -152,6 +152,10 @@ void Patient::setInsuranceProvider(std::string prov)
 {
     insurance_provider = prov;
 }
+void Patient::setRoom(Room& room)
+{
+    this->room = room;
+}
 
 // Patient Class Getters
 bool Patient::getHasInsurance() const

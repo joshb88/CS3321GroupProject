@@ -76,6 +76,7 @@ class Patient : public User
         // Setters
         void setHasInsurance(bool);
         void setInsuranceProvider(std::string);
+        void setRoom(Room&);
 
         // Getters
         bool getHasInsurance() const;
