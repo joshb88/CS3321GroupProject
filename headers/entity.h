@@ -80,6 +80,7 @@ class Patient : virtual public User
         // Getters
         bool getHasInsurance() const;
         std::string getInsuranceProvider() const;
+        Room getRoom() const;
 };
 
 class Staff : virtual User

@@ -162,6 +162,10 @@ std::string Patient::getInsuranceProvider() const
 {
     return insurance_provider;
 }
+Room Patient::getRoom() const
+{
+    return room;
+}
 
 // STAFF CLASS
 // Staff Class Default Constructor
