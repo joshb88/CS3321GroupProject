@@ -13,9 +13,6 @@ int main()
     Room testroom1(101, 5, true);
     Room testroom2(303, 2, true);
     Patient testPatient;
-    
-
-    
 
     //std::cout << testPatient.getRoom()->getRoomNumber();
     testPatient.setRoom(&testroom1);
