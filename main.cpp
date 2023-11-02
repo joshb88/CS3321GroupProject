@@ -1,8 +1,12 @@
-#include <iomanip>
 #include <iostream>
-#include <string>
-//#include ".\headers\entity.h"     // windows
-#include "./headers/entity.h"      // mac
+#include <iomanip>
+#include "./headers/entity/schedule.h"
+
+/* 
+There is a chain of includes that are all satisfied by calling "schedule.h".
+These include the contents of the header folder, <string>, <vector>, and
+<chrono>.
+*/
 
 int main()
 {   
@@ -16,35 +20,6 @@ int main()
     testPatient.setRoom(testroom);
     std::cout << testPatient.getRoom().getRoomNumber() << std::endl;
     std::cout << testPatient.getRoom().getRoomFloorNumber();
-    // Room R101(101, 5, true);
-    // // Patient testPatient("josh","pass", 8884, 19880814, false, "");
-
-    // std::cout 
-    // << newcomer.getUserLogin() << '\n' 
-    // << newcomer.getUserPassword() << std::endl;
-
-    // newcomer.setUserLogin("name-test1");
-    // newcomer.setUserPassword("pass-test1");
-
-    // std::cout 
-    // << newcomer.getUserLogin() << '\n' 
-    // << newcomer.getUserPassword() << std::endl;
-    // std::cout << "Hello World. \nThis is a test." << std::endl;
-
-    // std::cout
-    // << testPatient.getUserLogin() << '\n' << testPatient.getUserPassword() << std::endl;
-
-    // std::cout << testPatient.getDateOfBirth() << std::endl;
-    // testPatient.setUserLogin("test-Patient");
-    // testPatient.setUserPassword("test-password");
-
-    // std::cout 
-    // << testPatient.getUserLogin() << '\n' 
-    // << testPatient.getUserPassword() << std::endl;
-
-    // std::cout << "ty for work" << std::endl;
-
-    // newcomer.setUserLogin("can i change this?");
-    // std::cout << newcomer.getUserLogin() << std::endl;
+    
     return 0;
 };
