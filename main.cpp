@@ -9,17 +9,18 @@ These include the contents of the header folder, <string>, <vector>, and
 */
 
 int main()
-{   
-    User newcomer;
-    Room testroom(101, 5, true);
+{ 
+    Room testroom1(101, 5, true);
+    Room testroom2(303, 2, true);
     Patient testPatient;
-    std::cout << testPatient.getRoom().getRoomFloorNumber() << std::endl;
-    testPatient.getRoom().setRoomFloorNumber(3);
-    std::cout << testPatient.getRoom().getRoomNumber() << std::endl;
-    std::cout << testPatient.getRoom().getRoomFloorNumber() << std::endl;
-    testPatient.setRoom(testroom);
-    std::cout << testPatient.getRoom().getRoomNumber() << std::endl;
-    std::cout << testPatient.getRoom().getRoomFloorNumber();
     
+
+    
+
+    //std::cout << testPatient.getRoom()->getRoomNumber();
+    testPatient.setRoom(&testroom1);
+    std::cout << testPatient.getRoom()->getRoomNumber();
+    testPatient.setRoom(&testroom2);
+    std::cout << testPatient.getRoom()->getRoomNumber();
     return 0;
 };

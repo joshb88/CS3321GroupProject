@@ -2,7 +2,6 @@
 
 class Room
 {
-    //friend class Modify_Room_Availability;
     private:
         unsigned int room_number; // Room number
         short room_floor_number;  // Floor Number
