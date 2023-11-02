@@ -15,7 +15,7 @@ class User
         //Constructors
         User();
         //login, password, last name, first name, dob, gender
-        User(const std::string& login, std::string password, 
+        User(std::string login, std::string password, 
         std::string last, std::string first, 
         unsigned int dob, unsigned char gender);
 

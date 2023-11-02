@@ -14,7 +14,7 @@ User::User()
     gender = 'X';
 }
 // User Class Parameterized Constructor
-User::User(const std::string& login, std::string pass, std::string last, std::string first, unsigned int dob, unsigned char gend)
+User::User(std::string login, std::string pass, std::string last, std::string first, unsigned int dob, unsigned char gend)
 {
     user_login = login;
     user_password = pass;
