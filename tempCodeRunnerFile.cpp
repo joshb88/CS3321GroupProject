@@ -1,1 +1,0 @@
-oom.setRoomAvailability(true

@@ -48,7 +48,7 @@ class Room
     public:
         //Constructors
         Room();
-        Room(unsigned int, short, bool);
+        Room(unsigned int Room_no, short Floor_no, bool Room_Available);
 
         // Setters
         void setRoomNumber(unsigned int);
@@ -57,11 +57,11 @@ class Room
 
         // Getters
         unsigned int getRoomNumber() const;
-        short getRoomFloor() const;
+        short getRoomFloorNumber() const;
         bool getRoomAvailability() const;
 };
 
-class Patient : virtual public User
+class Patient : public User
 {
     private:
         bool has_insurance;
@@ -76,13 +76,15 @@ class Patient : virtual public User
         // Setters
         void setHasInsurance(bool);
         void setInsuranceProvider(std::string);
+        void setRoom(Room&);
 
         // Getters
         bool getHasInsurance() const;
         std::string getInsuranceProvider() const;
+        Room& getRoom();
 };
 
-class Staff : virtual User
+class Staff : public User
 {
     public:
         enum Clearance { entry, janitorial, nursing, medical, admin };

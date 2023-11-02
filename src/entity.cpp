@@ -114,7 +114,7 @@ unsigned int Room::getRoomNumber() const
 {
     return room_number;
 }
-short Room::getRoomFloor() const
+short Room::getRoomFloorNumber() const
 {
     return room_floor_number;
 }
@@ -152,6 +152,10 @@ void Patient::setInsuranceProvider(std::string prov)
 {
     insurance_provider = prov;
 }
+void Patient::setRoom(Room& room)
+{
+    this->room = room;
+}
 
 // Patient Class Getters
 bool Patient::getHasInsurance() const
@@ -161,6 +165,10 @@ bool Patient::getHasInsurance() const
 std::string Patient::getInsuranceProvider() const
 {
     return insurance_provider;
+}
+Room& Patient::getRoom()
+{
+    return room;
 }
 
 // STAFF CLASS

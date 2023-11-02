@@ -106,6 +106,5 @@
         "typeindex": "cpp",
         "valarray": "cpp",
         "__verbose_abort": "cpp"
-    },
-    "cmake.configureOnOpen": true
+    }
 }
