@@ -48,7 +48,7 @@ class Room
     public:
         //Constructors
         Room();
-        Room(unsigned int, short, bool);
+        Room(unsigned int Room_no, short Floor_no, bool Room_Available);
 
         // Setters
         void setRoomNumber(unsigned int);
