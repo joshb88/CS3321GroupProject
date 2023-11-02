@@ -114,7 +114,7 @@ unsigned int Room::getRoomNumber() const
 {
     return room_number;
 }
-short Room::getRoomFloor() const
+short Room::getRoomFloorNumber() const
 {
     return room_floor_number;
 }
@@ -162,7 +162,7 @@ std::string Patient::getInsuranceProvider() const
 {
     return insurance_provider;
 }
-Room Patient::getRoom() const
+Room& Patient::getRoom()
 {
     return room;
 }
