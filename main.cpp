@@ -16,7 +16,7 @@ int main()
 
     //std::cout << testPatient.getRoom()->getRoomNumber();
     testPatient.setRoom(&testroom1);
-    std::cout << testPatient.getRoom()->getRoomNumber();
+    std::cout << testPatient.getRoom()->getRoomNumber() << std::endl;
     testPatient.setRoom(&testroom2);
     std::cout << testPatient.getRoom()->getRoomNumber();
     return 0;
