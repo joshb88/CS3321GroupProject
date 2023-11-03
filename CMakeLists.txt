@@ -5,8 +5,8 @@ project(hospital VERSION 0.1.0 LANGUAGES C CXX)
 set(CMAKE_CXX_STANDARD 17) 
 
 # Allows testing.
-include(CTest)
-enable_testing()
+# include(CTest)
+# enable_testing()
 
 # Create a list of source files by globbing all .cpp files in "Testing/src" directory.
 file(GLOB LIB_SOURCES "./src/*/*.cpp")
