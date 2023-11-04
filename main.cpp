@@ -1,7 +1,7 @@
 #include <iostream>
 #include <iomanip>
-#include "entity/schedule.h"
-#include "control/storedata.h"
+#include "./headers/entity/schedule.h"
+#include "./headers/control/storedata.h"
 
 /* 
 There is a chain of includes that are all satisfied by calling "schedule.h".

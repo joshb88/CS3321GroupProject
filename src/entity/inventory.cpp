@@ -1,5 +1,5 @@
-#include "..\..\headers\entity\inventory.h"
-
+//#include "..\..\headers\entity\inventory.h"
+#include "../../headers/entity/inventory.h"
 // INVENTORY CLASS
 // Inventory Class Constructors
 Inventory::Inventory() : item_name(""), item_count(0), item_threshold(0) {}
