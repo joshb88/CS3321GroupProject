@@ -2,6 +2,7 @@
 #include <iomanip>
 #include "./headers/entity/schedule.h"
 #include "./headers/control/storedata.h"
+#include "./headers/control/ModifyRoomAvailability.h"
 
 /* 
 There is a chain of includes that are all satisfied by calling "schedule.h".
@@ -22,5 +23,12 @@ int main()
     // std::cout << testPatient.getRoom()->getRoomNumber() << std::endl;
     // testPatient.setRoom(&testroom2);
     // std::cout << testPatient.getRoom()->getRoomNumber();
+
+    //testing storing room as a map. also testing ModifyRoomAvailability class.
+    std::map<int, Room*> roomMap;
+    roomMap[testroom1.getRoomNumber()]=&testroom1;
+    roomMap[testroom2.getRoomNumber()]=&testroom2;
+    ModifyRoomAvailability::bookRoom(testroom1.getRoomNumber(), roomMap);
+    std::cout << testroom1.getRoomNumber() << " availability: " << testroom1.getRoomAvailability() << std::endl;
     return 0;
 };
