@@ -1,8 +1,13 @@
 #include <iostream>
 #include <iomanip>
+//following macro means we don't have to replace the slashes everytime we swap between OSes
+#ifdef _WIN32 //if Windows
+//#include windows path
+#else //If MacOS or Linux
 #include "./headers/entity/schedule.h"
 #include "./headers/control/storedata.h"
 #include "./headers/control/ModifyRoomAvailability.h"
+#endif
 
 /* 
 There is a chain of includes that are all satisfied by calling "schedule.h".
