@@ -165,6 +165,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\hospital_management.dir\build.make CMakeFiles/hospital_management.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/control/storedata.obj: src/control/storedata.cpp.obj
+.PHONY : src/control/storedata.obj
+
+# target to build an object file
+src/control/storedata.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/storedata.cpp.obj
+.PHONY : src/control/storedata.cpp.obj
+
+src/control/storedata.i: src/control/storedata.cpp.i
+.PHONY : src/control/storedata.i
+
+# target to preprocess a source file
+src/control/storedata.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/storedata.cpp.i
+.PHONY : src/control/storedata.cpp.i
+
+src/control/storedata.s: src/control/storedata.cpp.s
+.PHONY : src/control/storedata.s
+
+# target to generate assembly for a file
+src/control/storedata.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/storedata.cpp.s
+.PHONY : src/control/storedata.cpp.s
+
 src/entity/inventory.obj: src/entity/inventory.cpp.obj
 .PHONY : src/entity/inventory.obj
 
@@ -346,6 +370,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/control/storedata.obj
+	@echo ... src/control/storedata.i
+	@echo ... src/control/storedata.s
 	@echo ... src/entity/inventory.obj
 	@echo ... src/entity/inventory.i
 	@echo ... src/entity/inventory.s
