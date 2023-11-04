@@ -1,1 +1,2 @@
-Test.
+# Hospital Management System
+This software is meant to faciliate the management of a hosptal utilizing an Object-Oriented Programming (OOP) paradigm. It is being developed as part of a semester long project, with each stage of development being assigned as its own propietary assignment. This work has been, and will most likely remain, a collaborative effort in an attempt to learn not only Software Engineering, but collaborative work via git and further improving our coding ability.
