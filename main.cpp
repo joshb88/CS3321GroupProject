@@ -13,9 +13,7 @@ int main()
 { 
     Room testroom1(101, 5, true);
     Room testroom2(303, 2, true);
-    User testPatient;
-
-    testPatient.setUserLogin("user_login");
+    User testPatient("test_login","test_password","test_last","test_first",19880814,'M');
 
     StoreData::storeUser(testPatient);
 
