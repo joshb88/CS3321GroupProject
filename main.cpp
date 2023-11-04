@@ -15,7 +15,6 @@ int main()
     Room testroom1(101, 5, true);
     Room testroom2(303, 2, true);
     User testPatient("test_login","test_password","test_last","test_first",19880814,'M');
-
     StoreData::storeUser(testPatient);
 
     //std::cout << testPatient.getRoom()->getRoomNumber();
@@ -25,10 +24,15 @@ int main()
     // std::cout << testPatient.getRoom()->getRoomNumber();
 
     //testing storing room as a map. also testing ModifyRoomAvailability class.
-    std::map<int, Room*> roomMap;
+    /*std::map<int, Room*> roomMap;
     roomMap[testroom1.getRoomNumber()]=&testroom1;
     roomMap[testroom2.getRoomNumber()]=&testroom2;
     ModifyRoomAvailability::bookRoom(testroom1.getRoomNumber(), roomMap);
-    std::cout << testroom1.getRoomNumber() << " availability: " << testroom1.getRoomAvailability() << std::endl;
+    std::cout << testroom1.getRoomNumber() << " availability: " << testroom1.getRoomAvailability() << std::endl;*/
+
+    //testing changes to patient
+    /*Patient patientTest("username","password","Doe","John",19920809,'M', false,"N/A", nullptr);
+    patientTest.setRoom(testroom1);
+    std::cout << patientTest.getRoomNumber();*/
     return 0;
 };

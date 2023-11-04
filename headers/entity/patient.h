@@ -17,10 +17,11 @@ class Patient : public User
         // Setters
         void setHasInsurance(bool);
         void setInsuranceProvider(std::string);
-        void setRoom(Room*);
+        void setRoom(Room&);
 
         // Getters
         bool getHasInsurance() const;
         std::string getInsuranceProvider() const;
-        Room* getRoom();
+        Room& getRoom();
+        int getRoomNumber();
 };

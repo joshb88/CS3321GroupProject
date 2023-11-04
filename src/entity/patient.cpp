@@ -32,9 +32,9 @@ void Patient::setInsuranceProvider(std::string prov)
 {
     insurance_provider = prov;
 }
-void Patient::setRoom(Room* room)
+void Patient::setRoom(Room& room)
 {
-    this->room = room;
+    this->room = &room;
 }
 
 // Patient Class Getters
@@ -46,7 +46,12 @@ std::string Patient::getInsuranceProvider() const
 {
     return insurance_provider;
 }
-Room* Patient::getRoom()
+Room& Patient::getRoom()
 {
-    return room;
+    return *room;
+}
+
+int Patient::getRoomNumber()
+{
+    return room->getRoomNumber();
 }
