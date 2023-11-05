@@ -1,6 +1,5 @@
-#include <cstdlib>
 #include <string>
-#include "../../headers/entity/user.h"
+#include "entity/user.h"
 
 // USER CLASS
 // User Class Default Constructor

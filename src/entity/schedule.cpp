@@ -1,4 +1,4 @@
-#include "../../headers/entity/schedule.h"
+#include "entity/schedule.h"
 
 // SCHEDULE CLASS
 // Schedule Class Constructors

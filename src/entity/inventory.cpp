@@ -1,4 +1,4 @@
-#include "..\..\headers\entity\inventory.h"
+#include "entity/inventory.h"
 
 // INVENTORY CLASS
 // Inventory Class Constructors
