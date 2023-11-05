@@ -1,7 +1,5 @@
-#include <cstdlib>
-#include <string>
-#include "../../headers/entity/user.h"
-#include "../../headers/entity/staff.h"
+#include "entity/user.h"
+#include "entity/staff.h"
 
 // Staff Class Default Constructor
 Staff::Staff() : User()
