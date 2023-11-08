@@ -3,6 +3,7 @@
 #include "entity/schedule.h"
 #include "control/storedata.h"
 //#include "control/GenerateRoomAvailabilityReport.h"
+//#include "control/ModifyRoomAvailability.h"
 
 /* 
 There is a chain of includes that are all satisfied by calling "schedule.h".
@@ -24,11 +25,6 @@ int main()
     // testPatient.setRoom(&testroom2);
     // std::cout << testPatient.getRoom()->getRoomNumber();
 
-    /*//Testing GenerateRoomAvailabilityReport
-    std::map<int, Room*> roomMap;
-    roomMap[testroom1.getRoomNumber()]=&testroom1;
-    roomMap[testroom2.getRoomNumber()]=&testroom2;
-    std::cout << GenerateRoomAvailabilityReport::generateRoomReport(roomMap);*/
 
     return 0;
 };
