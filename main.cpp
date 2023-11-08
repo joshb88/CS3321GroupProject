@@ -25,6 +25,5 @@ int main()
     // testPatient.setRoom(&testroom2);
     // std::cout << testPatient.getRoom()->getRoomNumber();
 
-
     return 0;
 };

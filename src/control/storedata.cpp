@@ -10,6 +10,6 @@ void StoreData::storeUser(User& user)
     user.getFirstName() << '\n' <<
     user.getLastName() << '\n' <<
     user.getDateOfBirth() << '\n' <<
-    user.getGender() << '\n' <<
+    user.getGender() <<
     std::endl;
 }

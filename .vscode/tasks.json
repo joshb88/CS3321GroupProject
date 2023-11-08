@@ -9,6 +9,8 @@
                 "-g",
                 "${file}",
                 "${fileDirname}\\src\\entity\\*.cpp",
+                "${fileDirname}\\src\\control\\*.cpp",
+                "-I${fileDirname}\\headers",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],

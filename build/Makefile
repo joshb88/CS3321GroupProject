@@ -165,6 +165,54 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\hospital_management.dir\build.make CMakeFiles/hospital_management.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/control/GenerateRoomAvailabilityReport.obj: src/control/GenerateRoomAvailabilityReport.cpp.obj
+.PHONY : src/control/GenerateRoomAvailabilityReport.obj
+
+# target to build an object file
+src/control/GenerateRoomAvailabilityReport.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/GenerateRoomAvailabilityReport.cpp.obj
+.PHONY : src/control/GenerateRoomAvailabilityReport.cpp.obj
+
+src/control/GenerateRoomAvailabilityReport.i: src/control/GenerateRoomAvailabilityReport.cpp.i
+.PHONY : src/control/GenerateRoomAvailabilityReport.i
+
+# target to preprocess a source file
+src/control/GenerateRoomAvailabilityReport.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/GenerateRoomAvailabilityReport.cpp.i
+.PHONY : src/control/GenerateRoomAvailabilityReport.cpp.i
+
+src/control/GenerateRoomAvailabilityReport.s: src/control/GenerateRoomAvailabilityReport.cpp.s
+.PHONY : src/control/GenerateRoomAvailabilityReport.s
+
+# target to generate assembly for a file
+src/control/GenerateRoomAvailabilityReport.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/GenerateRoomAvailabilityReport.cpp.s
+.PHONY : src/control/GenerateRoomAvailabilityReport.cpp.s
+
+src/control/ModifyRoomAvailability.obj: src/control/ModifyRoomAvailability.cpp.obj
+.PHONY : src/control/ModifyRoomAvailability.obj
+
+# target to build an object file
+src/control/ModifyRoomAvailability.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.obj
+.PHONY : src/control/ModifyRoomAvailability.cpp.obj
+
+src/control/ModifyRoomAvailability.i: src/control/ModifyRoomAvailability.cpp.i
+.PHONY : src/control/ModifyRoomAvailability.i
+
+# target to preprocess a source file
+src/control/ModifyRoomAvailability.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.i
+.PHONY : src/control/ModifyRoomAvailability.cpp.i
+
+src/control/ModifyRoomAvailability.s: src/control/ModifyRoomAvailability.cpp.s
+.PHONY : src/control/ModifyRoomAvailability.s
+
+# target to generate assembly for a file
+src/control/ModifyRoomAvailability.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.s
+.PHONY : src/control/ModifyRoomAvailability.cpp.s
+
 src/control/storedata.obj: src/control/storedata.cpp.obj
 .PHONY : src/control/storedata.obj
 
@@ -370,6 +418,12 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/control/GenerateRoomAvailabilityReport.obj
+	@echo ... src/control/GenerateRoomAvailabilityReport.i
+	@echo ... src/control/GenerateRoomAvailabilityReport.s
+	@echo ... src/control/ModifyRoomAvailability.obj
+	@echo ... src/control/ModifyRoomAvailability.i
+	@echo ... src/control/ModifyRoomAvailability.s
 	@echo ... src/control/storedata.obj
 	@echo ... src/control/storedata.i
 	@echo ... src/control/storedata.s
