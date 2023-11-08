@@ -1,6 +1,6 @@
 #include <fstream>
 #include <iostream>
-#include "../entity/user.h"
+#include "entity/user.h"
 
 class StoreData
 {
