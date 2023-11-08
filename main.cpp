@@ -2,6 +2,7 @@
 #include <iomanip>
 #include "entity/schedule.h"
 #include "control/storedata.h"
+//#include "control/GenerateRoomAvailabilityReport.h"
 //#include "control/ModifyRoomAvailability.h"
 
 /* 
@@ -24,11 +25,6 @@ int main()
     // testPatient.setRoom(&testroom2);
     // std::cout << testPatient.getRoom()->getRoomNumber();
 
-    //testing storing room as a map. also testing ModifyRoomAvailability class.
-    /*std::map<int, Room*> roomMap;
-    roomMap[testroom1.getRoomNumber()]=&testroom1;
-    roomMap[testroom2.getRoomNumber()]=&testroom2;
-    ModifyRoomAvailability::bookRoom(testroom1.getRoomNumber(), roomMap);
-    std::cout << testroom1.getRoomNumber() << " availability: " << testroom1.getRoomAvailability() << std::endl;*/
+
     return 0;
 };
