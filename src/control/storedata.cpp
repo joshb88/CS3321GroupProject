@@ -36,8 +36,8 @@ void StoreData::storeUser(User& user)
                 std::cout << "user added to database." << std::endl;
             } 
         }
-        user_file.close();
     }
+    user_file.close();
 }
     
 
