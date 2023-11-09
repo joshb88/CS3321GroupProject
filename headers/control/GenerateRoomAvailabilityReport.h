@@ -1,7 +1,7 @@
 #pragma once
-#include "entity/room.h"
 #include <string>
 #include <map>
+#include "entity/room.h"
 
 class GenerateRoomAvailabilityReport{
     /*private:

@@ -1,5 +1,5 @@
-#include "entity/room.h"
 #include <map>
+#include "entity/room.h"
 //take in room Number and reference to map, change room availability according to method called
 
 class ModifyRoomAvailability

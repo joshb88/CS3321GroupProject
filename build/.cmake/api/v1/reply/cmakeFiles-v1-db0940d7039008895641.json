@@ -149,6 +149,9 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"path" : "database/users.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

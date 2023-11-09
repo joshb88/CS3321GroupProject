@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.15)
 project(hospital VERSION 0.1.0 LANGUAGES C CXX)
 
 # Set the C++ standard to C++17.
-set(CMAKE_CXX_STANDARD 17) 
+set(CMAKE_CXX_STANDARD 17)
 
 # Allows testing.
 # include(CTest)
@@ -34,3 +34,5 @@ target_link_libraries(hospital_management mylibrary)
 set_target_properties(hospital_management PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/output"
 )
+# Copy the users.txt file to the output directory when building the project.
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/database/users.txt ${CMAKE_CURRENT_SOURCE_DIR}/output/database/users.txt COPYONLY)

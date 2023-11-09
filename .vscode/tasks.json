@@ -9,6 +9,8 @@
                 "-g",
                 "${file}",
                 "${fileDirname}\\src\\entity\\*.cpp",
+                "${fileDirname}\\src\\control\\*.cpp",
+                "-I${fileDirname}\\headers",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
@@ -33,7 +35,9 @@
                 "-fansi-escape-codes",
                 "-g",
                 "${file}",
-                "${fileDirname}/src/*cpp",
+                "${fileDirname}/src/entity/*cpp",
+                "${fileDirname}/src/control/*.cpp",
+                "-I${fileDirname}/headers",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
