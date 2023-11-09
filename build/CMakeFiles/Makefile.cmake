@@ -34,6 +34,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.28.0-rc3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.0-rc3/CMakeRCCompiler.cmake"
   "CMakeFiles/3.28.0-rc3/CMakeSystem.cmake"
+  "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/database/users.txt"
   )
 
 # The corresponding makefile is:
@@ -44,6 +45,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/output/database/users.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

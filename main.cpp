@@ -19,14 +19,16 @@ int main()
     User testPatient2("test_login2","test_password2","test_last2","test_first2",19880815,'F');
     User testPatient3("test_login3","test_password3","test_last3","test_first3",19880816,'X');
     User testPatient4("test_login4","test_password4","test_last4","test_first4",19880817,'X');
+    User testPatient5;
 
     StoreData::storeUser(testPatient1);
     StoreData::storeUser(testPatient2);
+    //StoreData::storeUser(testPatient5);
     StoreData::storeUser(testPatient3);
     StoreData::storeUser(testPatient4);
 
     //std::cout << testPatient.getRoom()->getRoomNumber();
-    // testPatient.setRoom(&testroom1);
+    // testPatient.setRoom(&testroom1); 
     // std::cout << testPatient.getRoom()->getRoomNumber() << std::endl;
     // testPatient.setRoom(&testroom2);
     // std::cout << testPatient.getRoom()->getRoomNumber();
