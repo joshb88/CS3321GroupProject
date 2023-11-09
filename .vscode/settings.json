@@ -106,5 +106,6 @@
         "typeindex": "cpp",
         "valarray": "cpp",
         "__verbose_abort": "cpp"
-    }
+    },
+    "C_Cpp.default.compilerPath": "/usr/bin/clang++"
 }

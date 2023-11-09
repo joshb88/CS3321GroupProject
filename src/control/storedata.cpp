@@ -16,7 +16,7 @@ void StoreData::storeUser(User& user)
             user.getLastName() << " " << 
             user.getFirstName() << " " <<
             user.getDateOfBirth() << " " <<
-            user.getGender() << " " << std::endl;
+            user.getGender() << std::endl;
 
         user_file.close();
         std::cout << "User data written to file." << std::endl;

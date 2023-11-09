@@ -16,6 +16,7 @@ int main()
     Room testroom1(101, 5, true);
     Room testroom2(303, 2, true);
     User testPatient("test_login","test_password","test_last","test_first",19880814,'M');
+    User testPatient2("test_login2","test_pass2","test_last2","test_first2",19010101,'X');
 
     StoreData::storeUser(testPatient);
 

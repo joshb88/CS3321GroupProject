@@ -1,1 +1,2 @@
-test_login test_password test_last test_first 19880814 M 
+test_login2 test_pass2 test_last2 test_first2 19010101 X
+test_login test_password test_last test_first 19880814 M
