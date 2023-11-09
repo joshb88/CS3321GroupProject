@@ -8,4 +8,5 @@ class StoreData
 {
     public:
         static void storeUser(User&);
+        static bool userInDatabase(User&);
 };
