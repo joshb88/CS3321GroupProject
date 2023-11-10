@@ -37,6 +37,7 @@
                 "${file}",
                 "${fileDirname}/src/entity/*cpp",
                 "${fileDirname}/src/control/*.cpp",
+                "${fileDirname}/src/boundary/*.cpp",
                 "-I${fileDirname}/headers",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
