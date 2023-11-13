@@ -165,6 +165,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\hospital_management.dir\build.make CMakeFiles/hospital_management.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/boundary/userinterface.obj: src/boundary/userinterface.cpp.obj
+.PHONY : src/boundary/userinterface.obj
+
+# target to build an object file
+src/boundary/userinterface.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.obj
+.PHONY : src/boundary/userinterface.cpp.obj
+
+src/boundary/userinterface.i: src/boundary/userinterface.cpp.i
+.PHONY : src/boundary/userinterface.i
+
+# target to preprocess a source file
+src/boundary/userinterface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.i
+.PHONY : src/boundary/userinterface.cpp.i
+
+src/boundary/userinterface.s: src/boundary/userinterface.cpp.s
+.PHONY : src/boundary/userinterface.s
+
+# target to generate assembly for a file
+src/boundary/userinterface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.s
+.PHONY : src/boundary/userinterface.cpp.s
+
 src/control/GenerateRoomAvailabilityReport.obj: src/control/GenerateRoomAvailabilityReport.cpp.obj
 .PHONY : src/control/GenerateRoomAvailabilityReport.obj
 
@@ -418,6 +442,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/boundary/userinterface.obj
+	@echo ... src/boundary/userinterface.i
+	@echo ... src/boundary/userinterface.s
 	@echo ... src/control/GenerateRoomAvailabilityReport.obj
 	@echo ... src/control/GenerateRoomAvailabilityReport.i
 	@echo ... src/control/GenerateRoomAvailabilityReport.s

@@ -80,7 +80,8 @@
 				6,
 				7,
 				8,
-				9
+				9,
+				10
 			]
 		}
 	],
@@ -107,14 +108,14 @@
 				6,
 				7,
 				8,
-				9
+				9,
+				10
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				10,
 				11,
 				12,
 				13,
@@ -123,12 +124,20 @@
 				16,
 				17,
 				18,
-				19
+				19,
+				20,
+				21
 			]
 		}
 	],
 	"sources" : 
 	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/boundary/userinterface.cpp",
+			"sourceGroupIndex" : 0
+		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
@@ -188,6 +197,11 @@
 			"compileGroupIndex" : 0,
 			"path" : "src/entity/user.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "headers/boundary/userinterface.h",
+			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 3,
