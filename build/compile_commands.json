@@ -1,6 +1,12 @@
 [
 {
   "directory": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\boundary\\userinterface.cpp.obj -c C:\\Users\\Josh\\Desktop\\Repositories\\CS3321GroupProject\\src\\boundary\\userinterface.cpp",
+  "file": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/src/boundary/userinterface.cpp",
+  "output": "CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.obj"
+},
+{
+  "directory": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\control\\GenerateRoomAvailabilityReport.cpp.obj -c C:\\Users\\Josh\\Desktop\\Repositories\\CS3321GroupProject\\src\\control\\GenerateRoomAvailabilityReport.cpp",
   "file": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/src/control/GenerateRoomAvailabilityReport.cpp",
   "output": "CMakeFiles/mylibrary.dir/src/control/GenerateRoomAvailabilityReport.cpp.obj"

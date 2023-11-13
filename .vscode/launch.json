@@ -6,7 +6,8 @@
             "name": "Launch",
             "program": "${fileDirname}/main",
             "args": [],
-            "cwd": "${fileDirname}"
+            "cwd": "${fileDirname}",
+            "preLaunchTask": "C/C++: clang++ build active file"
         },
         {
             "name": "C/C++: g++.exe build and debug active file",

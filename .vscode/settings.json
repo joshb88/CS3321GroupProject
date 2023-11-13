@@ -105,7 +105,8 @@
         "thread": "cpp",
         "typeindex": "cpp",
         "valarray": "cpp",
-        "__verbose_abort": "cpp"
+        "__verbose_abort": "cpp",
+        "__tree": "cpp"
     },
     "C_Cpp.default.compilerPath": "/usr/bin/clang++"
 }
