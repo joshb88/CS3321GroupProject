@@ -7,6 +7,6 @@
 class MainMenu
 {
     public:
-        static std::string passwordInputScreen();
+        static std::string passwordInput();
         static void loginInterface();
 };

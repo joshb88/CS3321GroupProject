@@ -2,7 +2,7 @@
 
 std::string SECTION_BREAK = "==================================================\n";
 
-std::string MainMenu::passwordInputScreen()
+std::string MainMenu::passwordInput()
 {
     std::string password;
     char ch;
@@ -39,9 +39,9 @@ void MainMenu::loginInterface()
     "Enter User Login:\t";
     std::cin >> login_input;
 
-    std::cout << std::left << std::setw(20) <<
+    std::cout << std::left << std::setw(22) <<
     "Enter User Password:\t";
-    password_input = MainMenu::passwordInputScreen();
+    password_input = MainMenu::passwordInput();
 
     std::cout << SECTION_BREAK << std::endl;
 }

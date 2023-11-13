@@ -3,7 +3,11 @@ Hotel_Management_Project/
         users.txt
     headers/
         boundary/
+            userinterface.h
         control/
+            storedata.h
+            GenerateRoomAvailabilityReports.h
+            ModifyRoomAvailability.h
         entity/
             inventory.h
             patient.h
@@ -15,7 +19,11 @@ Hotel_Management_Project/
     output/
     src/
         boundary/
+            userinterface.cpp
         control/
+            storedata.cpp
+            GenerateRoomAvailabilityReports.cpp
+            ModifyRoomAvailability.cpp
         entity/
             inventory.cpp
             patient.cpp
