@@ -2,11 +2,10 @@
 #include <iostream>
 #include <iomanip>
 #include <string>
-#include <conio.h>
+#include <cstdio>
 
 class MainMenu
 {
     public:
-        static std::string passwordInputScreen();
         static void loginInterface();
 };
