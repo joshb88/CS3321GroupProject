@@ -1,4 +1,5 @@
 #include "boundary/userinterface.h"
+#include "entity/user.h"
 
 std::string SECTION_BREAK = "==================================================\n";
 

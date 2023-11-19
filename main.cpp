@@ -14,6 +14,13 @@ These include the contents of the header/entity/ folder, <string>, <vector>, and
 
 int main()
 {
+    bool userVerified = false;
+    enum optionsStaff {addPatient, viewPatient, Billing, viewRoomAvail, exit};
+    enum optionsAdmin {addPatient, viewPatient, Billing, viewRoomAvail, modifyPatient, viewInventory, modifyInventory, addNewEmployee, exit};
+    
+    optionsStaff choice_1;
+    optionsAdmin choice_2;
+
     MainMenu::loginInterface();
     // Room testroom1(101, 5, true);
     // Room testroom2(303, 2, true);

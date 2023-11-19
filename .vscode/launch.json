@@ -1,7 +1,7 @@
 {
     "configurations": [
         {
-            "type": "lldb",
+            "type": "node",
             "request": "launch",
             "name": "Launch",
             "program": "${fileDirname}/main",
@@ -44,7 +44,7 @@
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
-            "externalConsole": false,
+            "externalConsole": true,
             "MIMode": "lldb",
             "preLaunchTask": "C/C++: clang++ build active file"
         }
