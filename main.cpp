@@ -30,7 +30,7 @@ int main()
     StoreData::storeUser(testPatient3);
     StoreData::storeUser(testPatient4);
     StoreData::storeUser(test_patient1);
-    StoreData::storeUser(test_patient2);
+    //StoreData::storeUser(test_patient2);
 
     //std::cout << testPatient.getRoom()->getRoomNumber();
     // testPatient.setRoom(&testroom1); 
