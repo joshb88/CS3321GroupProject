@@ -18,6 +18,8 @@ class User
         User(std::string login, std::string password, 
         std::string last, std::string first, 
         unsigned int dob, unsigned char gender);
+        // Temp user
+        User(std::string login, std::string password);
 
         // Setters
         void setUserLogin(std::string);
