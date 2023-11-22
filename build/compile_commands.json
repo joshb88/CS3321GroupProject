@@ -1,74 +1,82 @@
 [
 {
-  "directory": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\boundary\\userinterface.cpp.obj -c C:\\Users\\Josh\\Desktop\\Repositories\\CS3321GroupProject\\src\\boundary\\userinterface.cpp",
-  "file": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/src/boundary/userinterface.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.obj"
+  "directory": "C:/Users/Adrian/Desktop/CS3321GroupProject/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\boundary\\patientInterface.cpp.obj -c C:\\Users\\Adrian\\Desktop\\CS3321GroupProject\\src\\boundary\\patientInterface.cpp",
+  "file": "C:/Users/Adrian/Desktop/CS3321GroupProject/src/boundary/patientInterface.cpp"
 },
 {
-  "directory": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\control\\GenerateRoomAvailabilityReport.cpp.obj -c C:\\Users\\Josh\\Desktop\\Repositories\\CS3321GroupProject\\src\\control\\GenerateRoomAvailabilityReport.cpp",
-  "file": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/src/control/GenerateRoomAvailabilityReport.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/control/GenerateRoomAvailabilityReport.cpp.obj"
+  "directory": "C:/Users/Adrian/Desktop/CS3321GroupProject/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\boundary\\staffInterface.cpp.obj -c C:\\Users\\Adrian\\Desktop\\CS3321GroupProject\\src\\boundary\\staffInterface.cpp",
+  "file": "C:/Users/Adrian/Desktop/CS3321GroupProject/src/boundary/staffInterface.cpp"
 },
 {
-  "directory": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\control\\ModifyRoomAvailability.cpp.obj -c C:\\Users\\Josh\\Desktop\\Repositories\\CS3321GroupProject\\src\\control\\ModifyRoomAvailability.cpp",
-  "file": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/src/control/ModifyRoomAvailability.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.obj"
+  "directory": "C:/Users/Adrian/Desktop/CS3321GroupProject/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\boundary\\userLogInUI.cpp.obj -c C:\\Users\\Adrian\\Desktop\\CS3321GroupProject\\src\\boundary\\userLogInUI.cpp",
+  "file": "C:/Users/Adrian/Desktop/CS3321GroupProject/src/boundary/userLogInUI.cpp"
 },
 {
-  "directory": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\control\\storedata.cpp.obj -c C:\\Users\\Josh\\Desktop\\Repositories\\CS3321GroupProject\\src\\control\\storedata.cpp",
-  "file": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/src/control/storedata.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/control/storedata.cpp.obj"
+  "directory": "C:/Users/Adrian/Desktop/CS3321GroupProject/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\control\\GenerateRoomAvailabilityReport.cpp.obj -c C:\\Users\\Adrian\\Desktop\\CS3321GroupProject\\src\\control\\GenerateRoomAvailabilityReport.cpp",
+  "file": "C:/Users/Adrian/Desktop/CS3321GroupProject/src/control/GenerateRoomAvailabilityReport.cpp"
 },
 {
-  "directory": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\entity\\inventory.cpp.obj -c C:\\Users\\Josh\\Desktop\\Repositories\\CS3321GroupProject\\src\\entity\\inventory.cpp",
-  "file": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/src/entity/inventory.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/entity/inventory.cpp.obj"
+  "directory": "C:/Users/Adrian/Desktop/CS3321GroupProject/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\control\\GenerateScheduleReport.cpp.obj -c C:\\Users\\Adrian\\Desktop\\CS3321GroupProject\\src\\control\\GenerateScheduleReport.cpp",
+  "file": "C:/Users/Adrian/Desktop/CS3321GroupProject/src/control/GenerateScheduleReport.cpp"
 },
 {
-  "directory": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\entity\\patient.cpp.obj -c C:\\Users\\Josh\\Desktop\\Repositories\\CS3321GroupProject\\src\\entity\\patient.cpp",
-  "file": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/src/entity/patient.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/entity/patient.cpp.obj"
+  "directory": "C:/Users/Adrian/Desktop/CS3321GroupProject/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\control\\ModifyRoomAvailability.cpp.obj -c C:\\Users\\Adrian\\Desktop\\CS3321GroupProject\\src\\control\\ModifyRoomAvailability.cpp",
+  "file": "C:/Users/Adrian/Desktop/CS3321GroupProject/src/control/ModifyRoomAvailability.cpp"
 },
 {
-  "directory": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\entity\\procedure.cpp.obj -c C:\\Users\\Josh\\Desktop\\Repositories\\CS3321GroupProject\\src\\entity\\procedure.cpp",
-  "file": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/src/entity/procedure.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/entity/procedure.cpp.obj"
+  "directory": "C:/Users/Adrian/Desktop/CS3321GroupProject/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\control\\loginVerification.cpp.obj -c C:\\Users\\Adrian\\Desktop\\CS3321GroupProject\\src\\control\\loginVerification.cpp",
+  "file": "C:/Users/Adrian/Desktop/CS3321GroupProject/src/control/loginVerification.cpp"
 },
 {
-  "directory": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\entity\\room.cpp.obj -c C:\\Users\\Josh\\Desktop\\Repositories\\CS3321GroupProject\\src\\entity\\room.cpp",
-  "file": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/src/entity/room.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/entity/room.cpp.obj"
+  "directory": "C:/Users/Adrian/Desktop/CS3321GroupProject/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\control\\storedata.cpp.obj -c C:\\Users\\Adrian\\Desktop\\CS3321GroupProject\\src\\control\\storedata.cpp",
+  "file": "C:/Users/Adrian/Desktop/CS3321GroupProject/src/control/storedata.cpp"
 },
 {
-  "directory": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\entity\\schedule.cpp.obj -c C:\\Users\\Josh\\Desktop\\Repositories\\CS3321GroupProject\\src\\entity\\schedule.cpp",
-  "file": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/src/entity/schedule.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/entity/schedule.cpp.obj"
+  "directory": "C:/Users/Adrian/Desktop/CS3321GroupProject/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\entity\\inventory.cpp.obj -c C:\\Users\\Adrian\\Desktop\\CS3321GroupProject\\src\\entity\\inventory.cpp",
+  "file": "C:/Users/Adrian/Desktop/CS3321GroupProject/src/entity/inventory.cpp"
 },
 {
-  "directory": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\entity\\staff.cpp.obj -c C:\\Users\\Josh\\Desktop\\Repositories\\CS3321GroupProject\\src\\entity\\staff.cpp",
-  "file": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/src/entity/staff.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/entity/staff.cpp.obj"
+  "directory": "C:/Users/Adrian/Desktop/CS3321GroupProject/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\entity\\patient.cpp.obj -c C:\\Users\\Adrian\\Desktop\\CS3321GroupProject\\src\\entity\\patient.cpp",
+  "file": "C:/Users/Adrian/Desktop/CS3321GroupProject/src/entity/patient.cpp"
 },
 {
-  "directory": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\entity\\user.cpp.obj -c C:\\Users\\Josh\\Desktop\\Repositories\\CS3321GroupProject\\src\\entity\\user.cpp",
-  "file": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/src/entity/user.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/entity/user.cpp.obj"
+  "directory": "C:/Users/Adrian/Desktop/CS3321GroupProject/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\entity\\procedure.cpp.obj -c C:\\Users\\Adrian\\Desktop\\CS3321GroupProject\\src\\entity\\procedure.cpp",
+  "file": "C:/Users/Adrian/Desktop/CS3321GroupProject/src/entity/procedure.cpp"
 },
 {
-  "directory": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/hospital_management.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\hospital_management.dir\\main.cpp.obj -c C:\\Users\\Josh\\Desktop\\Repositories\\CS3321GroupProject\\main.cpp",
-  "file": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/main.cpp",
-  "output": "CMakeFiles/hospital_management.dir/main.cpp.obj"
+  "directory": "C:/Users/Adrian/Desktop/CS3321GroupProject/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\entity\\room.cpp.obj -c C:\\Users\\Adrian\\Desktop\\CS3321GroupProject\\src\\entity\\room.cpp",
+  "file": "C:/Users/Adrian/Desktop/CS3321GroupProject/src/entity/room.cpp"
+},
+{
+  "directory": "C:/Users/Adrian/Desktop/CS3321GroupProject/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\entity\\schedule.cpp.obj -c C:\\Users\\Adrian\\Desktop\\CS3321GroupProject\\src\\entity\\schedule.cpp",
+  "file": "C:/Users/Adrian/Desktop/CS3321GroupProject/src/entity/schedule.cpp"
+},
+{
+  "directory": "C:/Users/Adrian/Desktop/CS3321GroupProject/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\entity\\staff.cpp.obj -c C:\\Users\\Adrian\\Desktop\\CS3321GroupProject\\src\\entity\\staff.cpp",
+  "file": "C:/Users/Adrian/Desktop/CS3321GroupProject/src/entity/staff.cpp"
+},
+{
+  "directory": "C:/Users/Adrian/Desktop/CS3321GroupProject/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\entity\\user.cpp.obj -c C:\\Users\\Adrian\\Desktop\\CS3321GroupProject\\src\\entity\\user.cpp",
+  "file": "C:/Users/Adrian/Desktop/CS3321GroupProject/src/entity/user.cpp"
+},
+{
+  "directory": "C:/Users/Adrian/Desktop/CS3321GroupProject/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/hospital_management.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\hospital_management.dir\\main.cpp.obj -c C:\\Users\\Adrian\\Desktop\\CS3321GroupProject\\main.cpp",
+  "file": "C:/Users/Adrian/Desktop/CS3321GroupProject/main.cpp"
 }
 ]

@@ -1,8 +1,11 @@
 #include <iostream>
 #include <iomanip>
+#include <string>
 #include "entity/schedule.h"
 #include "control/storedata.h"
 #include "boundary/userLogInUI.h"
+#include "boundary/staffInterface.h"
+#include "boundary/patientInterface.h"
 //#include "control/GenerateRoomAvailabilityReport.h"
 //#include "control/ModifyRoomAvailability.h"
 
@@ -32,6 +35,20 @@ int main()
     // std::cout << testPatient.getRoom()->getRoomNumber() << std::endl;
     // testPatient.setRoom(&testroom2);
     // std::cout << testPatient.getRoom()->getRoomNumber();
+
+    bool isStaff = false;
+    
+    // std::string name;
+    // std::cout << "Name: ";
+    // std::cin >> name;
+
+    if (isStaff) {
+        StaffInterface staffUI;
+        staffUI.displayMainMenu();
+    } else {
+        PatientInterface patientUI(" Jane Doe ");
+        patientUI.displayMainMenu();
+    }
 
     return 0;
 };
