@@ -4,9 +4,34 @@
 #include <string>
 #include "control/loginVerification.h"
 
-bool loginVerification::verifyUser(std::string entered_name, std::string  entered_password)
+bool loginVerification::verifyUser(std::string entered_login, std::string  entered_password)
 {
-        std::string first_token;
+//     User our_user;
+//     bool found_user = false;
+//     bool correct_password = false;
+//     dataManipulation data;
+
+//     found_user = data.checkForUeser(entered_login);
+    
+//     if(found_user)
+//     {
+//        // data.getUserFromFile(our_user, entered_login);
+
+//         if(our_user.getUserPassword() == entered_password)
+//         {
+//             correct_password = true;
+//         }
+//     }
+
+//     if(found_user && correct_password)
+//     {
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
+
+    std::string first_token;
     std::string second_token;
     bool found_user = false;
     bool correct_password = false;
@@ -22,7 +47,7 @@ bool loginVerification::verifyUser(std::string entered_name, std::string  entere
             std::istringstream my_line(line);
             if (my_line >> first_token)
             {   
-                if(first_token == entered_name)
+                if(first_token == entered_login)
                 {
                     found_user = true;
                      my_line >> second_token;
@@ -49,5 +74,6 @@ bool loginVerification::verifyUser(std::string entered_name, std::string  entere
     {
         return false;
     }
+
 
 }
