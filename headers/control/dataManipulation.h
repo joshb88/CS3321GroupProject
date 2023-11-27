@@ -21,5 +21,8 @@ public:
     bool checkForItem(std::string);
     void wtireToInventoryFile(Inventory);
     Inventory getInventoryFromFile(std::string);
+    std::vector<Inventory> createList();
+    void writeUpdatedItemToFile (std::vector<Inventory>);
+
 };
 
