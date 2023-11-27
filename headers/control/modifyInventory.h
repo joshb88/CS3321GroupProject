@@ -9,9 +9,9 @@ private:
     /* data */
 public:
     void addItem(std::string, int, int);
-   // void modifyItemFromFile();
-    //void manualUpdate ();
-    //void procedureUpdate();
-    //void updateCounts ();
+    void printInventory();
+    void modifyItemCount(std::string, int);
+    void modifyItemThresh(std::string, int);
+    void modifyBoth(std::string, int, int);
 
 };
