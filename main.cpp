@@ -4,6 +4,7 @@
 #include "entity/schedule.h"
 #include "control/storedata.h"
 #include "boundary/userLogInUI.h"
+#include "boundary/inventoryUI.h"
 #include "boundary/staffInterface.h"
 #include "boundary/patientInterface.h"
 //#include "control/GenerateRoomAvailabilityReport.h"
@@ -17,7 +18,8 @@ These include the contents of the header/entity/ folder, <string>, <vector>, and
 
 int main()
 {
-    MainMenu::loginInterface();
+    //MainMenu::loginInterface();
+    inventoryMenu::createInventoryMenu();
     // Room testroom1(101, 5, true);
     // Room testroom2(303, 2, true);
     // User testPatient1("test_login1","test_password1","test_last1","test_first1",19880814,'M');

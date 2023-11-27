@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "control/dataManipulation.h"
 
 class loginVerification
 {
