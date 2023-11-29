@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.obj.d"
   "CMakeFiles/mylibrary.dir/src/control/GenerateRoomAvailabilityReport.cpp.obj"
   "CMakeFiles/mylibrary.dir/src/control/GenerateRoomAvailabilityReport.cpp.obj.d"
+  "CMakeFiles/mylibrary.dir/src/control/LoginVerification.cpp.obj"
+  "CMakeFiles/mylibrary.dir/src/control/LoginVerification.cpp.obj.d"
   "CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.obj"
   "CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.obj.d"
   "CMakeFiles/mylibrary.dir/src/control/storedata.cpp.obj"

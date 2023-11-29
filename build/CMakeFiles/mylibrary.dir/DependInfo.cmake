@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/src/boundary/userinterface.cpp" "CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.obj" "gcc" "CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.obj.d"
   "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/src/control/GenerateRoomAvailabilityReport.cpp" "CMakeFiles/mylibrary.dir/src/control/GenerateRoomAvailabilityReport.cpp.obj" "gcc" "CMakeFiles/mylibrary.dir/src/control/GenerateRoomAvailabilityReport.cpp.obj.d"
+  "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/src/control/LoginVerification.cpp" "CMakeFiles/mylibrary.dir/src/control/LoginVerification.cpp.obj" "gcc" "CMakeFiles/mylibrary.dir/src/control/LoginVerification.cpp.obj.d"
   "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/src/control/ModifyRoomAvailability.cpp" "CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.obj" "gcc" "CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.obj.d"
   "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/src/control/storedata.cpp" "CMakeFiles/mylibrary.dir/src/control/storedata.cpp.obj" "gcc" "CMakeFiles/mylibrary.dir/src/control/storedata.cpp.obj.d"
   "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/src/entity/inventory.cpp" "CMakeFiles/mylibrary.dir/src/entity/inventory.cpp.obj" "gcc" "CMakeFiles/mylibrary.dir/src/entity/inventory.cpp.obj.d"

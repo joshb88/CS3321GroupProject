@@ -132,7 +132,8 @@
 				8,
 				9,
 				10,
-				11
+				11,
+				12
 			]
 		}
 	],
@@ -152,6 +153,11 @@
 		{
 			"backtrace" : 2,
 			"path" : "headers/control/GenerateRoomAvailabilityReport.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "headers/control/LoginVerification.h",
 			"sourceGroupIndex" : 1
 		},
 		{

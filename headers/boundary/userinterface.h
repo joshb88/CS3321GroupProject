@@ -7,5 +7,8 @@
 class MainMenu
 {
     public:
-        static void loginInterface();
+        static void clearScreen();
+        static void StartMenu();
+        static void loginMenu();
+        static void accountCreation();
 };

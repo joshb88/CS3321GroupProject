@@ -213,6 +213,30 @@ src/control/GenerateRoomAvailabilityReport.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/GenerateRoomAvailabilityReport.cpp.s
 .PHONY : src/control/GenerateRoomAvailabilityReport.cpp.s
 
+src/control/LoginVerification.obj: src/control/LoginVerification.cpp.obj
+.PHONY : src/control/LoginVerification.obj
+
+# target to build an object file
+src/control/LoginVerification.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/LoginVerification.cpp.obj
+.PHONY : src/control/LoginVerification.cpp.obj
+
+src/control/LoginVerification.i: src/control/LoginVerification.cpp.i
+.PHONY : src/control/LoginVerification.i
+
+# target to preprocess a source file
+src/control/LoginVerification.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/LoginVerification.cpp.i
+.PHONY : src/control/LoginVerification.cpp.i
+
+src/control/LoginVerification.s: src/control/LoginVerification.cpp.s
+.PHONY : src/control/LoginVerification.s
+
+# target to generate assembly for a file
+src/control/LoginVerification.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/LoginVerification.cpp.s
+.PHONY : src/control/LoginVerification.cpp.s
+
 src/control/ModifyRoomAvailability.obj: src/control/ModifyRoomAvailability.cpp.obj
 .PHONY : src/control/ModifyRoomAvailability.obj
 
@@ -448,6 +472,9 @@ help:
 	@echo ... src/control/GenerateRoomAvailabilityReport.obj
 	@echo ... src/control/GenerateRoomAvailabilityReport.i
 	@echo ... src/control/GenerateRoomAvailabilityReport.s
+	@echo ... src/control/LoginVerification.obj
+	@echo ... src/control/LoginVerification.i
+	@echo ... src/control/LoginVerification.s
 	@echo ... src/control/ModifyRoomAvailability.obj
 	@echo ... src/control/ModifyRoomAvailability.i
 	@echo ... src/control/ModifyRoomAvailability.s

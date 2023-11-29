@@ -13,6 +13,12 @@
 },
 {
   "directory": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\control\\LoginVerification.cpp.obj -c C:\\Users\\Josh\\Desktop\\Repositories\\CS3321GroupProject\\src\\control\\LoginVerification.cpp",
+  "file": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/src/control/LoginVerification.cpp",
+  "output": "CMakeFiles/mylibrary.dir/src/control/LoginVerification.cpp.obj"
+},
+{
+  "directory": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\control\\ModifyRoomAvailability.cpp.obj -c C:\\Users\\Josh\\Desktop\\Repositories\\CS3321GroupProject\\src\\control\\ModifyRoomAvailability.cpp",
   "file": "C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/src/control/ModifyRoomAvailability.cpp",
   "output": "CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.obj"
