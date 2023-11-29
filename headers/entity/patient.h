@@ -22,5 +22,5 @@ class Patient : public User
         // Getters
         bool getHasInsurance() const;
         std::string getInsuranceProvider() const;
-        Room& getRoom();
+        Room* getRoom();
 };

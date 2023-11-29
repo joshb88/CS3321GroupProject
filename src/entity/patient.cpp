@@ -46,7 +46,7 @@ std::string Patient::getInsuranceProvider() const
 {
     return insurance_provider;
 }
-Room& Patient::getRoom()
+Room* Patient::getRoom()
 {
-    return *room;
+    return room;
 }

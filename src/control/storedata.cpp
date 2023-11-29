@@ -72,13 +72,25 @@ void StoreData::storeUser(User& user)
                 patientPtr->getHasInsurance() << " " <<
                 patientPtr->getInsuranceProvider() << " ";
 
-                if (patientPtr->getRoom().getRoomNumber() > 0)
+                // check that room as been assigned or fatal error
+                if (patientPtr->getRoom() != nullptr)
                 {
                     user_file << 
-                    patientPtr->getRoom().getRoomAvailability() <<
-                    patientPtr->getRoom().getRoomFloorNumber() <<
-                    patientPtr->getRoom().getRoomNumber();
+                    patientPtr->getRoom()->getRoomAvailability() <<
+                    patientPtr->getRoom()->getRoomFloorNumber() <<
+                    patientPtr->getRoom()->getRoomNumber();
                 }
+                else { std::cout << "Room isn't set." << std::endl; }
+            }
+
+            // Check if the user is a Staff and append additional data
+            Staff* staffPtr = dynamic_cast<Staff*>(&user);
+            if (staffPtr) {
+                user_file << " " << 
+                staffPtr->getIdNumber() << " " <<
+                staffPtr->getClearanceLevel() << " " <<
+                staffPtr->getJobTitle() << " " <<
+                staffPtr->getDateOfHire();
             }
 
             user_file << " " << std::endl;  // Add a newline at the end

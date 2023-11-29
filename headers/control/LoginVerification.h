@@ -6,9 +6,10 @@
 #include "entity/patient.h"
 #include "entity/staff.h"
 
-class StoreData
+
+class LoginVerification
 {
     public:
         static bool userInDatabase(User&);
-        static void storeUser(User&);
+        // static void checkPassword(User&);
 };
