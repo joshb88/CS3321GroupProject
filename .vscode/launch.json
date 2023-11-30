@@ -7,7 +7,8 @@
             "program": "${fileDirname}/main",
             "args": [],
             "cwd": "${fileDirname}",
-            "preLaunchTask": "C/C++: clang++ build active file"
+            "preLaunchTask": "C/C++: clang++ build active file",
+            "externalConsole": false
         },
         {
             "name": "C/C++: g++.exe build and debug active file",

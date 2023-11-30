@@ -1,4 +1,4 @@
-C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/build/CMakeFiles/mylibrary.dir
-C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/build/CMakeFiles/hospital_management.dir
-C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/build/CMakeFiles/edit_cache.dir
-C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/build/CMakeFiles/rebuild_cache.dir
+/Users/jb/GitHubRepositories/CS3321GroupProject/build/CMakeFiles/mylibrary.dir
+/Users/jb/GitHubRepositories/CS3321GroupProject/build/CMakeFiles/hospital_management.dir
+/Users/jb/GitHubRepositories/CS3321GroupProject/build/CMakeFiles/edit_cache.dir
+/Users/jb/GitHubRepositories/CS3321GroupProject/build/CMakeFiles/rebuild_cache.dir

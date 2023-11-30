@@ -9,6 +9,11 @@ Patient::Patient() : User()
     insurance_provider = "N/A";
     room = nullptr;
 }
+Patient::Patient(const User& user)
+    : User(user), has_insurance(false), insurance_provider("N/A"), room(nullptr)
+{
+
+}
 // Patient Class Parameterized Constructor
 Patient::Patient(std::string name, std::string pass, std::string last, std::string first, unsigned int dob, unsigned char gender, bool insurance, std::string provider, Room* roomptr)
 {

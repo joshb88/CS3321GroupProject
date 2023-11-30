@@ -12,6 +12,7 @@ class Patient : public User
     public:
         // Constructors
         Patient();
+        Patient(const User&);
         Patient(std::string patient_login, std::string patient_password, std::string last_name, std::string first_name, unsigned int date_of_birth, unsigned char gender, bool has_insurance, std::string insurance_provider, Room* room_ptr);
 
         // Setters
