@@ -12,7 +12,8 @@ class Patient : public User
     public:
         // Constructors
         Patient();
-        Patient(std::string, std::string, std::string, std::string, unsigned int, unsigned char, bool, std::string, Room*);
+        Patient(const User&);
+        Patient(std::string patient_login, std::string patient_password, std::string last_name, std::string first_name, unsigned int date_of_birth, unsigned char gender, bool has_insurance, std::string insurance_provider, Room* room_ptr);
 
         // Setters
         void setHasInsurance(bool);
@@ -22,5 +23,5 @@ class Patient : public User
         // Getters
         bool getHasInsurance() const;
         std::string getInsuranceProvider() const;
-        Room& getRoom();
+        Room* getRoom();
 };
