@@ -18,8 +18,8 @@ These include the contents of the header/entity/ folder, <string>, <vector>, and
 
 int main()
 {
-    //MainMenu::loginInterface();
-    inventoryMenu::createInventoryMenu();
+    MainMenu::loginInterface();
+    //inventoryMenu::createInventoryMenu();
     // Room testroom1(101, 5, true);
     // Room testroom2(303, 2, true);
     // User testPatient1("test_login1","test_password1","test_last1","test_first1",19880814,'M');
@@ -38,19 +38,19 @@ int main()
     // testPatient.setRoom(&testroom2);
     // std::cout << testPatient.getRoom()->getRoomNumber();
 
-    bool isStaff = false;
+    // bool isStaff = false;
     
     // std::string name;
     // std::cout << "Name: ";
     // std::cin >> name;
 
-    if (isStaff) {
-        StaffInterface staffUI;
-        staffUI.displayMainMenu();
-    } else {
-        PatientInterface patientUI(" Jane Doe ");
-        patientUI.displayMainMenu();
-    }
+    // if (isStaff) {
+    //     StaffInterface staffUI;
+    //     staffUI.displayMainMenu();
+    // } else {
+    //     PatientInterface patientUI(" Jane Doe ");
+    //     patientUI.displayMainMenu();
+    // }
 
     return 0;
 };
