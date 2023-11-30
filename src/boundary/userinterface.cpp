@@ -1,10 +1,19 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <cstdio>
+#include <fstream>
+#include <sstream>
 #include <cctype>
+#include <ctime>
 #include "entity/staff.h"
 #include "entity/patient.h"
 #include "boundary/userinterface.h"
+#include "boundary/patientUI.h"
 #include "control/LoginVerification.h"
 
-std::string SECTION_BREAK = "==================================================\n";
+const std::string MainMenu::SECTION_BREAK = "==================================================\n";
+
 
 void MainMenu::clearScreen() 
 {
@@ -45,7 +54,7 @@ void MainMenu::StartMenu()
     case 1:
         // Sign up
         std::cout << "You've opted to create an account." << std::endl;
-        accountCreation();
+        MainMenu::accountCreation();
         break;
     case 2:
         // Login
@@ -89,7 +98,7 @@ void MainMenu::loginMenu()
         std::cout << SECTION_BREAK << std::endl;
 
         std::cout << "LOGIN PASSED" << std::endl; 
-        EXIT_SUCCESS;
+        return;
     }
     // User not found, offer to make a new account.
     else 
@@ -108,7 +117,6 @@ void MainMenu::loginMenu()
         {
         case 'y':
             accountCreation();
-            //accountCreation(login_input);
             break;
         case 'n':
             loginMenu();
@@ -156,7 +164,7 @@ void MainMenu::accountCreation()
     {
     case 1:
         // Patient class used
-        patientAccountCreation();
+        PatientUI::accountCreation();
         break;
     case 2:
         // Staff class used
@@ -172,72 +180,4 @@ void MainMenu::accountCreation()
         accountCreation();
         break;
     } 
-}
-
-void MainMenu::patientAccountCreation()
-{
-    Patient new_patient();
-    std::string desired_user_login, password, confirmation_password, first_name, last_name;
-    short user_choice;
-
-    clearScreen();
-
-    std::cout << 
-    SECTION_BREAK << std::setw(37) << std::right << 
-    "Patient Account Creation" << std::endl <<
-    SECTION_BREAK <<
-    "Enter a username:\t";
-    std::cin >> desired_user_login;
-
-    
-    while (LoginVerification::userInDatabase(desired_user_login)) // If username given is found
-    {
-        std::cout << 
-        SECTION_BREAK <<
-        "Username already exists." << std::endl <<
-        "1.\tEnter a different username" << std::endl <<
-        "0.\tMain Menu" << std::endl << 
-        SECTION_BREAK;
-
-        std::cin >> user_choice;
-        if (std::cin.fail()) // if not given an appropriate input
-        {
-            std::cin.clear();                // Clear the error state
-            std::cin.ignore(INT_MAX, '\n');  // Discard invalid input
-            patientAccountCreation();               // Recursively call accountCreation
-            return;                          // Ensure the function exits after recursion
-        }
-
-        if (user_choice == 0) { StartMenu(); return;} // start menu
-        else if(user_choice == 1) { patientAccountCreation(); return; } // retry
-        else // wrong entry
-        { 
-            std::cout << 
-            "Invalid Choice" << std::endl <<
-            "1.\tEnter a different username" << std::endl <<
-            "0.\tMain Menu" << std::endl <<
-            SECTION_BREAK;
-        }
-    };
-
-   do
-   {
-    std::cout <<
-    "Enter a password:\t";
-    std::cin >> password;
-    std::cout <<
-    "Confirm your password:\t";
-    std::cin >> confirmation_password;
-    if (!(password == confirmation_password)) { std::cout << "Passwords don't match." << std::endl << SECTION_BREAK; }
-   } 
-   while (!(password == confirmation_password));
-   
-    std::cout << 
-    "Password confirmed." << std::endl << 
-    SECTION_BREAK << std::endl <<
-    "Enter your first name:\t";
-    std::cin >> first_name;
-    std::cout << std::endl <<
-    "Enter your last name:\t";
-    std::cin >> last_name;
 }

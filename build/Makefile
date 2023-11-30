@@ -165,6 +165,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\hospital_management.dir\build.make CMakeFiles/hospital_management.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/boundary/patientUI.obj: src/boundary/patientUI.cpp.obj
+.PHONY : src/boundary/patientUI.obj
+
+# target to build an object file
+src/boundary/patientUI.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.obj
+.PHONY : src/boundary/patientUI.cpp.obj
+
+src/boundary/patientUI.i: src/boundary/patientUI.cpp.i
+.PHONY : src/boundary/patientUI.i
+
+# target to preprocess a source file
+src/boundary/patientUI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.i
+.PHONY : src/boundary/patientUI.cpp.i
+
+src/boundary/patientUI.s: src/boundary/patientUI.cpp.s
+.PHONY : src/boundary/patientUI.s
+
+# target to generate assembly for a file
+src/boundary/patientUI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.s
+.PHONY : src/boundary/patientUI.cpp.s
+
 src/boundary/userinterface.obj: src/boundary/userinterface.cpp.obj
 .PHONY : src/boundary/userinterface.obj
 
@@ -466,6 +490,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/boundary/patientUI.obj
+	@echo ... src/boundary/patientUI.i
+	@echo ... src/boundary/patientUI.s
 	@echo ... src/boundary/userinterface.obj
 	@echo ... src/boundary/userinterface.i
 	@echo ... src/boundary/userinterface.s

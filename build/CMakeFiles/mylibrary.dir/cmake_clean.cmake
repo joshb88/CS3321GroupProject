@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.obj"
+  "CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.obj.d"
   "CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.obj"
   "CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.obj.d"
   "CMakeFiles/mylibrary.dir/src/control/GenerateRoomAvailabilityReport.cpp.obj"

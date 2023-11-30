@@ -4,6 +4,7 @@
 #include "control/storedata.h"
 #include "boundary/userinterface.h"
 #include "control/LoginVerification.h"
+#include "boundary/patientUI.h"
 //#include "control/GenerateRoomAvailabilityReport.h"
 //#include "control/ModifyRoomAvailability.h"
 
@@ -16,6 +17,7 @@ These include the contents of the header/entity/ folder, <string>, <vector>, and
 int main()
 {
     MainMenu::StartMenu();
+    //PatientUI::accountCreation();
     // Room testroom1(101, 5, true);
     // Room testroom2(303, 2, true);
     // User testPatient1("test_login1","test_password1","test_last1","test_first1",19880814,'M');

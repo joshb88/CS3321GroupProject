@@ -8,10 +8,10 @@ set(CMAKE_CXX_STANDARD 17)
 # include(CTest)
 # enable_testing()
 
-# Create a list of source files by globbing all .cpp files in "Testing/src" directory.
+# Create a list of source files by globbing all .cpp files in "/src/" directory.
 file(GLOB LIB_SOURCES "./src/*/*.cpp")
 
-# Create a list of header files by globbing all .h or .hpp files in the "Testing/headers" directory and its subdirectories.
+# Create a list of header files by globbing all .h or .hpp files in the "/headers/" directory and its subdirectories.
 file(GLOB LIB_HEADERS "./headers/*/*.h" "./headers/*/*.hpp")
 
 # Create the library target and specify the language as CXX (C++).
