@@ -11,4 +11,5 @@ class MainMenu
         static void StartMenu();
         static void loginMenu();
         static void accountCreation();
+        static void patientAccountCreation();
 };

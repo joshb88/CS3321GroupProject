@@ -11,6 +11,7 @@ class LoginVerification
 {
     public:
         static bool userInDatabase(User&);
-        static bool userInDatabase(const std::string& first_name, const std::string& last_name);
-        // static void checkPassword(User&);
+        static bool userInDatabase(const std::string& user_login);
+        static bool checkPassword(User&);
+        static bool checkPassword(const std::string& user_login, const std::string& user_password);
 };
