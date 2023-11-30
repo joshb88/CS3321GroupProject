@@ -240,3 +240,4 @@ void MainMenu::patientAccountCreation()
     std::cout << std::endl <<
     "Enter your last name:\t";
     std::cin >> last_name;
+}
