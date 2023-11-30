@@ -166,6 +166,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hospital_management.dir/build.make CMakeFiles/hospital_management.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/boundary/MainMenu.o: src/boundary/MainMenu.cpp.o
+.PHONY : src/boundary/MainMenu.o
+
+# target to build an object file
+src/boundary/MainMenu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mylibrary.dir/build.make CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.o
+.PHONY : src/boundary/MainMenu.cpp.o
+
+src/boundary/MainMenu.i: src/boundary/MainMenu.cpp.i
+.PHONY : src/boundary/MainMenu.i
+
+# target to preprocess a source file
+src/boundary/MainMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mylibrary.dir/build.make CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.i
+.PHONY : src/boundary/MainMenu.cpp.i
+
+src/boundary/MainMenu.s: src/boundary/MainMenu.cpp.s
+.PHONY : src/boundary/MainMenu.s
+
+# target to generate assembly for a file
+src/boundary/MainMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mylibrary.dir/build.make CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.s
+.PHONY : src/boundary/MainMenu.cpp.s
+
 src/boundary/patientUI.o: src/boundary/patientUI.cpp.o
 .PHONY : src/boundary/patientUI.o
 
@@ -189,30 +213,6 @@ src/boundary/patientUI.s: src/boundary/patientUI.cpp.s
 src/boundary/patientUI.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mylibrary.dir/build.make CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.s
 .PHONY : src/boundary/patientUI.cpp.s
-
-src/boundary/userinterface.o: src/boundary/userinterface.cpp.o
-.PHONY : src/boundary/userinterface.o
-
-# target to build an object file
-src/boundary/userinterface.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mylibrary.dir/build.make CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.o
-.PHONY : src/boundary/userinterface.cpp.o
-
-src/boundary/userinterface.i: src/boundary/userinterface.cpp.i
-.PHONY : src/boundary/userinterface.i
-
-# target to preprocess a source file
-src/boundary/userinterface.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mylibrary.dir/build.make CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.i
-.PHONY : src/boundary/userinterface.cpp.i
-
-src/boundary/userinterface.s: src/boundary/userinterface.cpp.s
-.PHONY : src/boundary/userinterface.s
-
-# target to generate assembly for a file
-src/boundary/userinterface.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mylibrary.dir/build.make CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.s
-.PHONY : src/boundary/userinterface.cpp.s
 
 src/control/GenerateRoomAvailabilityReport.o: src/control/GenerateRoomAvailabilityReport.cpp.o
 .PHONY : src/control/GenerateRoomAvailabilityReport.o
@@ -491,12 +491,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/boundary/MainMenu.o"
+	@echo "... src/boundary/MainMenu.i"
+	@echo "... src/boundary/MainMenu.s"
 	@echo "... src/boundary/patientUI.o"
 	@echo "... src/boundary/patientUI.i"
 	@echo "... src/boundary/patientUI.s"
-	@echo "... src/boundary/userinterface.o"
-	@echo "... src/boundary/userinterface.i"
-	@echo "... src/boundary/userinterface.s"
 	@echo "... src/control/GenerateRoomAvailabilityReport.o"
 	@echo "... src/control/GenerateRoomAvailabilityReport.i"
 	@echo "... src/control/GenerateRoomAvailabilityReport.s"

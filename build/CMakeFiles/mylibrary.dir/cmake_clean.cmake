@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.o"
+  "CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.o.d"
   "CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.o"
   "CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.o.d"
-  "CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.o"
-  "CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.o.d"
   "CMakeFiles/mylibrary.dir/src/control/GenerateRoomAvailabilityReport.cpp.o"
   "CMakeFiles/mylibrary.dir/src/control/GenerateRoomAvailabilityReport.cpp.o.d"
   "CMakeFiles/mylibrary.dir/src/control/LoginVerification.cpp.o"

@@ -1,15 +1,15 @@
 [
 {
   "directory": "/Users/jb/GitHubRepositories/CS3321GroupProject/build",
-  "command": "/usr/bin/clang++  -I/Users/jb/GitHubRepositories/CS3321GroupProject/headers -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -o CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.o -c /Users/jb/GitHubRepositories/CS3321GroupProject/src/boundary/patientUI.cpp",
-  "file": "/Users/jb/GitHubRepositories/CS3321GroupProject/src/boundary/patientUI.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.o"
+  "command": "/usr/bin/clang++  -I/Users/jb/GitHubRepositories/CS3321GroupProject/headers -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -o CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.o -c /Users/jb/GitHubRepositories/CS3321GroupProject/src/boundary/MainMenu.cpp",
+  "file": "/Users/jb/GitHubRepositories/CS3321GroupProject/src/boundary/MainMenu.cpp",
+  "output": "CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.o"
 },
 {
   "directory": "/Users/jb/GitHubRepositories/CS3321GroupProject/build",
-  "command": "/usr/bin/clang++  -I/Users/jb/GitHubRepositories/CS3321GroupProject/headers -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -o CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.o -c /Users/jb/GitHubRepositories/CS3321GroupProject/src/boundary/userinterface.cpp",
-  "file": "/Users/jb/GitHubRepositories/CS3321GroupProject/src/boundary/userinterface.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.o"
+  "command": "/usr/bin/clang++  -I/Users/jb/GitHubRepositories/CS3321GroupProject/headers -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -o CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.o -c /Users/jb/GitHubRepositories/CS3321GroupProject/src/boundary/patientUI.cpp",
+  "file": "/Users/jb/GitHubRepositories/CS3321GroupProject/src/boundary/patientUI.cpp",
+  "output": "CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.o"
 },
 {
   "directory": "/Users/jb/GitHubRepositories/CS3321GroupProject/build",

@@ -41,14 +41,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "hospital_management::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-hospital_management-Debug-266b892e05d9e8d92149.json",
+					"jsonFile" : "target-hospital_management-Debug-75c385efc6279f0a78c8.json",
 					"name" : "hospital_management",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "mylibrary::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-mylibrary-Debug-7d824fe835897833d4d3.json",
+					"jsonFile" : "target-mylibrary-Debug-7dc936d6949256c29aab.json",
 					"name" : "mylibrary",
 					"projectIndex" : 0
 				}

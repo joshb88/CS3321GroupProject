@@ -1,5 +1,5 @@
-CMakeFiles/hospital_management.dir/main.cpp.o: \
-  /Users/jb/GitHubRepositories/CS3321GroupProject/main.cpp \
+CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.o: \
+  /Users/jb/GitHubRepositories/CS3321GroupProject/src/boundary/MainMenu.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__config \
@@ -792,14 +792,6 @@ CMakeFiles/hospital_management.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cstdarg \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/iomanip \
-  /Users/jb/GitHubRepositories/CS3321GroupProject/headers/entity/schedule.h \
-  /Users/jb/GitHubRepositories/CS3321GroupProject/headers/entity/staff.h \
-  /Users/jb/GitHubRepositories/CS3321GroupProject/headers/entity/user.h \
-  /Users/jb/GitHubRepositories/CS3321GroupProject/headers/entity/patient.h \
-  /Users/jb/GitHubRepositories/CS3321GroupProject/headers/entity/room.h \
-  /Users/jb/GitHubRepositories/CS3321GroupProject/headers/entity/procedure.h \
-  /Users/jb/GitHubRepositories/CS3321GroupProject/headers/entity/inventory.h \
-  /Users/jb/GitHubRepositories/CS3321GroupProject/headers/control/storedata.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
@@ -819,6 +811,11 @@ CMakeFiles/hospital_management.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/sstream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/thread \
+  /Users/jb/GitHubRepositories/CS3321GroupProject/headers/entity/staff.h \
+  /Users/jb/GitHubRepositories/CS3321GroupProject/headers/entity/user.h \
+  /Users/jb/GitHubRepositories/CS3321GroupProject/headers/entity/patient.h \
+  /Users/jb/GitHubRepositories/CS3321GroupProject/headers/entity/room.h \
   /Users/jb/GitHubRepositories/CS3321GroupProject/headers/boundary/MainMenu.h \
-  /Users/jb/GitHubRepositories/CS3321GroupProject/headers/control/LoginVerification.h \
-  /Users/jb/GitHubRepositories/CS3321GroupProject/headers/boundary/patientUI.h
+  /Users/jb/GitHubRepositories/CS3321GroupProject/headers/boundary/patientUI.h \
+  /Users/jb/GitHubRepositories/CS3321GroupProject/headers/control/LoginVerification.h

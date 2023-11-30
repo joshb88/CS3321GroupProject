@@ -69,10 +69,24 @@ include CMakeFiles/mylibrary.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/mylibrary.dir/flags.make
 
+CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.o: CMakeFiles/mylibrary.dir/flags.make
+CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.o: /Users/jb/GitHubRepositories/CS3321GroupProject/src/boundary/MainMenu.cpp
+CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.o: CMakeFiles/mylibrary.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jb/GitHubRepositories/CS3321GroupProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.o -MF CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.o.d -o CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.o -c /Users/jb/GitHubRepositories/CS3321GroupProject/src/boundary/MainMenu.cpp
+
+CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jb/GitHubRepositories/CS3321GroupProject/src/boundary/MainMenu.cpp > CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.i
+
+CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jb/GitHubRepositories/CS3321GroupProject/src/boundary/MainMenu.cpp -o CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.s
+
 CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.o: CMakeFiles/mylibrary.dir/flags.make
 CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.o: /Users/jb/GitHubRepositories/CS3321GroupProject/src/boundary/patientUI.cpp
 CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.o: CMakeFiles/mylibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jb/GitHubRepositories/CS3321GroupProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jb/GitHubRepositories/CS3321GroupProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.o -MF CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.o.d -o CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.o -c /Users/jb/GitHubRepositories/CS3321GroupProject/src/boundary/patientUI.cpp
 
 CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.i: cmake_force
@@ -82,20 +96,6 @@ CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.i: cmake_force
 CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jb/GitHubRepositories/CS3321GroupProject/src/boundary/patientUI.cpp -o CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.s
-
-CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.o: CMakeFiles/mylibrary.dir/flags.make
-CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.o: /Users/jb/GitHubRepositories/CS3321GroupProject/src/boundary/userinterface.cpp
-CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.o: CMakeFiles/mylibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jb/GitHubRepositories/CS3321GroupProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.o -MF CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.o.d -o CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.o -c /Users/jb/GitHubRepositories/CS3321GroupProject/src/boundary/userinterface.cpp
-
-CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jb/GitHubRepositories/CS3321GroupProject/src/boundary/userinterface.cpp > CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.i
-
-CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jb/GitHubRepositories/CS3321GroupProject/src/boundary/userinterface.cpp -o CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.s
 
 CMakeFiles/mylibrary.dir/src/control/GenerateRoomAvailabilityReport.cpp.o: CMakeFiles/mylibrary.dir/flags.make
 CMakeFiles/mylibrary.dir/src/control/GenerateRoomAvailabilityReport.cpp.o: /Users/jb/GitHubRepositories/CS3321GroupProject/src/control/GenerateRoomAvailabilityReport.cpp
@@ -253,8 +253,8 @@ CMakeFiles/mylibrary.dir/src/entity/user.cpp.s: cmake_force
 
 # Object files for target mylibrary
 mylibrary_OBJECTS = \
+"CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.o" \
 "CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.o" \
-"CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.o" \
 "CMakeFiles/mylibrary.dir/src/control/GenerateRoomAvailabilityReport.cpp.o" \
 "CMakeFiles/mylibrary.dir/src/control/LoginVerification.cpp.o" \
 "CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.o" \
@@ -270,8 +270,8 @@ mylibrary_OBJECTS = \
 # External object files for target mylibrary
 mylibrary_EXTERNAL_OBJECTS =
 
+libmylibrary.a: CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.o
 libmylibrary.a: CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.o
-libmylibrary.a: CMakeFiles/mylibrary.dir/src/boundary/userinterface.cpp.o
 libmylibrary.a: CMakeFiles/mylibrary.dir/src/control/GenerateRoomAvailabilityReport.cpp.o
 libmylibrary.a: CMakeFiles/mylibrary.dir/src/control/LoginVerification.cpp.o
 libmylibrary.a: CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.o
