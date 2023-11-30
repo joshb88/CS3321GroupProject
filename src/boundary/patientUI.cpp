@@ -5,7 +5,7 @@
 // #include <fstream>
 // #include <sstream>
 // #include <string>
-#include "boundary/userinterface.h"
+#include "boundary/MainMenu.h"
 #include "boundary/patientUI.h"
 #include "entity/patient.h"
 #include "control/LoginVerification.h"

@@ -10,7 +10,7 @@
 #include <cstdlib>
 #include "entity/staff.h"
 #include "entity/patient.h"
-#include "boundary/userinterface.h"
+#include "boundary/MainMenu.h"
 #include "boundary/patientUI.h"
 #include "control/LoginVerification.h"
 
