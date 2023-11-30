@@ -1,12 +1,12 @@
 #pragma once
-#include <cctype>
 #include <ctime>
-#include <iostream>
-#include <iomanip>
-#include <fstream>
-#include <sstream>
-#include <string>
-// #include "entity/patient.h"
+// #include <cctype>
+// #include <iostream>
+// #include <iomanip>
+// #include <fstream>
+// #include <sstream>
+// #include <string>
+// // #include "entity/patient.h"
 #include "boundary/userinterface.h"
 // #include "control/LoginVerification.h"
 

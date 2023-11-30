@@ -1,10 +1,10 @@
-#include <cctype>
 #include <ctime>
-#include <iostream>
 #include <iomanip>
-#include <fstream>
-#include <sstream>
-#include <string>
+// #include <cctype>
+// #include <iostream>
+// #include <fstream>
+// #include <sstream>
+// #include <string>
 #include "boundary/patientUI.h"
 #include "control/LoginVerification.h"
 
@@ -114,18 +114,32 @@ void PatientUI::accountCreation()
     } 
     while (true);
 
-    std::cout << 
-    SECTION_BREAK <<
-    "Enter your Sex." << std::endl <<
-    "Enter either:\nM for male\nF for female\nX for other" << std::endl;
-    std::cin >> gender;
-    gender = tolower(gender);
+    // std::cout << 
+    // SECTION_BREAK <<
+    // "Enter your Sex." << std::endl <<
+    // "Enter either:\nM for male\nF for female\nX for other" << std::endl;
+    // std::cin >> gender;
+    // gender = tolower(gender);
     std::cout << SECTION_BREAK;
-        if (std::cin.fail()) // if not given an appropriate input
+    do
+    {
+        std::cout <<
+        "Enter your Sex." << std::endl <<
+        "Enter either:\nM for male\nF for female\nX for other" << std::endl <<
+        SECTION_BREAK;
+        std::cin >> gender;
+        gender = tolower(gender);
+        if (std::cin.fail() || !(gender == 'm' || gender == 'f' || gender == 'x')) // if not given an appropriate input
         {
             std::cin.clear();                // Clear the error state
             std::cin.ignore(INT_MAX, '\n');  // Discard invalid input
+            std::cout << "Invalid entry." << std::endl;
+            continue;
         }
+    } 
+    while (std::cin.fail() || !(gender == 'm' || gender == 'f' || gender == 'x') );
+    
+
 
 
 //     Patient new_patient(desired_user_login,password, last_name, first_name, date_of_birth, gender, has_insurance, provider, nullptr);
