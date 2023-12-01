@@ -133,6 +133,8 @@ while(!quit)
                 break;
                 default:
                 {
+                    std::cin.cler(); // clear input error flag
+                    std::cin.ignore(100, '\n'); // clear cin buffer
                     std::cout << "\nOption not valid. Please try again\n";
                     user_input = '2';
                 }
@@ -159,6 +161,8 @@ while(!quit)
 
         default: // invalid input
         {
+            std::cin.clear(); // clear error input flag
+            std::cin.ignore(100,'n'); // clear cin buffer
             std::cout << "Invalid selection, please try agian\n\n";
             user_input = 'H';
         }
