@@ -2762,6 +2762,9 @@ CMakeFiles/mylibrary.dir/src/control/modifyInventory.cpp.obj: C:/Users/Josh/Desk
 
 CMakeFiles/mylibrary.dir/src/control/storedata.cpp.obj: C:/Users/Josh/Desktop/CS3321GroupProject/src/control/storedata.cpp \
   C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/storedata.h \
+  C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/patient.h \
+  C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/room.h \
+  C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/staff.h \
   C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/user.h \
   C:/msys64/mingw64/include/_mingw.h \
   C:/msys64/mingw64/include/_mingw_mac.h \
