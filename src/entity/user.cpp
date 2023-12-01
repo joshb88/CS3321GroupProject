@@ -23,12 +23,6 @@ User::User(std::string login, std::string pass, std::string last, std::string fi
     gender = gend;
 
 }
-// temp user for login
-User::User(std::string login, std::string password)
-{
-    user_login = login;
-    user_password = password;
-}
 
 // User Class Setters
 void User::setUserLogin(std::string login)
