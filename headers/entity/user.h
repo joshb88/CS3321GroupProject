@@ -20,6 +20,8 @@ class User
         unsigned int dob, unsigned char gender);
         // Temp user
         User(std::string login, std::string password);
+        // Deconstructor
+        virtual ~User() = default;
 
         // Setters
         void setUserLogin(std::string);

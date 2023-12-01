@@ -3,10 +3,12 @@
 #include <iostream>
 #include <sstream>
 #include "entity/user.h"
+#include "entity/patient.h"
+#include "entity/staff.h"
 
 class StoreData
 {
     public:
-        static void storeUser(User&);
         static bool userInDatabase(User&);
+        static void storeUser(User&);
 };

@@ -2,7 +2,7 @@
 
 void viewBill::displayBillInformation(){
     //obtain info from generateBill class and display
-    billGenerator.displayPatientInfo(patient);
-    billGenerator.displayProcedures(procedures);
+    billGenerator.displayPatientInfo(Patient patient);
+    billGenerator.displayProcedures(Procedure procedures);
 
 }

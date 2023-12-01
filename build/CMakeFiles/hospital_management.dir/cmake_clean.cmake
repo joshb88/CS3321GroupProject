@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "../output/hospital_management.exe"
-  "../output/hospital_management.exe.manifest"
-  "../output/hospital_management.pdb"
+  "C:/Users/Josh/Desktop/CS3321GroupProject/output/hospital_management.exe"
+  "C:/Users/Josh/Desktop/CS3321GroupProject/output/hospital_management.exe.manifest"
+  "C:/Users/Josh/Desktop/CS3321GroupProject/output/hospital_management.pdb"
   "CMakeFiles/hospital_management.dir/main.cpp.obj"
   "CMakeFiles/hospital_management.dir/main.cpp.obj.d"
   "libhospital_management.dll.a"
