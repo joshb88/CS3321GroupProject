@@ -7,7 +7,7 @@
 class generateBill
 {
     private:
-    folat total;
+    static float total;
     public:
      static float calculateTotal(std::vector<float>);
 

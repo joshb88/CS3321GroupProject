@@ -14,7 +14,7 @@ private:
 public:
     void displayBillInformation();
     void getProcedureInfo(Schedule);
-    void getPatientInfo(Patient);
+    void getPatientInfo(Schedule);
 };
 
 #endif // VIEW_BILL_H

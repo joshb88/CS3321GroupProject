@@ -133,7 +133,7 @@ while(!quit)
                 break;
                 default:
                 {
-                    std::cin.cler(); // clear input error flag
+                    std::cin.clear(); // clear input error flag
                     std::cin.ignore(100, '\n'); // clear cin buffer
                     std::cout << "\nOption not valid. Please try again\n";
                     user_input = '2';

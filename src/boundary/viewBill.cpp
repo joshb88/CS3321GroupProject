@@ -18,7 +18,7 @@ void viewBill::displayBillInformation(){
     std::cout << "| " << patient_info.getInsuranceProvider() << "\n| ";
 
     std::cout << std::setw(38) << std::left <<  
-    patient.getDateOfBirth() << "|\n";
+    patient_info.getDateOfBirth() << "|\n";
 
     std::cout << std::setw(40) << std::left << "|" << "|\n";
     std::cout << section_break_end;
@@ -27,11 +27,10 @@ void viewBill::displayBillInformation(){
     std::cout << std::setw(35) << std::left << "|" << "|\n";
 
     // Displaying patient procedures, cost, and total
-    for (int i  = 0; i < procedure.size(); i++)
+    for (int i  = 0; i < procedure_list.size(); i++)
     {
-        std::cout << "| " << std::setw(33) << std::left << procedure[i].getProcedureName()
-        << "| " << std::setprecision(2) << std::fixed << procedure[i].getCost() << std::endl;
-        total += procedure[i].getCost();
+        std::cout << "| " << std::setw(33) << std::left << procedure_list[i]
+        << "| " << std::setprecision(2) << std::fixed << procedure_cost[i] << std::endl;
     }
 
     float sum = generateBill::calculateTotal(procedure_cost);
