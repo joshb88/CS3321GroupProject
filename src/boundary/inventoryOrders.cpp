@@ -1,6 +1,7 @@
 #include "boundary/inventoryOrders.h"
 
-void inventoryOrders::compileAndPlaceOrder(){
+void inventoryOrders::compileAndPlaceOrder(const std::vector<Inventory>& my_inventory)
+{
     
     std::vector<Inventory> inventoryOrder;
 
