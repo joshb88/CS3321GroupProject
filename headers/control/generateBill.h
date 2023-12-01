@@ -1,7 +1,7 @@
 #include <iostream>
+#include <iomanip>
 #include "entity/procedure.h"
 #include "entity/patient.h"
-#include <iomanip>
 
 
 class generateBill
@@ -10,7 +10,7 @@ class generateBill
     float calculateTotal(std::vector<int>);
     float total = 0;
     public:
-    void displayPatientInfo(Patient);
-    void displayProcedures(std::vector<Procedure>);
+    static void displayPatientInfo(Patient);
+    static void displayProcedures(std::vector<Procedure>);
 
 };

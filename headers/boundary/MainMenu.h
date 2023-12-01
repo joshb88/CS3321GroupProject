@@ -11,7 +11,9 @@ class MainMenu
         static void clearScreen();
         static void loginMenu();
         static void accountCreateMenu();
+        static void accountCreateMenu(std::string entered_username);
         static User genericUserCreation();
+        static User genericUserCreation(std::string entered_username);
     public:
         static void StartMenu();
 };
