@@ -4,23 +4,51 @@ void StoreData::storeUser(User& user)
 {
     std::fstream user_file;
     user_file.open("./database/users.txt", std::ios::out | std::ios::app);
-    if (!userInDatabase(user))
-    {
-        if (user_file.is_open()) // Checks that the file opened correctly
-        {
-            // Write user data as a single line with a newline at the end
+    if (!userInDatabase(user)) {
+        if (user_file.is_open()) {
+            // Write common user data
             user_file << 
                 user.getUserLogin() << " " << 
                 user.getUserPassword() << " " << 
                 user.getLastName() << " " << 
                 user.getFirstName() << " " <<
                 user.getDateOfBirth() << " " <<
-                user.getGender() << " " << std::endl;
+                user.getGender();
+
+            // Check if the user is a Patient and append additional data
+            Patient* patientPtr = dynamic_cast<Patient*>(&user);
+            if (patientPtr) {
+                user_file << " " << 
+                patientPtr->getHasInsurance() << " " <<
+                patientPtr->getInsuranceProvider() << " ";
+
+                // check that room as been assigned or fatal error
+                if (patientPtr->getRoom() != nullptr)
+                {
+                    user_file << 
+                    patientPtr->getRoom()->getRoomAvailability() <<
+                    patientPtr->getRoom()->getRoomFloorNumber() <<
+                    patientPtr->getRoom()->getRoomNumber();
+                }
+                else { std::cout << "Room isn't set." << std::endl; }
+            }
+
+            // Check if the user is a Staff and append additional data
+            Staff* staffPtr = dynamic_cast<Staff*>(&user);
+            if (staffPtr) {
+                user_file << " " << 
+                staffPtr->getIdNumber() << " " <<
+                staffPtr->getClearanceLevel() << " " <<
+                staffPtr->getJobTitle() << " " <<
+                staffPtr->getDateOfHire();
+            }
+
+            user_file << " " << std::endl;  // Add a newline at the end
             user_file.close();
             std::cout << "User data written to file." << std::endl;
-        } 
+        }
     }
-}
+};
     
 bool StoreData::userInDatabase(User& user)
 {

@@ -1,9 +1,10 @@
 #pragma once
 #include <iostream>
 #include <fstream>
+#include <string>
+#include <vector>
 #include "entity/user.h"
 #include "entity/inventory.h"
-#include <string>
 
 class dataManipulation
 {

@@ -1,79 +1,116 @@
-#include <iostream>
-#include <fstream>
-#include <sstream>
-#include <string>
-#include "control/loginVerification.h"
+#include "control/LoginVerification.h"
 
-bool loginVerification::verifyUser(std::string entered_login, std::string  entered_password)
+bool LoginVerification::userInDatabase(User& user)
 {
-//     User our_user;
-//     bool found_user = false;
-//     bool correct_password = false;
-//     dataManipulation data;
-
-//     found_user = data.checkForUeser(entered_login);
-    
-//     if(found_user)
-//     {
-//        // data.getUserFromFile(our_user, entered_login);
-
-//         if(our_user.getUserPassword() == entered_password)
-//         {
-//             correct_password = true;
-//         }
-//     }
-
-//     if(found_user && correct_password)
-//     {
-//         return true;
-//     }
-//     else{
-//         return false;
-//     }
-
+    std::fstream user_file;
+    user_file.open("./database/users.txt", std::ios::in);
+    std::string userToCheck = user.getUserLogin();
+    std::string passToCheck = user.getUserPassword();
     std::string first_token;
-    std::string second_token;
-    bool found_user = false;
-    bool correct_password = false;
     
-    std::ifstream myFile;
-    myFile.open("./database/users.txt");
-    if(myFile.is_open())
+    if (user_file.is_open()) // as long as database file is open,
     {
         std::string line;
-
-        while (std::getline(myFile, line))
-        { 
-            std::istringstream my_line(line);
-            if (my_line >> first_token)
-            {   
-                if(first_token == entered_login)
+        
+        while (std::getline(user_file, line))   //loop through each line in the file
+        {
+            std::istringstream iss(line);       // create a string stream to iterate through each token (word)
+            if (iss >> first_token)             // make the first token the database entry (user login)
+            {
+                if (first_token == userToCheck) // is it the same as the provided?
                 {
-                    found_user = true;
-                     my_line >> second_token;
-                     if (second_token == entered_password)
-                     {
-                        correct_password = true;
-                        break;
-                     }
+                    //std::cout << userToCheck << " already exists in database." << std::endl;
+                    return true;
                 }
-               
-                // std::cout << line << std::endl; 
-                // std::cout << first_token << std::endl;
-                
-               // std::cout << my_line_updated << std::endl;
             }
         }
     }
-    myFile.close();
-    if (found_user && correct_password)
-    {
-        return true;
-    }
-    else 
-    {
-        return false;
-    }
+    user_file.close();
+    return false;    
+};
 
+bool LoginVerification::userInDatabase(const std::string& user_login)
+{
+    std::fstream user_file;
+    user_file.open("./database/users.txt", std::ios::in);
+    std::string first_token;
+    std::string second_token;
+    
 
-}
+    if (user_file.is_open()) // as long as the database file is open,
+    {
+        std::string line;
+
+        while (std::getline(user_file, line)) // loop through each line in the file
+        {
+            std::istringstream iss(line); // create a string stream to iterate through each token (word)
+            if (iss >> first_token)
+            {       // make the first token the database entry (user login) 
+                if (first_token == user_login) // user found in database.
+                {
+                    return true;
+                }
+            }
+        }
+    }
+    user_file.close();
+    return false;
+};
+
+bool LoginVerification::checkPassword(User& user)
+{
+    std::fstream user_file;
+    user_file.open("./database/users.txt", std::ios::in);
+    std::string userToCheck = user.getUserLogin();
+    std::string passToCheck = user.getUserPassword();
+    std::string first_token;
+    std::string second_token;
+    
+    if (user_file.is_open()) // as long as database file is open,
+    {
+        std::string line;
+        
+        while (std::getline(user_file, line))   //loop through each line in the file
+        {
+            std::istringstream iss(line);       // create a string stream to iterate through each token (word)
+            if (iss >> first_token >> second_token)             // make the firstand second token the database entries (user login and second token)
+            {
+                if (first_token == userToCheck && second_token == passToCheck) // is it the same as the provided?
+                {
+                    //std::cout << userToCheck << " already exists in database." << std::endl;
+                    return true;
+                }
+            }
+        }
+    }
+    user_file.close();
+    return false;  
+};
+
+bool LoginVerification::checkPassword(const std::string& user_login, const std::string& user_password)
+{
+    std::fstream user_file;
+    user_file.open("./database/users.txt", std::ios::in);
+    std::string first_token;
+    std::string second_token;
+    
+
+    if (user_file.is_open()) // as long as the database file is open,
+    {
+        std::string line;
+
+        while (std::getline(user_file, line)) // loop through each line in the file
+        {
+            std::istringstream iss(line); // create a string stream to iterate through each token (word)
+            if (iss >> first_token >> second_token)       // make the firstand second token the database entries (user login and second token)
+            {
+                if (first_token == user_login && second_token == user_password) // user found in database.
+                {
+                    return true;
+                }
+            }
+        }
+    }
+    user_file.close();
+    return false;
+};

@@ -2,11 +2,13 @@
 #include <iomanip>
 #include <string>
 #include "entity/schedule.h"
-#include "control/storedata.h"
-#include "boundary/userLogInUI.h"
-#include "boundary/inventoryUI.h"
-#include "boundary/staffInterface.h"
-#include "boundary/patientInterface.h"
+// #include "control/storedata.h"
+//#include "boundary/userLogInUI.h"
+// #include "boundary/inventoryUI.h"
+// #include "boundary/staffInterface.h"
+// #include "boundary/patientInterface.h"
+#include "control/LoginVerification.h"
+#include "boundary/MainMenu.h"
 //#include "control/GenerateRoomAvailabilityReport.h"
 //#include "control/ModifyRoomAvailability.h"
 
@@ -18,7 +20,7 @@ These include the contents of the header/entity/ folder, <string>, <vector>, and
 
 int main()
 {
-    MainMenu::loginInterface();
+    MainMenu::StartMenu();
     //inventoryMenu::createInventoryMenu();
     // Room testroom1(101, 5, true);
     // Room testroom2(303, 2, true);

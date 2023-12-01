@@ -1,16 +1,17 @@
 #pragma once
+#include <fstream>
 #include <iostream>
-#include <string>
-#include <vector>
-#include "control/dataManipulation.h"
+#include <sstream>
+#include "entity/user.h"
+#include "entity/patient.h"
+#include "entity/staff.h"
 
-class loginVerification
+
+class LoginVerification
 {
-    private:
-    int incorrectLogins = 0;
-    
     public:
-    const int maxIncorrectLogins = 3;
-    const int lockTime = 5;
-    bool verifyUser(std::string, std::string);
+        static bool userInDatabase(User&);
+        static bool userInDatabase(const std::string& user_login);
+        static bool checkPassword(User&);
+        static bool checkPassword(const std::string& user_login, const std::string& user_password);
 };
