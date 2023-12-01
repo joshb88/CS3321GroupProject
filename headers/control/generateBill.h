@@ -7,10 +7,9 @@
 class generateBill
 {
     private:
-    float calculateTotal(std::vector<int>);
-    float total = 0;
+    folat total;
     public:
-    static void displayPatientInfo(Patient);
-    static void displayProcedures(std::vector<Procedure>);
+     static float calculateTotal(std::vector<float>);
+
 
 };
