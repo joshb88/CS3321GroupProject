@@ -4,3 +4,6 @@ test_login3 test_password3 test_last3 test_first3 19880816 X
 test_login4 test_password4 test_last4 test_first4 19880817 X 
 patient_test1 patient_pw1 patient_last patient_first 20231031 F 0 n/a 12303 
     19000101 X 0 N/A  
+    19000101 X 0 N/A  
+staff1 staff1 test test 19010101 X 814 1 nurse 20220101 
+    19000101 X 0 0  19000101 

@@ -1,5 +1,5 @@
 CMakeFiles/mylibrary.dir/src/entity/user.cpp.obj: \
- C:\Users\Josh\Desktop\Repositories\CS3321GroupProject\src\entity\user.cpp \
+ C:\Users\Josh\Desktop\CS3321GroupProject\src\entity\user.cpp \
  C:/msys64/mingw64/include/c++/11.2.0/string \
  C:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/os_defines.h \
@@ -99,4 +99,4 @@ CMakeFiles/mylibrary.dir/src/entity/user.cpp.obj: \
  C:/msys64/mingw64/include/c++/11.2.0/cerrno \
  C:/msys64/mingw64/include/c++/11.2.0/bits/charconv.h \
  C:/msys64/mingw64/include/c++/11.2.0/bits/basic_string.tcc \
- C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/headers/entity/user.h
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/user.h

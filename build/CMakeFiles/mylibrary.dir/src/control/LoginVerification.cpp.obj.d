@@ -1,6 +1,6 @@
 CMakeFiles/mylibrary.dir/src/control/LoginVerification.cpp.obj: \
- C:\Users\Josh\Desktop\Repositories\CS3321GroupProject\src\control\LoginVerification.cpp \
- C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/headers/control/LoginVerification.h \
+ C:\Users\Josh\Desktop\CS3321GroupProject\src\control\LoginVerification.cpp \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/LoginVerification.h \
  C:/msys64/mingw64/include/c++/11.2.0/fstream \
  C:/msys64/mingw64/include/c++/11.2.0/istream \
  C:/msys64/mingw64/include/c++/11.2.0/ios \
@@ -135,7 +135,7 @@ CMakeFiles/mylibrary.dir/src/control/LoginVerification.cpp.obj: \
  C:/msys64/mingw64/include/c++/11.2.0/iostream \
  C:/msys64/mingw64/include/c++/11.2.0/sstream \
  C:/msys64/mingw64/include/c++/11.2.0/bits/sstream.tcc \
- C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/headers/entity/user.h \
- C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/headers/entity/patient.h \
- C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/headers/entity/room.h \
- C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/headers/entity/staff.h
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/user.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/patient.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/room.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/staff.h

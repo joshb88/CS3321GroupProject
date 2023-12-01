@@ -1,86 +1,86 @@
 [
 {
-  "directory": "/Users/jb/GitHubRepositories/CS3321GroupProject/build",
-  "command": "/usr/bin/clang++  -I/Users/jb/GitHubRepositories/CS3321GroupProject/headers -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -o CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.o -c /Users/jb/GitHubRepositories/CS3321GroupProject/src/boundary/MainMenu.cpp",
-  "file": "/Users/jb/GitHubRepositories/CS3321GroupProject/src/boundary/MainMenu.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.o"
+  "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\boundary\\MainMenu.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\boundary\\MainMenu.cpp",
+  "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/boundary/MainMenu.cpp",
+  "output": "CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.obj"
 },
 {
-  "directory": "/Users/jb/GitHubRepositories/CS3321GroupProject/build",
-  "command": "/usr/bin/clang++  -I/Users/jb/GitHubRepositories/CS3321GroupProject/headers -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -o CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.o -c /Users/jb/GitHubRepositories/CS3321GroupProject/src/boundary/patientUI.cpp",
-  "file": "/Users/jb/GitHubRepositories/CS3321GroupProject/src/boundary/patientUI.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.o"
+  "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\boundary\\patientUI.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\boundary\\patientUI.cpp",
+  "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/boundary/patientUI.cpp",
+  "output": "CMakeFiles/mylibrary.dir/src/boundary/patientUI.cpp.obj"
 },
 {
-  "directory": "/Users/jb/GitHubRepositories/CS3321GroupProject/build",
-  "command": "/usr/bin/clang++  -I/Users/jb/GitHubRepositories/CS3321GroupProject/headers -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -o CMakeFiles/mylibrary.dir/src/control/GenerateRoomAvailabilityReport.cpp.o -c /Users/jb/GitHubRepositories/CS3321GroupProject/src/control/GenerateRoomAvailabilityReport.cpp",
-  "file": "/Users/jb/GitHubRepositories/CS3321GroupProject/src/control/GenerateRoomAvailabilityReport.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/control/GenerateRoomAvailabilityReport.cpp.o"
+  "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\control\\GenerateRoomAvailabilityReport.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\control\\GenerateRoomAvailabilityReport.cpp",
+  "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/control/GenerateRoomAvailabilityReport.cpp",
+  "output": "CMakeFiles/mylibrary.dir/src/control/GenerateRoomAvailabilityReport.cpp.obj"
 },
 {
-  "directory": "/Users/jb/GitHubRepositories/CS3321GroupProject/build",
-  "command": "/usr/bin/clang++  -I/Users/jb/GitHubRepositories/CS3321GroupProject/headers -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -o CMakeFiles/mylibrary.dir/src/control/LoginVerification.cpp.o -c /Users/jb/GitHubRepositories/CS3321GroupProject/src/control/LoginVerification.cpp",
-  "file": "/Users/jb/GitHubRepositories/CS3321GroupProject/src/control/LoginVerification.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/control/LoginVerification.cpp.o"
+  "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\control\\LoginVerification.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\control\\LoginVerification.cpp",
+  "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/control/LoginVerification.cpp",
+  "output": "CMakeFiles/mylibrary.dir/src/control/LoginVerification.cpp.obj"
 },
 {
-  "directory": "/Users/jb/GitHubRepositories/CS3321GroupProject/build",
-  "command": "/usr/bin/clang++  -I/Users/jb/GitHubRepositories/CS3321GroupProject/headers -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -o CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.o -c /Users/jb/GitHubRepositories/CS3321GroupProject/src/control/ModifyRoomAvailability.cpp",
-  "file": "/Users/jb/GitHubRepositories/CS3321GroupProject/src/control/ModifyRoomAvailability.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.o"
+  "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\control\\ModifyRoomAvailability.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\control\\ModifyRoomAvailability.cpp",
+  "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/control/ModifyRoomAvailability.cpp",
+  "output": "CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.obj"
 },
 {
-  "directory": "/Users/jb/GitHubRepositories/CS3321GroupProject/build",
-  "command": "/usr/bin/clang++  -I/Users/jb/GitHubRepositories/CS3321GroupProject/headers -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -o CMakeFiles/mylibrary.dir/src/control/storedata.cpp.o -c /Users/jb/GitHubRepositories/CS3321GroupProject/src/control/storedata.cpp",
-  "file": "/Users/jb/GitHubRepositories/CS3321GroupProject/src/control/storedata.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/control/storedata.cpp.o"
+  "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\control\\storedata.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\control\\storedata.cpp",
+  "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/control/storedata.cpp",
+  "output": "CMakeFiles/mylibrary.dir/src/control/storedata.cpp.obj"
 },
 {
-  "directory": "/Users/jb/GitHubRepositories/CS3321GroupProject/build",
-  "command": "/usr/bin/clang++  -I/Users/jb/GitHubRepositories/CS3321GroupProject/headers -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -o CMakeFiles/mylibrary.dir/src/entity/inventory.cpp.o -c /Users/jb/GitHubRepositories/CS3321GroupProject/src/entity/inventory.cpp",
-  "file": "/Users/jb/GitHubRepositories/CS3321GroupProject/src/entity/inventory.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/entity/inventory.cpp.o"
+  "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\entity\\inventory.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\entity\\inventory.cpp",
+  "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/entity/inventory.cpp",
+  "output": "CMakeFiles/mylibrary.dir/src/entity/inventory.cpp.obj"
 },
 {
-  "directory": "/Users/jb/GitHubRepositories/CS3321GroupProject/build",
-  "command": "/usr/bin/clang++  -I/Users/jb/GitHubRepositories/CS3321GroupProject/headers -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -o CMakeFiles/mylibrary.dir/src/entity/patient.cpp.o -c /Users/jb/GitHubRepositories/CS3321GroupProject/src/entity/patient.cpp",
-  "file": "/Users/jb/GitHubRepositories/CS3321GroupProject/src/entity/patient.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/entity/patient.cpp.o"
+  "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\entity\\patient.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\entity\\patient.cpp",
+  "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/entity/patient.cpp",
+  "output": "CMakeFiles/mylibrary.dir/src/entity/patient.cpp.obj"
 },
 {
-  "directory": "/Users/jb/GitHubRepositories/CS3321GroupProject/build",
-  "command": "/usr/bin/clang++  -I/Users/jb/GitHubRepositories/CS3321GroupProject/headers -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -o CMakeFiles/mylibrary.dir/src/entity/procedure.cpp.o -c /Users/jb/GitHubRepositories/CS3321GroupProject/src/entity/procedure.cpp",
-  "file": "/Users/jb/GitHubRepositories/CS3321GroupProject/src/entity/procedure.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/entity/procedure.cpp.o"
+  "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\entity\\procedure.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\entity\\procedure.cpp",
+  "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/entity/procedure.cpp",
+  "output": "CMakeFiles/mylibrary.dir/src/entity/procedure.cpp.obj"
 },
 {
-  "directory": "/Users/jb/GitHubRepositories/CS3321GroupProject/build",
-  "command": "/usr/bin/clang++  -I/Users/jb/GitHubRepositories/CS3321GroupProject/headers -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -o CMakeFiles/mylibrary.dir/src/entity/room.cpp.o -c /Users/jb/GitHubRepositories/CS3321GroupProject/src/entity/room.cpp",
-  "file": "/Users/jb/GitHubRepositories/CS3321GroupProject/src/entity/room.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/entity/room.cpp.o"
+  "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\entity\\room.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\entity\\room.cpp",
+  "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/entity/room.cpp",
+  "output": "CMakeFiles/mylibrary.dir/src/entity/room.cpp.obj"
 },
 {
-  "directory": "/Users/jb/GitHubRepositories/CS3321GroupProject/build",
-  "command": "/usr/bin/clang++  -I/Users/jb/GitHubRepositories/CS3321GroupProject/headers -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -o CMakeFiles/mylibrary.dir/src/entity/schedule.cpp.o -c /Users/jb/GitHubRepositories/CS3321GroupProject/src/entity/schedule.cpp",
-  "file": "/Users/jb/GitHubRepositories/CS3321GroupProject/src/entity/schedule.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/entity/schedule.cpp.o"
+  "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\entity\\schedule.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\entity\\schedule.cpp",
+  "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/entity/schedule.cpp",
+  "output": "CMakeFiles/mylibrary.dir/src/entity/schedule.cpp.obj"
 },
 {
-  "directory": "/Users/jb/GitHubRepositories/CS3321GroupProject/build",
-  "command": "/usr/bin/clang++  -I/Users/jb/GitHubRepositories/CS3321GroupProject/headers -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -o CMakeFiles/mylibrary.dir/src/entity/staff.cpp.o -c /Users/jb/GitHubRepositories/CS3321GroupProject/src/entity/staff.cpp",
-  "file": "/Users/jb/GitHubRepositories/CS3321GroupProject/src/entity/staff.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/entity/staff.cpp.o"
+  "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\entity\\staff.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\entity\\staff.cpp",
+  "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/entity/staff.cpp",
+  "output": "CMakeFiles/mylibrary.dir/src/entity/staff.cpp.obj"
 },
 {
-  "directory": "/Users/jb/GitHubRepositories/CS3321GroupProject/build",
-  "command": "/usr/bin/clang++  -I/Users/jb/GitHubRepositories/CS3321GroupProject/headers -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -o CMakeFiles/mylibrary.dir/src/entity/user.cpp.o -c /Users/jb/GitHubRepositories/CS3321GroupProject/src/entity/user.cpp",
-  "file": "/Users/jb/GitHubRepositories/CS3321GroupProject/src/entity/user.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/entity/user.cpp.o"
+  "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\entity\\user.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\entity\\user.cpp",
+  "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/entity/user.cpp",
+  "output": "CMakeFiles/mylibrary.dir/src/entity/user.cpp.obj"
 },
 {
-  "directory": "/Users/jb/GitHubRepositories/CS3321GroupProject/build",
-  "command": "/usr/bin/clang++  -I/Users/jb/GitHubRepositories/CS3321GroupProject/headers -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -o CMakeFiles/hospital_management.dir/main.cpp.o -c /Users/jb/GitHubRepositories/CS3321GroupProject/main.cpp",
-  "file": "/Users/jb/GitHubRepositories/CS3321GroupProject/main.cpp",
-  "output": "CMakeFiles/hospital_management.dir/main.cpp.o"
+  "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/hospital_management.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\hospital_management.dir\\main.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\main.cpp",
+  "file": "C:/Users/Josh/Desktop/CS3321GroupProject/main.cpp",
+  "output": "CMakeFiles/hospital_management.dir/main.cpp.obj"
 }
 ]

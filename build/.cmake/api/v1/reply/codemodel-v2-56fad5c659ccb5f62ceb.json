@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.15"
@@ -41,14 +41,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "hospital_management::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-hospital_management-Debug-75c385efc6279f0a78c8.json",
+					"jsonFile" : "target-hospital_management-Debug-def79f5f8b24aaf2cdbb.json",
 					"name" : "hospital_management",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "mylibrary::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-mylibrary-Debug-7dc936d6949256c29aab.json",
+					"jsonFile" : "target-mylibrary-Debug-64bd3b69caf623197985.json",
 					"name" : "mylibrary",
 					"projectIndex" : 0
 				}
@@ -58,8 +58,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/jb/GitHubRepositories/CS3321GroupProject/build",
-		"source" : "/Users/jb/GitHubRepositories/CS3321GroupProject"
+		"build" : "C:/Users/Josh/Desktop/CS3321GroupProject/build",
+		"source" : "C:/Users/Josh/Desktop/CS3321GroupProject"
 	},
 	"version" : 
 	{

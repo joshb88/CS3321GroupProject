@@ -1,6 +1,6 @@
 CMakeFiles/mylibrary.dir/src/entity/inventory.cpp.obj: \
- C:\Users\Josh\Desktop\Repositories\CS3321GroupProject\src\entity\inventory.cpp \
- C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/headers/entity/inventory.h \
+ C:\Users\Josh\Desktop\CS3321GroupProject\src\entity\inventory.cpp \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/inventory.h \
  C:/msys64/mingw64/include/c++/11.2.0/string \
  C:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/os_defines.h \

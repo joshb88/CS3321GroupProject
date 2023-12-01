@@ -1,6 +1,6 @@
 CMakeFiles/mylibrary.dir/src/entity/procedure.cpp.obj: \
- C:\Users\Josh\Desktop\Repositories\CS3321GroupProject\src\entity\procedure.cpp \
- C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/headers/entity/procedure.h \
+ C:\Users\Josh\Desktop\CS3321GroupProject\src\entity\procedure.cpp \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/procedure.h \
  C:/msys64/mingw64/include/c++/11.2.0/vector \
  C:/msys64/mingw64/include/c++/11.2.0/bits/stl_algobase.h \
  C:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -40,7 +40,7 @@ CMakeFiles/mylibrary.dir/src/entity/procedure.cpp.obj: \
  C:/msys64/mingw64/include/c++/11.2.0/bits/hash_bytes.h \
  C:/msys64/mingw64/include/c++/11.2.0/bits/range_access.h \
  C:/msys64/mingw64/include/c++/11.2.0/bits/vector.tcc \
- C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/headers/entity/inventory.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/inventory.h \
  C:/msys64/mingw64/include/c++/11.2.0/string \
  C:/msys64/mingw64/include/c++/11.2.0/bits/stringfwd.h \
  C:/msys64/mingw64/include/c++/11.2.0/bits/char_traits.h \

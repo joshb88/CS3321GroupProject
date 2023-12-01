@@ -1,6 +1,6 @@
 CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.obj: \
- C:\Users\Josh\Desktop\Repositories\CS3321GroupProject\src\control\ModifyRoomAvailability.cpp \
- C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/headers/control/ModifyRoomAvailability.h \
+ C:\Users\Josh\Desktop\CS3321GroupProject\src\control\ModifyRoomAvailability.cpp \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/ModifyRoomAvailability.h \
  C:/msys64/mingw64/include/c++/11.2.0/map \
  C:/msys64/mingw64/include/c++/11.2.0/bits/stl_tree.h \
  C:/msys64/mingw64/include/c++/11.2.0/bits/stl_algobase.h \
@@ -48,4 +48,4 @@ CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.obj: \
  C:/msys64/mingw64/include/c++/11.2.0/bits/invoke.h \
  C:/msys64/mingw64/include/c++/11.2.0/bits/stl_multimap.h \
  C:/msys64/mingw64/include/c++/11.2.0/bits/erase_if.h \
- C:/Users/Josh/Desktop/Repositories/CS3321GroupProject/headers/entity/room.h
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/room.h
