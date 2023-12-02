@@ -13,10 +13,11 @@ private:
 public:
 
     // user stuff
-    bool checkForUeser(std::string);
+    static bool userInDatabase(User& user);
+    static bool userInDatabase(const std::string& user_name);
+    static void addUserToFile(User& user);
     User getUserFromFile(std::string);
     void modifyUserFromFile (User);
-    void addUser (User);
 
     // Inventory stuff
     bool checkForItem(std::string);

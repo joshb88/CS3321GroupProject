@@ -10,6 +10,7 @@ class MainMenu
         static void header();
         static void clearScreen();
         static void loginMenu();
+        static void loginMenu(std::string entered_username);
         static void accountCreateMenu();
         static void accountCreateMenu(std::string entered_username);
         static User genericUserCreation(short user_type);

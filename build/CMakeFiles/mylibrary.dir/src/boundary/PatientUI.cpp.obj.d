@@ -146,15 +146,13 @@ CMakeFiles/mylibrary.dir/src/boundary/PatientUI.cpp.obj: \
  C:/msys64/mingw64/include/c++/11.2.0/bits/ostream.tcc \
  C:/msys64/mingw64/include/c++/11.2.0/bits/istream.tcc \
  C:/msys64/mingw64/include/c++/11.2.0/bits/sstream.tcc \
- C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/MainMenu.h \
- C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/user.h \
- C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/patientUI.h \
- C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/patient.h \
- C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/room.h \
- C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/LoginVerification.h \
+ C:/msys64/mingw64/include/c++/11.2.0/iostream \
  C:/msys64/mingw64/include/c++/11.2.0/fstream \
  C:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/basic_file.h \
  C:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/c++io.h \
  C:/msys64/mingw64/include/c++/11.2.0/bits/fstream.tcc \
- C:/msys64/mingw64/include/c++/11.2.0/iostream \
- C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/staff.h
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/MainMenu.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/user.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/patientUI.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/patient.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/room.h

@@ -1,7 +1,139 @@
+#include <sstream>
 #include "control/dataManipulation.h"
+#include "entity/patient.h"
+#include "entity/staff.h"
 //******************************************************************************************************************
 //                                          USER DATA MANIPULATION
 //******************************************************************************************************************
+
+bool dataManipulation::userInDatabase(User& user) 
+{
+    std::fstream user_file;
+    user_file.open("./database/users.txt", std::ios::in);
+    std::string userToCheck = user.getUserLogin();
+    
+    if (user_file.is_open()) {
+        std::string line;
+
+        while (std::getline(user_file, line)) {
+            std::istringstream iss(line);
+            std::string token;
+
+            while (std::getline(iss, token, ',')) {
+                if (token == userToCheck) {
+                    std::cout << userToCheck << " already exists in database." << std::endl;
+                    user_file.close();
+                    return true;
+                }
+            }
+        }
+    }
+
+    user_file.close();
+    return false;
+}
+
+bool dataManipulation::userInDatabase(const std::string& user_login)
+{
+    std::fstream user_file;
+    user_file.open("./database/users.txt", std::ios::in);
+    std::string line;
+
+    if (user_file.is_open()) // as long as the database file is open,
+    {
+        while (std::getline(user_file, line)) // loop through each line in the file
+        {
+            std::istringstream iss(line); // create a string stream to iterate through each token (word)
+            std::string token;
+
+            // Split the line using commas as delimiters
+            while (std::getline(iss, token, ','))
+            {
+                // Check if the current token is equal to the provided user login
+                if (token == user_login)
+                {
+                    user_file.close();
+                    return true;
+                }
+            }
+        }
+    }
+    user_file.close();
+    return false;
+}
+
+void dataManipulation::addUserToFile(User& user) 
+{
+   
+    std::fstream user_file;
+    user_file.open("./database/users.txt", std::ios::out | std::ios::app);
+    if (!userInDatabase(user)) {
+        if (user_file.is_open()) {
+            
+            Patient* patientPtr = dynamic_cast<Patient*>(&user);
+            Staff* staffPtr = dynamic_cast<Staff*>(&user);
+            if (patientPtr) // signify the stored user as a patient
+            {
+                user_file << 1 << ",";
+            }
+            else if(staffPtr) // signify the stored user as a patient
+            {
+                user_file << 2 << ",";
+            }
+            else
+            {
+                user_file << 0 << ",";
+            }
+            
+            
+            // Write common user data
+            user_file << 
+                user.getUserLogin() << "," << 
+                user.getUserPassword() << "," << 
+                user.getLastName() << "," << 
+                user.getFirstName() << "," <<
+                user.getDateOfBirth() << "," <<
+                user.getGender();
+
+            // Check if the user is a Patient and append additional data
+            if (patientPtr) {
+                user_file << "," << 
+                patientPtr->getHasInsurance();
+                if (patientPtr->getHasInsurance()) 
+                {
+                    user_file << "," << patientPtr->getInsuranceProvider();
+                }
+
+                // check that room as been assigned or fatal error
+                if (patientPtr->getRoom() != nullptr)
+                {
+                    user_file << "," <<
+                    patientPtr->getRoom()->getRoomAvailability() << "," <<
+                    patientPtr->getRoom()->getRoomFloorNumber() << "," <<
+                    patientPtr->getRoom()->getRoomNumber();
+                }
+                else { std::cout << "Room isn't set; will not store." << std::endl; }
+            }
+
+            // Check if the user is a Staff and append additional data
+            if (staffPtr) {
+                user_file << "," << 
+                staffPtr->getIdNumber() << "," <<
+                staffPtr->getClearanceLevel() << "," <<
+                staffPtr->getJobTitle() << "," <<
+                staffPtr->getDateOfHire();
+            }
+
+            user_file << std::endl;  // Add a newline at the end
+            user_file.close();
+            std::cout << "User data written to file." << std::endl;
+        }
+    }
+}
+
+
+
+
 // User dataManipulation::getUserFromFile ( std::string the_login)
 // {
 //     std::string user_login = the_login;
@@ -33,28 +165,6 @@
 // }
 
 
-// bool dataManipulation::checkForUeser(std::string user_login)
-// {
-//     bool userIsFound = false;
-//     std::ifstream patient_file;
-
-//     User our_user;
-
-//     patient_file.open("./database/users.txt", std::ios::in);
-//     patient_file.read((char*)&our_user, sizeof(our_user));
-
-//     while (!patient_file.eof()){
-//         if(our_user.getUserLogin() == user_login)
-//         {
-//             userIsFound = true;
-//             break;
-//         }
-//         patient_file.read((char*)&our_user, sizeof(our_user));
-//     }
-
-//     patient_file.close();
-//     return userIsFound;
-// }
 //******************************************************************************************************************
 //                                          INVENTORY DATA MANIPULATION
 //******************************************************************************************************************

@@ -149,8 +149,7 @@
 				25,
 				26,
 				27,
-				28,
-				29
+				28
 			]
 		}
 	],
@@ -265,11 +264,6 @@
 		{
 			"backtrace" : 2,
 			"path" : "headers/control/modifyInventory.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 2,
-			"path" : "headers/control/storedata.h",
 			"sourceGroupIndex" : 1
 		},
 		{

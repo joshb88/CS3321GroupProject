@@ -645,30 +645,6 @@ src/control/modifyInventory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/modifyInventory.cpp.s
 .PHONY : src/control/modifyInventory.cpp.s
 
-src/control/storedata.obj: src/control/storedata.cpp.obj
-.PHONY : src/control/storedata.obj
-
-# target to build an object file
-src/control/storedata.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/storedata.cpp.obj
-.PHONY : src/control/storedata.cpp.obj
-
-src/control/storedata.i: src/control/storedata.cpp.i
-.PHONY : src/control/storedata.i
-
-# target to preprocess a source file
-src/control/storedata.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/storedata.cpp.i
-.PHONY : src/control/storedata.cpp.i
-
-src/control/storedata.s: src/control/storedata.cpp.s
-.PHONY : src/control/storedata.s
-
-# target to generate assembly for a file
-src/control/storedata.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/storedata.cpp.s
-.PHONY : src/control/storedata.cpp.s
-
 src/entity/inventory.obj: src/entity/inventory.cpp.obj
 .PHONY : src/entity/inventory.obj
 
@@ -910,9 +886,6 @@ help:
 	@echo ... src/control/modifyInventory.obj
 	@echo ... src/control/modifyInventory.i
 	@echo ... src/control/modifyInventory.s
-	@echo ... src/control/storedata.obj
-	@echo ... src/control/storedata.i
-	@echo ... src/control/storedata.s
 	@echo ... src/entity/inventory.obj
 	@echo ... src/entity/inventory.i
 	@echo ... src/entity/inventory.s
