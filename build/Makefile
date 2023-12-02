@@ -213,6 +213,30 @@ src/boundary/PatientUI.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/PatientUI.cpp.s
 .PHONY : src/boundary/PatientUI.cpp.s
 
+src/boundary/StaffUI.obj: src/boundary/StaffUI.cpp.obj
+.PHONY : src/boundary/StaffUI.obj
+
+# target to build an object file
+src/boundary/StaffUI.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/StaffUI.cpp.obj
+.PHONY : src/boundary/StaffUI.cpp.obj
+
+src/boundary/StaffUI.i: src/boundary/StaffUI.cpp.i
+.PHONY : src/boundary/StaffUI.i
+
+# target to preprocess a source file
+src/boundary/StaffUI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/StaffUI.cpp.i
+.PHONY : src/boundary/StaffUI.cpp.i
+
+src/boundary/StaffUI.s: src/boundary/StaffUI.cpp.s
+.PHONY : src/boundary/StaffUI.s
+
+# target to generate assembly for a file
+src/boundary/StaffUI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/StaffUI.cpp.s
+.PHONY : src/boundary/StaffUI.cpp.s
+
 src/boundary/inventoryOrders.obj: src/boundary/inventoryOrders.cpp.obj
 .PHONY : src/boundary/inventoryOrders.obj
 
@@ -832,6 +856,9 @@ help:
 	@echo ... src/boundary/PatientUI.obj
 	@echo ... src/boundary/PatientUI.i
 	@echo ... src/boundary/PatientUI.s
+	@echo ... src/boundary/StaffUI.obj
+	@echo ... src/boundary/StaffUI.i
+	@echo ... src/boundary/StaffUI.s
 	@echo ... src/boundary/inventoryOrders.obj
 	@echo ... src/boundary/inventoryOrders.i
 	@echo ... src/boundary/inventoryOrders.s

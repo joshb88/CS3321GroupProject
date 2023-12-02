@@ -1,5 +1,6 @@
 #pragma once
 #include "entity/patient.h"
+#include "boundary/MainMenu.h"
 
 
 class PatientUI : public MainMenu

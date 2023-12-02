@@ -6,6 +6,7 @@
 #include "boundary/MainMenu.h"
 #include "control/LoginVerification.h"
 #include "boundary/patientUI.h"
+#include "boundary/StaffUI.h"
 //#include "boundary/userLogInUI.h"
 // #include "boundary/inventoryUI.h"
 // #include "boundary/staffInterface.h"
@@ -44,7 +45,7 @@ int main()
     // StoreData::storeUser(test_staff1);
     // StoreData::storeUser(test_staff2);
 
-    //std::cout << testPatient.getRoom()->getRoomNumber();
+    //std::cout << testPatient.getRoom()->getRoomNumber3();
     // testPatient.setRoom(&testroom1); 
     // std::cout << testPatient.getRoom()->getRoomNumber() << std::endl;
     // testPatient.setRoom(&testroom2);

@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Josh/Desktop/CS3321GroupProject/src/boundary/MainMenu.cpp" "CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.obj" "gcc" "CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.obj.d"
   "C:/Users/Josh/Desktop/CS3321GroupProject/src/boundary/PatientUI.cpp" "CMakeFiles/mylibrary.dir/src/boundary/PatientUI.cpp.obj" "gcc" "CMakeFiles/mylibrary.dir/src/boundary/PatientUI.cpp.obj.d"
+  "C:/Users/Josh/Desktop/CS3321GroupProject/src/boundary/StaffUI.cpp" "CMakeFiles/mylibrary.dir/src/boundary/StaffUI.cpp.obj" "gcc" "CMakeFiles/mylibrary.dir/src/boundary/StaffUI.cpp.obj.d"
   "C:/Users/Josh/Desktop/CS3321GroupProject/src/boundary/inventoryOrders.cpp" "CMakeFiles/mylibrary.dir/src/boundary/inventoryOrders.cpp.obj" "gcc" "CMakeFiles/mylibrary.dir/src/boundary/inventoryOrders.cpp.obj.d"
   "C:/Users/Josh/Desktop/CS3321GroupProject/src/boundary/inventoryUI.cpp" "CMakeFiles/mylibrary.dir/src/boundary/inventoryUI.cpp.obj" "gcc" "CMakeFiles/mylibrary.dir/src/boundary/inventoryUI.cpp.obj.d"
   "C:/Users/Josh/Desktop/CS3321GroupProject/src/boundary/patientInterface.cpp" "CMakeFiles/mylibrary.dir/src/boundary/patientInterface.cpp.obj" "gcc" "CMakeFiles/mylibrary.dir/src/boundary/patientInterface.cpp.obj.d"
