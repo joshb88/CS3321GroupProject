@@ -11,9 +11,9 @@
 // #include "entity/staff.h"
 // #include "entity/patient.h"
 #include "boundary/StaffUI.h"
-#include "boundary/PatientUI.h"
+#include "boundary/patientUI.h"
 #include "boundary/MainMenu.h"
-#include "control/LoginVerification.h"
+#include "control/loginVerification.h"
 #include "control/storedata.h"
 
 const std::string MainMenu::SECTION_BREAK = "==================================================\n";
