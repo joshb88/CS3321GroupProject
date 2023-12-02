@@ -14,6 +14,7 @@
 #include "boundary/PatientUI.h"
 #include "boundary/MainMenu.h"
 #include "control/LoginVerification.h"
+#include "control/storedata.h"
 
 const std::string MainMenu::SECTION_BREAK = "==================================================\n";
 
@@ -33,7 +34,7 @@ void MainMenu::header()
 
 void MainMenu::clearScreen() 
 {
-    std::this_thread::sleep_for(std::chrono::seconds(1));
+    //std::this_thread::sleep_for(std::chrono::seconds(1));
     for (int i = 0; i < 40; ++i) { std::cout << std::endl; }
 }
 void MainMenu::StartMenu()
@@ -172,17 +173,19 @@ void MainMenu::accountCreateMenu()
         return;                          // Ensure the function exits after recursion
     }
 
-
+    Patient new_patient;
+    Staff new_staff;
     switch (user_type)
     {
     case 1:
         // Patient class used
-        PatientUI::accountCreation();
+        new_patient = PatientUI::accountCreation();
+        StoreData::storeUser(new_patient);
         break;
     case 2:
         // Staff class used
-        StaffUI::accountCreation();
-
+        new_staff = StaffUI::accountCreation();
+        StoreData::storeUser(new_staff);
         break;
     case 9:
         loginMenu();
@@ -221,15 +224,19 @@ void MainMenu::accountCreateMenu(std::string entered_username)
     }
 
 
+    Patient new_patient;
+    Staff new_staff;
     switch (user_type)
     {
     case 1:
         // Patient class used
-        PatientUI::accountCreation(entered_username);
+        new_patient = PatientUI::accountCreation(entered_username);
+        StoreData::storeUser(new_patient);
         break;
     case 2:
         // Staff class used
-        StaffUI::accountCreation(entered_username);
+        new_staff = StaffUI::accountCreation(entered_username);
+        StoreData::storeUser(new_staff);
         break;
     case 9:
         loginMenu();
