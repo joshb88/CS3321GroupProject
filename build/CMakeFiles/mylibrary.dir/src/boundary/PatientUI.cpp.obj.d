@@ -148,7 +148,7 @@ CMakeFiles/mylibrary.dir/src/boundary/PatientUI.cpp.obj: \
  C:/msys64/mingw64/include/c++/11.2.0/bits/sstream.tcc \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/MainMenu.h \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/user.h \
- C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/PatientUI.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/patientUI.h \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/patient.h \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/room.h \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/LoginVerification.h \

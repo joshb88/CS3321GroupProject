@@ -4,7 +4,7 @@
 CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.obj
  C:/Users/Josh/Desktop/CS3321GroupProject/src/boundary/MainMenu.cpp
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/MainMenu.h
- C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/PatientUI.h
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/patientUI.h
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/loginVerification.h
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/patient.h
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/room.h
@@ -178,7 +178,7 @@ CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.obj
 CMakeFiles/mylibrary.dir/src/boundary/PatientUI.cpp.obj
  C:/Users/Josh/Desktop/CS3321GroupProject/src/boundary/PatientUI.cpp
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/MainMenu.h
- C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/PatientUI.h
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/patientUI.h
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/loginVerification.h
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/patient.h
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/room.h
