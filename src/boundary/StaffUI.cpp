@@ -1,22 +1,17 @@
-#include <ctime>
-#include <iomanip>
-// #include <cctype>
-// #include <iostream>
-// #include <fstream>
-// #include <sstream>
-// #include <string>
+#include <string>
 #include "boundary/MainMenu.h"
-#include "boundary/patientUI.h"
-#include "entity/patient.h"
-#include "control/LoginVerification.h"
+#include "boundary/StaffUI.h"
+#include "entity/staff.h"
 
-Patient PatientUI::accountCreation()
+Staff StaffUI::accountCreation()
 {
     User temp_user = genericUserCreation();
-    Patient new_patient(temp_user);
+    Staff new_staff(temp_user);
     short choice;
-    bool insurance;
-    std::string provider;
+    unsigned int idnumber;
+    short clearance, 
+    std::string jobtitle;
+    unsigned int doh;
 
    do // Insurance or OOP
     {
@@ -39,7 +34,7 @@ Patient PatientUI::accountCreation()
     } 
     while (std::cin.fail() || !(choice == 1 || choice == 2));
     insurance = (choice==1);
-    new_patient.setHasInsurance(insurance);
+    new_staff.setHasInsurance(insurance);
 
     if (insurance)
     {
@@ -56,15 +51,15 @@ Patient PatientUI::accountCreation()
         }
         while (provider.empty());
     }
-    new_patient.setInsuranceProvider(provider);
+    new_staff.setInsuranceProvider(provider);
 
-    return new_patient;
+    return new_staff;
 }
 
-Patient PatientUI::accountCreation(std::string entered_username)
+Staff PatientUI::accountCreation(std::string entered_username)
 {
     User temp_user = genericUserCreation(entered_username);
-    Patient new_patient(temp_user);
+    Staff new_staff(temp_user);
     short choice;
     bool insurance;
     std::string provider;
@@ -90,7 +85,7 @@ Patient PatientUI::accountCreation(std::string entered_username)
     } 
     while (std::cin.fail() || !(choice == 1 || choice == 2));
     insurance = (choice==1);
-    new_patient.setHasInsurance(insurance);
+    new_staff.setHasInsurance(insurance);
 
     if (insurance)
     {
@@ -107,17 +102,17 @@ Patient PatientUI::accountCreation(std::string entered_username)
         }
         while (provider.empty());
     }
-    new_patient.setInsuranceProvider(provider);
+    new_staff.setInsuranceProvider(provider);
 
     std::cout <<
-    new_patient.getUserLogin() << std::endl <<
-    new_patient.getUserPassword() << std::endl <<
-    new_patient.getLastName() << std::endl <<
-    new_patient.getFirstName() << std::endl <<
-    new_patient.getDateOfBirth() << std::endl <<
-    new_patient.getGender() << std::endl <<
-    new_patient.getHasInsurance() << std::endl <<
-    new_patient.getInsuranceProvider() << std::endl;
+    new_staff.getUserLogin() << std::endl <<
+    new_staff.getUserPassword() << std::endl <<
+    new_staff.getLastName() << std::endl <<
+    new_staff.getFirstName() << std::endl <<
+    new_staff.getDateOfBirth() << std::endl <<
+    new_staff.getGender() << std::endl <<
+    new_staff.getHasInsurance() << std::endl <<
+    new_staff.getInsuranceProvider() << std::endl;
 
-    return new_patient;
+    return new_staff;
 }

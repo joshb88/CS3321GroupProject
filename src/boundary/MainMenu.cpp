@@ -140,7 +140,6 @@ void MainMenu::loginMenu()
     
 
 }
-
 void MainMenu::accountCreateMenu()
 {
     short user_type;
@@ -188,7 +187,6 @@ void MainMenu::accountCreateMenu()
         break;
     } 
 }
-
 void MainMenu::accountCreateMenu(std::string entered_username)
 {
     short user_type;
@@ -236,7 +234,6 @@ void MainMenu::accountCreateMenu(std::string entered_username)
         break;
     } 
 }
-
 User MainMenu::genericUserCreation()
 {
     std::string desired_user_login, password, confirmation_password, first_name, last_name;
@@ -383,7 +380,6 @@ User MainMenu::genericUserCreation()
     User new_user(desired_user_login,password,last_name,first_name,date_of_birth,gender);
     return new_user;
 }
-
 User MainMenu::genericUserCreation(std::string entered_name)
 {
     std::string password, confirmation_password, first_name, last_name;
