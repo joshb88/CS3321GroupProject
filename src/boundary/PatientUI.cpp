@@ -12,7 +12,8 @@
 
 Patient PatientUI::accountCreation()
 {
-    User temp_user = genericUserCreation();
+    short user_type = 1; //1 is the value for patient in LoginMenu()
+    User temp_user = genericUserCreation(user_type);
     Patient new_patient(temp_user);
     short choice;
     bool insurance;

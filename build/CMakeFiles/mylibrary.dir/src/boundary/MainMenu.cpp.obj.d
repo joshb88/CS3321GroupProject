@@ -158,10 +158,12 @@ CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.obj: \
  C:/msys64/mingw64/include/c++/11.2.0/ratio \
  C:/msys64/mingw64/include/c++/11.2.0/limits \
  C:/msys64/mingw64/include/c++/11.2.0/bits/parse_numbers.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/StaffUI.h \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/staff.h \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/user.h \
- C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/patient.h \
- C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/room.h \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/MainMenu.h \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/PatientUI.h \
- C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/LoginVerification.h
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/patient.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/room.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/LoginVerification.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/storedata.h

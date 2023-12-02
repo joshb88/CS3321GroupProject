@@ -13,6 +13,12 @@
 },
 {
   "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\boundary\\StaffUI.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\boundary\\StaffUI.cpp",
+  "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/boundary/StaffUI.cpp",
+  "output": "CMakeFiles/mylibrary.dir/src/boundary/StaffUI.cpp.obj"
+},
+{
+  "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\boundary\\inventoryOrders.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\boundary\\inventoryOrders.cpp",
   "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/boundary/inventoryOrders.cpp",
   "output": "CMakeFiles/mylibrary.dir/src/boundary/inventoryOrders.cpp.obj"

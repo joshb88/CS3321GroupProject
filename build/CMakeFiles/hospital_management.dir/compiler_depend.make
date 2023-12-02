@@ -3,6 +3,7 @@
 
 CMakeFiles/hospital_management.dir/main.cpp.obj: C:/Users/Josh/Desktop/CS3321GroupProject/main.cpp \
   C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/MainMenu.h \
+  C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/StaffUI.h \
   C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/patientUI.h \
   C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/loginVerification.h \
   C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/storedata.h \
@@ -188,23 +189,25 @@ C:/Users/Josh/Desktop/CS3321GroupProject/main.cpp:
 
 C:/msys64/mingw64/include/c++/11.2.0/bits/fstream.tcc:
 
+C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/patient.h:
+
+C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/StaffUI.h:
+
 C:/msys64/mingw64/include/c++/11.2.0/bits/nested_exception.h:
 
 C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/patientUI.h:
 
 C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/loginVerification.h:
 
-C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/storedata.h:
-
 C:/msys64/mingw64/include/c++/11.2.0/sstream:
 
 C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/procedure.h:
 
+C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/storedata.h:
+
 C:/msys64/mingw64/include/c++/11.2.0/bits/ios_base.h:
 
 C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/inventory.h:
-
-C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/patient.h:
 
 C:/msys64/mingw64/include/c++/11.2.0/bits/cxxabi_init_exception.h:
 
@@ -290,10 +293,6 @@ C:/msys64/mingw64/include/c++/11.2.0/bits/locale_classes.tcc:
 
 C:/msys64/mingw64/include/c++/11.2.0/bits/concept_check.h:
 
-C:/msys64/mingw64/include/c++/11.2.0/iomanip:
-
-C:/msys64/mingw64/include/c++/11.2.0/bits/std_abs.h:
-
 C:/msys64/mingw64/include/c++/11.2.0/bits/cpp_type_traits.h:
 
 C:/msys64/mingw64/include/c++/11.2.0/bits/cxxabi_forced.h:
@@ -323,6 +322,10 @@ C:/msys64/mingw64/include/c++/11.2.0/bits/parse_numbers.h:
 C:/msys64/mingw64/include/c++/11.2.0/bits/predefined_ops.h:
 
 C:/msys64/mingw64/include/c++/11.2.0/bits/sstream.tcc:
+
+C:/msys64/mingw64/include/c++/11.2.0/iomanip:
+
+C:/msys64/mingw64/include/c++/11.2.0/bits/std_abs.h:
 
 C:/msys64/mingw64/include/c++/11.2.0/bits/stl_algobase.h:
 

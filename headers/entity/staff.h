@@ -13,6 +13,7 @@ class Staff : public User
     public:
         //Constructors
         Staff();
+        Staff(const User&);
         Staff(std::string login, std::string pass, std::string last, std::string first, unsigned int dob, unsigned char gender, unsigned int idnumber, short clearance, std::string jobtitle, unsigned int doh);
 
         // Setters

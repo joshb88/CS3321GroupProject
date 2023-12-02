@@ -4,6 +4,7 @@
 CMakeFiles/hospital_management.dir/main.cpp.obj
  C:/Users/Josh/Desktop/CS3321GroupProject/main.cpp
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/MainMenu.h
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/StaffUI.h
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/patientUI.h
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/loginVerification.h
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/storedata.h

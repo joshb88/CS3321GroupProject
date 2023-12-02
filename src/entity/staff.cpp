@@ -9,6 +9,11 @@ Staff::Staff() : User()
     job_title = "";
     date_of_hire = 19000101;
 }
+Staff::Staff(const User& user)
+    : User(user), id_number(0), clearance_level(entry), job_title(""), date_of_hire(19010101)
+{
+
+}
 
 // Staff Class Parameterized Constructor
 Staff::Staff(std::string login, std::string pass, std::string last, std::string first, unsigned int dob, unsigned char gender, unsigned int idnumber, short clearance, std::string jobtitle, unsigned int doh)
