@@ -7,15 +7,16 @@ Patient::Patient() : User()
 {
     has_insurance = false;
     insurance_provider = "N/A";
+    has_room = false;
     room = nullptr;
 }
 Patient::Patient(const User& user)
-    : User(user), has_insurance(false), insurance_provider("N/A"), room(nullptr)
+    : User(user), has_insurance(false), insurance_provider("N/A"), has_room(false), room(nullptr)
 {
 
 }
 // Patient Class Parameterized Constructor
-Patient::Patient(std::string name, std::string pass, std::string last, std::string first, unsigned int dob, unsigned char gender, bool insurance, std::string provider, Room* roomptr)
+Patient::Patient(std::string name, std::string pass, std::string last, std::string first, unsigned int dob, unsigned char gender, bool insurance, std::string provider, bool has_room, Room* roomptr)
 {
     user_login = name;
     user_password = pass;
@@ -25,6 +26,7 @@ Patient::Patient(std::string name, std::string pass, std::string last, std::stri
     this->gender = gender;
     has_insurance = insurance;
     insurance_provider = provider;
+    this->has_room = has_room;
     room = roomptr;
 }
 
@@ -36,6 +38,10 @@ void Patient::setHasInsurance(bool ins)
 void Patient::setInsuranceProvider(std::string prov)
 {
     insurance_provider = prov;
+}
+void Patient::setHasRoom(bool room)
+{
+    has_room = room;
 }
 void Patient::setRoom(Room& room)
 {
@@ -50,6 +56,10 @@ bool Patient::getHasInsurance() const
 std::string Patient::getInsuranceProvider() const
 {
     return insurance_provider;
+}
+bool Patient::getHasRoom() const
+{
+    return has_room;
 }
 Room* Patient::getRoom()
 {

@@ -16,7 +16,7 @@ public:
     static bool userInDatabase(User& user);
     static bool userInDatabase(const std::string& user_name);
     static void addUserToFile(User& user);
-    User getUserFromFile(std::string);
+    static User getUserFromFile(const std::string& user_name);
     void modifyUserFromFile (User);
 
     // Inventory stuff

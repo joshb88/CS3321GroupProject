@@ -104,8 +104,11 @@ void dataManipulation::addUserToFile(User& user)
                     user_file << "," << patientPtr->getInsuranceProvider();
                 }
 
+                user_file << "," << 
+                patientPtr->getHasRoom();
+
                 // check that room as been assigned or fatal error
-                if (patientPtr->getRoom() != nullptr)
+                if (patientPtr->getHasRoom())
                 {
                     user_file << "," <<
                     patientPtr->getRoom()->getRoomAvailability() << "," <<
@@ -131,6 +134,90 @@ void dataManipulation::addUserToFile(User& user)
     }
 }
 
+User dataManipulation::getUserFromFile(const std::string& username) 
+{
+    std::fstream file;
+    file.open("./database/users.txt", std::ios::in);
+    
+    std::string line, token;
+    std::cout << "GETTING STARTED";
+
+    while (std::getline(file, line, '\n'))
+    {
+        std::string account_type;
+        std::istringstream iss(line);
+        
+        std::getline(iss, account_type, ','); // store first token as account_type
+
+        std::getline(iss, token, ','); // store second token as token
+
+        if (token == username) 
+        {
+            if (account_type == "1") // Assuming account_type 1 corresponds to "patient"
+            {
+                Patient read_patient;
+
+                read_patient.setUserLogin(username);
+
+                std::string password;
+                std::getline(iss, password, ',');
+                read_patient.setUserPassword(password);
+
+                std::string lastName;
+                std::getline(iss, lastName, ',');
+                read_patient.setLastName(lastName);
+
+                std::string firstName;
+                std::getline(iss, firstName, ',');
+                read_patient.setFirstName(firstName);
+
+                std::string birthdayStr;
+                std::getline(iss, birthdayStr, ',');
+                read_patient.setDateOfBirth(std::stoi(birthdayStr));
+
+                std::string genderStr;
+                std::getline(iss, genderStr, ',');
+                read_patient.setGender(genderStr[0]);
+
+                std::string hasInsuranceStr;
+                std::getline(iss, hasInsuranceStr, ",");
+                bool hasInsurance = (hasInsuranceStr == "1")
+                read_patient.setHasInsurance(hasInsurance);
+
+                if (read_patient.getHasInsurance())
+                {
+                    std::string provider;
+                    std::getline(iss, provider, ',');
+                    read_patient.setInsuranceProvider(provider);
+                }
+
+                std::string hasRoomStr;
+                std::getline(iss, hasRoomStr, ",");
+                read_patient.setHasRoom(hasInsuranceStr == "1");
+
+                if (read_patient.getHasRoom())
+                {
+                    std::string roomAvailStr;
+                    std::getline(iss, roomAvailStr, ',');
+                    read_patient.setRoom()->getRoomAvailability(roomAvailStr == "1");
+
+                    std::string roomFloorStr;
+                    std::getline(iss, roomFloorStr, ',');
+                    read_patient.setRoom()->setRoomFloorNumber(std::stoi(roomFloorStr));
+
+                    std::string roomNumberStr;
+                    std::getline(iss, roomNumberStr, ',');
+                    read_patient.setRoom()->setRoomNumber(std::stoi(roomNumberStr));
+                }
+
+                return read_patient;
+            }
+        }
+    }
+
+    file.close(); // Close the file before returning a default-constructed User object
+    return User();
+}
 
 
 

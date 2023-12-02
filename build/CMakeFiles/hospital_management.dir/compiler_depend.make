@@ -6,6 +6,7 @@ CMakeFiles/hospital_management.dir/main.cpp.obj: C:/Users/Josh/Desktop/CS3321Gro
   C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/StaffUI.h \
   C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/patientUI.h \
   C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/loginVerification.h \
+  C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/dataManipulation.h \
   C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/inventory.h \
   C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/patient.h \
   C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/procedure.h \
@@ -198,6 +199,10 @@ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/patientUI.h:
 
 C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/loginVerification.h:
 
+C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/dataManipulation.h:
+
+C:/msys64/mingw64/include/c++/11.2.0/bits/basic_ios.h:
+
 C:/msys64/mingw64/include/c++/11.2.0/bits/ios_base.h:
 
 C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/inventory.h:
@@ -270,8 +275,6 @@ C:/msys64/mingw64/include/c++/11.2.0/bits/exception.h:
 
 C:/msys64/mingw64/include/c++/11.2.0/bits/allocator.h:
 
-C:/msys64/mingw64/include/c++/11.2.0/bits/basic_ios.h:
-
 C:/msys64/mingw64/include/c++/11.2.0/bits/basic_ios.tcc:
 
 C:/msys64/mingw64/include/c++/11.2.0/string_view:
@@ -289,10 +292,6 @@ C:/msys64/mingw64/include/c++/11.2.0/bits/codecvt.h:
 C:/msys64/mingw64/include/c++/11.2.0/bits/locale_classes.tcc:
 
 C:/msys64/mingw64/include/c++/11.2.0/bits/concept_check.h:
-
-C:/msys64/mingw64/include/c++/11.2.0/iomanip:
-
-C:/msys64/mingw64/include/c++/11.2.0/bits/std_abs.h:
 
 C:/msys64/mingw64/include/c++/11.2.0/bits/cpp_type_traits.h:
 
@@ -323,6 +322,10 @@ C:/msys64/mingw64/include/c++/11.2.0/bits/parse_numbers.h:
 C:/msys64/mingw64/include/c++/11.2.0/bits/predefined_ops.h:
 
 C:/msys64/mingw64/include/c++/11.2.0/bits/sstream.tcc:
+
+C:/msys64/mingw64/include/c++/11.2.0/iomanip:
+
+C:/msys64/mingw64/include/c++/11.2.0/bits/std_abs.h:
 
 C:/msys64/mingw64/include/c++/11.2.0/bits/stl_algobase.h:
 

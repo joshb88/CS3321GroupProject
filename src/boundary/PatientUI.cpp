@@ -59,6 +59,8 @@ Patient PatientUI::accountCreation()
     }
     new_patient.setInsuranceProvider(provider);
 
+    new_patient.setHasRoom(false); // Rooms will be assigned differently
+
     return new_patient;
 }
 
@@ -119,6 +121,8 @@ Patient PatientUI::accountCreation(std::string entered_username)
     // new_patient.getGender() << std::endl <<
     // new_patient.getHasInsurance() << std::endl <<
     // new_patient.getInsuranceProvider() << std::endl;
+
+    new_patient.setHasRoom(false); // Rooms will be assigned differently
 
     return new_patient;
 }
