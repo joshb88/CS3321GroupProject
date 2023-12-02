@@ -8,10 +8,11 @@
 #include <ctime>
 #include <thread>
 #include <cstdlib>
-#include "entity/staff.h"
-#include "entity/patient.h"
-#include "boundary/MainMenu.h"
+// #include "entity/staff.h"
+// #include "entity/patient.h"
+#include "boundary/StaffUI.h"
 #include "boundary/PatientUI.h"
+#include "boundary/MainMenu.h"
 #include "control/LoginVerification.h"
 
 const std::string MainMenu::SECTION_BREAK = "==================================================\n";
@@ -32,7 +33,7 @@ void MainMenu::header()
 
 void MainMenu::clearScreen() 
 {
-    //std::this_thread::sleep_for(std::chrono::seconds(1));
+    std::this_thread::sleep_for(std::chrono::seconds(1));
     for (int i = 0; i < 40; ++i) { std::cout << std::endl; }
 }
 void MainMenu::StartMenu()
@@ -113,22 +114,28 @@ void MainMenu::loginMenu()
     // User not found, offer to make a new account.
     else 
     {
-        unsigned char make_account;
-        std::cout << 
-        "User Not Found." << std::endl <<
-        "Would you like to create a new account with this?" << std::endl << std::endl <<
-        "Type y for yes." << std::endl <<
-        "Type n for try again." << std::endl << std::endl <<
-        SECTION_BREAK;
-        
-        std::cin >> make_account;
-
-        switch (tolower(make_account))
+        short make_account;
+        do
         {
-        case 'y':
+            std::cout << 
+            "User Not Found." << std::endl <<
+            "Would you like to create a new account with this?" << std::endl << std::endl <<
+            "1.\tYes." << std::endl <<
+            "2.\tTry again." << std::endl <<
+            SECTION_BREAK;
+            std::cin >> make_account;
+            if (std::cin.fail()) { std::cin.clear(); std::cin.ignore(INT_MAX, '\n'); }
+        } 
+        while (!(make_account == 1 || make_account == 2));
+        
+        
+
+        switch (make_account)
+        {
+        case 1:
             MainMenu::accountCreateMenu(login_input);
             break;
-        case 'n':
+        case 2:
             loginMenu();
             break;
         default:
@@ -174,7 +181,8 @@ void MainMenu::accountCreateMenu()
         break;
     case 2:
         // Staff class used
-        std::cout << "Staff class to be used" << std::endl;
+        StaffUI::accountCreation();
+
         break;
     case 9:
         loginMenu();
@@ -221,7 +229,7 @@ void MainMenu::accountCreateMenu(std::string entered_username)
         break;
     case 2:
         // Staff class used
-        std::cout << "Staff class to be used" << std::endl;
+        StaffUI::accountCreation(entered_username);
         break;
     case 9:
         loginMenu();
@@ -234,12 +242,12 @@ void MainMenu::accountCreateMenu(std::string entered_username)
         break;
     } 
 }
-User MainMenu::genericUserCreation()
+User MainMenu::genericUserCreation(short user_type)
 {
     std::string desired_user_login, password, confirmation_password, first_name, last_name;
     unsigned int date_of_birth;
     unsigned char gender;
-    short user_choice;
+    short user_choice, patient_or_staff = user_type;
     std::tm timeStruct = {};
 
     clearScreen();
@@ -277,17 +285,8 @@ User MainMenu::genericUserCreation()
         }
 
         if (user_choice == 0) { StartMenu(); } // start menu
-        else if(user_choice == 1) { PatientUI::accountCreation(); std::exit(EXIT_SUCCESS); } // retry
-        //else if(user_choice == 2) { MainMenu::loginMenu(desired_user_login); return; } // login with username
-        
-        // else // wrong entry
-        // { 
-        //     std::cout << 
-        //     "Invalid Choice" << std::endl <<
-        //     "1.\tEnter a different username" << std::endl <<
-        //     "0.\tMain Menu" << std::endl <<
-        //     SECTION_BREAK;
-        // }
+        else if(user_choice == 1 && patient_or_staff == 1) { PatientUI::accountCreation(); std::exit(EXIT_SUCCESS); } // retry as patient
+        else if(user_choice == 1 && patient_or_staff == 2) { StaffUI::accountCreation(); std::exit(EXIT_SUCCESS); } // retry as staff
     };
 
     do // password confirmation

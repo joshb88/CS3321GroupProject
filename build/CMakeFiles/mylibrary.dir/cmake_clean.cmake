@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.obj.d"
   "CMakeFiles/mylibrary.dir/src/boundary/PatientUI.cpp.obj"
   "CMakeFiles/mylibrary.dir/src/boundary/PatientUI.cpp.obj.d"
+  "CMakeFiles/mylibrary.dir/src/boundary/StaffUI.cpp.obj"
+  "CMakeFiles/mylibrary.dir/src/boundary/StaffUI.cpp.obj.d"
   "CMakeFiles/mylibrary.dir/src/boundary/inventoryOrders.cpp.obj"
   "CMakeFiles/mylibrary.dir/src/boundary/inventoryOrders.cpp.obj.d"
   "CMakeFiles/mylibrary.dir/src/boundary/inventoryUI.cpp.obj"

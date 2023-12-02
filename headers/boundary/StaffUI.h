@@ -1,10 +1,10 @@
 #pragma once
-#include "entity/patient.h"
-
+#include "entity/staff.h"
+#include "boundary/MainMenu.h"
 
 class StaffUI : public MainMenu
 {
     public:
-        static StaffUI accountCreation();
-        static StaffUI accountCreation(std::string entered_username);
+        static Staff accountCreation();
+        static Staff accountCreation(std::string entered_username);
 };
