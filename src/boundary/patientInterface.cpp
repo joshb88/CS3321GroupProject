@@ -20,20 +20,21 @@ void PatientInterface::displayMainMenu() {
 
         switch (choice) {
             case 1:
-                std::cout << "viewAppointments() ran\n";
+                std::cout << "1. viewAppointments() ran\n";
                 viewAppointments();
                 break;
             case 2:
-                std::cout << "updateProfile() ran\n";
+                std::cout << "2. updateProfile() ran\n";
                 break;
             case 3:
-                std::cout << "viewMedicalRecords() ran\n";
+                std::cout << "3. view patient profile\n";
+
                 break;
             case 4:
-                std::cout << "payBills() ran\n";
+                std::cout << "4. view bill\n";
                 break;
             case 5:
-                std::cout << "Logging out...\n";
+                std::cout << "5. Logging out...\n";
                 isRunning = false;
                 break;
             default:
@@ -42,38 +43,6 @@ void PatientInterface::displayMainMenu() {
     }
 }
 
-void PatientInterface::viewAppointments() {
-    std::ifstream file("./database/schedules.csv");
-    std::string line;
-    std::vector<std::string> patientAppointments;
-
-    if (file.is_open()) {
-        while (std::getline(file, line)) {
-            std::istringstream iss(line);
-            std::string room, dateTime, patientName, procedure;
-            getline(iss, room, '-');
-            getline(iss, dateTime, '-');
-            getline(iss, patientName, '-');
-            getline(iss, procedure);
-
-            if (this->patientName == patientName) {
-                patientAppointments.push_back(dateTime + " - " + procedure);
-            }
-        }
-        file.close();
-
-        std::cout << "Your Appointments:\n";
-        if (patientAppointments.empty()) {
-            std::cout << "No scheduled appointments.\n";
-        } else {
-            for (const auto& appointment : patientAppointments) {
-                std::cout << "- " << appointment << "\n";
-            }
-        }
-    } else {
-        std::cout << "Error: Unable to open the schedules file.\n";
-    }
-}
 
 // void PatientInterface::updateProfile() {
 //     std::cout << "Updating profile...\n";
