@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <climits>
 #include "entity/user.h"
 
 class MainMenu

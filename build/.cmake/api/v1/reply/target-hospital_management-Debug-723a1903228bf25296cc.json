@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "C:/Users/Josh/Desktop/CS3321GroupProject/output/hospital_management.exe"
+			"path" : "C:/Users/Adrian/12-3Hosp/CS3321GroupProject/output/hospital_management.exe"
 		},
 		{
-			"path" : "C:/Users/Josh/Desktop/CS3321GroupProject/output/hospital_management.pdb"
+			"path" : "C:/Users/Adrian/12-3Hosp/CS3321GroupProject/output/hospital_management.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -45,14 +45,17 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++17"
+					"fragment" : "-g"
+				},
+				{
+					"fragment" : "-std=gnu++17"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 2,
-					"path" : "C:/Users/Josh/Desktop/CS3321GroupProject/headers"
+					"path" : "C:/Users/Adrian/12-3Hosp/CS3321GroupProject/headers"
 				}
 			],
 			"language" : "CXX",
@@ -149,7 +152,9 @@
 				25,
 				26,
 				27,
-				28
+				28,
+				29,
+				30
 			]
 		}
 	],
@@ -213,6 +218,11 @@
 		},
 		{
 			"backtrace" : 2,
+			"path" : "headers/boundary/viewPatientProfile.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
 			"path" : "headers/boundary/viewRoomAvailabilityReport.h",
 			"sourceGroupIndex" : 1
 		},
@@ -249,6 +259,11 @@
 		{
 			"backtrace" : 2,
 			"path" : "headers/control/generateBill.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "headers/control/generatePatientProfile.h",
 			"sourceGroupIndex" : 1
 		},
 		{
