@@ -1,4 +1,4 @@
-#include "PatientScheduling.h"
+#include "boundary/patientScheduling.h"
 #include <iostream>
 
 PatientScheduling::PatientScheduling() {
@@ -13,7 +13,10 @@ void PatientScheduling::checkInPatient(const std::string& patientID) {
     std::string roomReport = roomReportGenerator.generateRoomReport(roomMap);
 
 
-    int roomNumberToBook = -1; // Placeholder for room number logic
+    int roomNumberToBook = -1;
+    std::cout << "Enter room # to book"; // Placeholder for room number logic
+    std::cin >> roomNumberToBook;
+
     for (const auto& roomPair : roomMap) {
         if (roomPair.second->getRoomAvailability()) {
             roomNumberToBook = roomPair.first;
