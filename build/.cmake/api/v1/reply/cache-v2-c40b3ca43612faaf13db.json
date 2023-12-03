@@ -158,11 +158,7 @@
 					"value" : "No help, variable specified on the command line."
 				}
 			],
-<<<<<<< HEAD:build/.cmake/api/v1/reply/cache-v2-c40b3ca43612faaf13db.json
 			"type" : "FILEPATH",
-=======
-			"type" : "STRING",
->>>>>>> cb81b8c7174041f3d61f24fba6f041a4d95969b1:build/.cmake/api/v1/reply/cache-v2-365f15ac501d1b767309.json
 			"value" : "C:/MinGW/bin/g++.exe"
 		},
 		{
@@ -306,11 +302,7 @@
 					"value" : "No help, variable specified on the command line."
 				}
 			],
-<<<<<<< HEAD:build/.cmake/api/v1/reply/cache-v2-c40b3ca43612faaf13db.json
 			"type" : "FILEPATH",
-=======
-			"type" : "STRING",
->>>>>>> cb81b8c7174041f3d61f24fba6f041a4d95969b1:build/.cmake/api/v1/reply/cache-v2-365f15ac501d1b767309.json
 			"value" : "C:/MinGW/bin/gcc.exe"
 		},
 		{
