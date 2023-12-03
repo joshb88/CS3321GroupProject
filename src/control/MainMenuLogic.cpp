@@ -453,16 +453,16 @@ bool DatabaseManagement::userInDatabase(const std::string& user_login)
     return false;
 }
 
-void DatabaseManagement::addUserToFile(User& user) 
+void DatabaseManagement::addUserToFile(std::unique_ptr<User>&& user) 
 {
    
     std::fstream user_file;
     user_file.open("./database/users.txt", std::ios::out | std::ios::app);
-    if (!userInDatabase(user)) {
+    if (!userInDatabase(user->getUserLogin())) {
         if (user_file.is_open()) {
             
-            Patient* patientPtr = dynamic_cast<Patient*>(&user);
-            Staff* staffPtr = dynamic_cast<Staff*>(&user);
+            Patient* patientPtr = dynamic_cast<Patient*>(user.get());
+            Staff* staffPtr = dynamic_cast<Staff*>(user.get());
             if (patientPtr) // signify the stored user as a patient
             {
                 user_file << 1 << ",";
@@ -479,12 +479,12 @@ void DatabaseManagement::addUserToFile(User& user)
             
             // Write common user data
             user_file << 
-                user.getUserLogin() << "," << 
-                user.getUserPassword() << "," << 
-                user.getLastName() << "," << 
-                user.getFirstName() << "," <<
-                user.getDateOfBirth() << "," <<
-                user.getGender();
+                user->getUserLogin() << "," << 
+                user->getUserPassword() << "," << 
+                user->getLastName() << "," << 
+                user->getFirstName() << "," <<
+                user->getDateOfBirth() << "," <<
+                user->getGender();
 
             // Check if the user is a Patient and append additional data
             if (patientPtr) 
