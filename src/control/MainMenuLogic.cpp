@@ -26,10 +26,38 @@ std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_
     short user_choice;
     std::tm timeStruct = {};
 
+    std::string header_content = "Account Creation Menu";
+
+    while (DatabaseManagement::userInDatabase(entered_username)) // If username given is found, fix.
+    {
+        MainMenu::clearScreen();
+        MainMenu::header(header_content);
+        std::cout <<
+        "Username '" << entered_username << "' already exists." << std::endl <<
+        "1.\tEnter a different username" << std::endl <<
+        "2.\tLogin with '" << entered_username << "'." << std::endl <<
+        "0.\tMain Menu" << std::endl << 
+        MainMenu::SECTION_BREAK;
+
+        std::cin >> user_choice;
+        if (std::cin.fail()) // if not given an appropriate input
+        {
+            std::cin.clear();                // Clear the error state
+            std::cin.ignore(INT_MAX, '\n');  // Discard invalid input
+            MainMenu::clearScreen();
+            AccountCreation::getUsername();
+            std::cout << MainMenu::SECTION_BREAK;
+            continue;                          // Ensure the function exits after recursion
+        }
+        if (user_choice == 1) { MainMenu::accountCreateMenu(AccountCreation::getUsername()); continue; } // Retry
+        else if(user_choice == 2) { MainMenu::loginMenu(entered_username); std::exit(EXIT_SUCCESS); } //Login with name
+        else if (user_choice == 0) { MainMenu::StartMenu(); std::exit(EXIT_SUCCESS); } // Start over
+    }
+
     do // password confirmation
     {
         MainMenu::clearScreen();
-        MainMenu::header();
+        MainMenu::header(header_content);
         std::cout <<
         "Enter a password:\t";
         std::cin >> password;
@@ -49,7 +77,7 @@ std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_
 
     // Name
     MainMenu::clearScreen();
-    MainMenu::header(); 
+    MainMenu::header(header_content); 
     std::cout <<
     "Enter your first name:\t";
     std::cin >> first_name;
@@ -62,7 +90,7 @@ std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_
     do // date of birth
     {
         MainMenu::clearScreen();
-        MainMenu::header();
+        MainMenu::header(header_content);
         std::cout << "Enter your date of birth (YYYYMMDD): ";
         std::cin >> std::get_time(&timeStruct, "%Y%m%d");
 
@@ -98,7 +126,7 @@ std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_
     do // Gender
     {
         MainMenu::clearScreen();
-        MainMenu::header();
+        MainMenu::header(header_content);
         std::cout <<
         "Enter your Sex." << std::endl <<
         "Enter either:\nM for male\nF for female\nX to not answer" << std::endl <<
@@ -128,7 +156,7 @@ std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_
         do // Insurance or OOP
         {
             MainMenu::clearScreen();
-            MainMenu::header();
+            MainMenu::header(header_content);
             std::cout << 
             "Do you have any insurance?" << std::endl <<
             "1.\tYes" << std::endl <<
@@ -153,7 +181,7 @@ std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_
             do
             {
                 MainMenu::clearScreen();
-                MainMenu::header();
+                MainMenu::header(header_content);
                 std::cout << 
                 "Write your insurance provider:" << std::endl <<
                 MainMenu::SECTION_BREAK;
@@ -192,7 +220,7 @@ std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_
         do // ID number
         {
             MainMenu::clearScreen();
-            MainMenu::header();
+            MainMenu::header(header_content);
             std::cout << "Assign an ID number." << std::endl << MainMenu::SECTION_BREAK;
             std::cin >> idnumber;
 
@@ -211,7 +239,7 @@ std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_
     do // Clearance level
         {
             MainMenu::clearScreen();
-            MainMenu::header();
+            MainMenu::header(header_content);
             std::cout << 
             "Enter a clearance level" << std::endl <<
             "1.\tJanitorial" << std::endl <<
@@ -235,7 +263,7 @@ std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_
         do //Job title
         {
             MainMenu::clearScreen();
-            MainMenu::header();
+            MainMenu::header(header_content);
             std::cout << 
             "Enter job title:" << std::endl <<
             MainMenu::SECTION_BREAK;
@@ -250,7 +278,7 @@ std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_
         do // hire date
         {
             MainMenu::clearScreen();
-            MainMenu::header();
+            MainMenu::header(header_content);
             std::cout << "Enter your hire date (YYYYMMDD): ";
             std::cin >> std::get_time(&timeStruct, "%Y%m%d");
 
@@ -299,41 +327,17 @@ std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_
 std::string AccountCreation::getUsername()
 {
     short user_choice;
-    std::string entered_login;
+    std::string entered_username;
+    //std::string header_content = "Account Creation Menu";
+
     MainMenu::clearScreen();
     MainMenu::header(); 
     std::cout <<
     "Enter a username:\t";
-    std::cin >> entered_login;
+    std::cin >> entered_username;
     std::cout << MainMenu::SECTION_BREAK;
 
-    
-    while (DatabaseManagement::userInDatabase(entered_login)) // If username given is found, fix.
-    {
-        MainMenu::clearScreen();
-        MainMenu::header();
-        std::cout <<
-        "Username '" << entered_login << "' already exists." << std::endl <<
-        "1.\tEnter a different username" << std::endl <<
-        "2.\tLogin with '" << entered_login << "'." << std::endl <<
-        "0.\tMain Menu" << std::endl << 
-        MainMenu::SECTION_BREAK;
-
-        std::cin >> user_choice;
-        if (std::cin.fail()) // if not given an appropriate input
-        {
-            std::cin.clear();                // Clear the error state
-            std::cin.ignore(INT_MAX, '\n');  // Discard invalid input
-            MainMenu::clearScreen();
-            AccountCreation::getUsername();
-            std::cout << MainMenu::SECTION_BREAK;
-            continue;                          // Ensure the function exits after recursion
-        }
-        if (user_choice == 1) { AccountCreation::getUsername(); continue; } // Retrty
-        else if(user_choice == 2) { MainMenu::loginMenu(entered_login); std::exit(EXIT_SUCCESS); } //Login with name
-        else if (user_choice == 0) { MainMenu::StartMenu(); std::exit(EXIT_SUCCESS); } // Start over
-    }
-    return entered_login;
+    return entered_username;
 }
 //******************************************************************************************************************
 //                                          LOGIN VERIFICATION
@@ -393,11 +397,6 @@ bool LoginVerification::checkPassword(const std::string& user_login, const std::
     return false;
 }
 
-//******************************************************************************************************************
-//                                          LOGIN VERIFICATION
-//******************************************************************************************************************
-
-
 bool DatabaseManagement::userInDatabase(User& user) 
 {
     std::fstream user_file;
@@ -412,8 +411,8 @@ bool DatabaseManagement::userInDatabase(User& user)
             std::string token;
 
             while (std::getline(iss, token, ',')) {
-                if (token == userToCheck) {
-                    std::cout << userToCheck << " already exists in database." << std::endl;
+                if (token == userToCheck) 
+                {
                     user_file.close();
                     return true;
                 }
@@ -518,6 +517,9 @@ void DatabaseManagement::addUserToFile(User& user)
         }
     }
 }
+
+
+
 
 std::unique_ptr<User> DatabaseManagement::getUserFromFile(const std::string& username) 
 {

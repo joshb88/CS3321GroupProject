@@ -1,7 +1,5 @@
 CMakeFiles/mylibrary.dir/src/boundary/staffInterface.cpp.obj: \
  C:\Users\Josh\Desktop\CS3321GroupProject\src\boundary\staffInterface.cpp \
- C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/staffInterface.h \
- C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/userInterface.h \
  C:/msys64/mingw64/include/c++/11.2.0/iostream \
  C:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/os_defines.h \
@@ -140,4 +138,32 @@ CMakeFiles/mylibrary.dir/src/boundary/staffInterface.cpp.obj: \
  C:/msys64/mingw64/include/c++/11.2.0/bits/stl_uninitialized.h \
  C:/msys64/mingw64/include/c++/11.2.0/bits/stl_vector.h \
  C:/msys64/mingw64/include/c++/11.2.0/bits/stl_bvector.h \
- C:/msys64/mingw64/include/c++/11.2.0/bits/vector.tcc
+ C:/msys64/mingw64/include/c++/11.2.0/bits/vector.tcc \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/staffInterface.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/userInterface.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/MainMenu.h \
+ C:/msys64/mingw64/include/c++/11.2.0/memory \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/stl_tempbuf.h \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/stl_raw_storage_iter.h \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/align.h \
+ C:/msys64/mingw64/include/c++/11.2.0/bit \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/uses_allocator.h \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/unique_ptr.h \
+ C:/msys64/mingw64/include/c++/11.2.0/utility \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/stl_relops.h \
+ C:/msys64/mingw64/include/c++/11.2.0/tuple \
+ C:/msys64/mingw64/include/c++/11.2.0/array \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/invoke.h \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/shared_ptr.h \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/shared_ptr_base.h \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/allocated_ptr.h \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/refwrap.h \
+ C:/msys64/mingw64/include/c++/11.2.0/ext/aligned_buffer.h \
+ C:/msys64/mingw64/include/c++/11.2.0/ext/concurrence.h \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/shared_ptr_atomic.h \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/atomic_base.h \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/atomic_lockfree_defines.h \
+ C:/msys64/mingw64/include/c++/11.2.0/backward/auto_ptr.h \
+ C:/msys64/mingw64/include/c++/11.2.0/pstl/glue_memory_defs.h \
+ C:/msys64/mingw64/include/c++/11.2.0/pstl/execution_defs.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/user.h

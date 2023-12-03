@@ -19,13 +19,23 @@ const std::string MainMenu::SECTION_BREAK = "===================================
 //     std::this_thread::sleep_for(std::chrono::seconds(second_delay));
 // }
 
-void MainMenu::header()
+void MainMenu::header(std::string header_content)
 {
+    int center = MainMenu::SECTION_BREAK.length() / 2 + header_content.length() / 2;
     std::cout << 
-    SECTION_BREAK << std::setw(40) << std::right << 
-    "UHD Hospital Management System" << std::endl <<
-    SECTION_BREAK;
-}
+    MainMenu::SECTION_BREAK << std::setw(center) << std::right <<
+    header_content << std::endl << 
+    MainMenu::SECTION_BREAK;
+};
+void MainMenu::header()
+{   
+    std::string header_content = "UHD Hospital Management System";
+    int center = MainMenu::SECTION_BREAK.length() / 2 + header_content.length() / 2;
+    std::cout << 
+    MainMenu::SECTION_BREAK << std::setw(center) << std::right <<
+    header_content << std::endl << 
+    MainMenu::SECTION_BREAK;
+};
 void MainMenu::clearScreen() 
 {
     //std::this_thread::sleep_for(std::chrono::seconds(1));
@@ -33,10 +43,11 @@ void MainMenu::clearScreen()
 }
 void MainMenu::StartMenu()
 {
-    clearScreen();
     short user_choice;
+    std::string header_content = "UHD Hospital Management System";
 
-    header();
+    clearScreen();
+    MainMenu::header(header_content);
 
     std::cout << std::left << std::setw(38) <<
     "Please, select an option." << std::endl;
@@ -63,7 +74,7 @@ void MainMenu::StartMenu()
     case 1:
         // Sign up
         std::cout << "You've opted to create an account." << std::endl;
-        MainMenu::accountCreateMenu(AccountCreation::getUsername());
+        MainMenu::accountCreateMenu("");
         break;
     case 2:
         // Login
@@ -79,29 +90,32 @@ void MainMenu::StartMenu()
         StartMenu();
     }
 }
-void MainMenu::loginMenu(std::string entered_username)
+std::unique_ptr<User> MainMenu::loginMenu(std::string entered_username)
 {
     std::string password_input;
+    std::string header_content = "Login Menu";
     std::unique_ptr<User> user_logged_in;
 
-    clearScreen();
-    header();
 
     if (DatabaseManagement::userInDatabase(entered_username)) 
     {
-        do
+        for(short login_attempts = 0; login_attempts < 3; login_attempts++)
         {
+            clearScreen();
+            MainMenu::header(header_content);
             std::cout << std::left << std::setw(35) <<
             "Enter User Password:";
             std::cin >> password_input;
-        } 
-        while (!LoginVerification::checkPassword(entered_username, password_input));
-        std::cout << SECTION_BREAK << std::endl;
-
-
-        std::cout << "LOGIN PASSED" << std::endl;
-        user_logged_in = DatabaseManagement::getUserFromFile(entered_username);
-        return;
+            std::cout << SECTION_BREAK;
+            if(LoginVerification::checkPassword(entered_username, password_input)) 
+            {
+                std::cout << "LOGIN PASSED" << std::endl;
+                user_logged_in = DatabaseManagement::getUserFromFile(entered_username);
+                return user_logged_in;
+            }
+        }
+        std::cout << "Too many attempts; Going to Main Menu."; 
+        MainMenu::StartMenu();
     }
     // User not found, offer to make a new account.
     else 
@@ -131,17 +145,19 @@ void MainMenu::loginMenu(std::string entered_username)
             MainMenu::loginMenu(AccountCreation::getUsername());
             break;
         default:
-            StartMenu();
+            MainMenu::StartMenu();
             break;
         }
     }
+    return nullptr;
 }
 void MainMenu::accountCreateMenu(std::string entered_username)
 {
     short user_type;
+    std::string header_content = "Account Creation Menu";
 
-    clearScreen();
-    header();
+    MainMenu::clearScreen();
+    MainMenu::header(header_content);
 
     std::cout <<
     "Select your account type." << std::endl <<
@@ -152,6 +168,8 @@ void MainMenu::accountCreateMenu(std::string entered_username)
     SECTION_BREAK;
     
     std::cin >> user_type;
+
+    if (entered_username.empty()) { entered_username = AccountCreation::getUsername(); }
 
     if (std::cin.fail()) 
     {
