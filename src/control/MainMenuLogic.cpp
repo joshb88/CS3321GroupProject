@@ -26,10 +26,12 @@ std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_
     short user_choice;
     std::tm timeStruct = {};
 
+    std::string header_content = "Account Creation Menu";
+
     do // password confirmation
     {
         MainMenu::clearScreen();
-        MainMenu::header();
+        MainMenu::header(header_content);
         std::cout <<
         "Enter a password:\t";
         std::cin >> password;
@@ -49,7 +51,7 @@ std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_
 
     // Name
     MainMenu::clearScreen();
-    MainMenu::header(); 
+    MainMenu::header(header_content); 
     std::cout <<
     "Enter your first name:\t";
     std::cin >> first_name;
@@ -62,7 +64,7 @@ std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_
     do // date of birth
     {
         MainMenu::clearScreen();
-        MainMenu::header();
+        MainMenu::header(header_content);
         std::cout << "Enter your date of birth (YYYYMMDD): ";
         std::cin >> std::get_time(&timeStruct, "%Y%m%d");
 
@@ -98,7 +100,7 @@ std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_
     do // Gender
     {
         MainMenu::clearScreen();
-        MainMenu::header();
+        MainMenu::header(header_content);
         std::cout <<
         "Enter your Sex." << std::endl <<
         "Enter either:\nM for male\nF for female\nX to not answer" << std::endl <<
@@ -128,7 +130,7 @@ std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_
         do // Insurance or OOP
         {
             MainMenu::clearScreen();
-            MainMenu::header();
+            MainMenu::header(header_content);
             std::cout << 
             "Do you have any insurance?" << std::endl <<
             "1.\tYes" << std::endl <<
@@ -153,7 +155,7 @@ std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_
             do
             {
                 MainMenu::clearScreen();
-                MainMenu::header();
+                MainMenu::header(header_content);
                 std::cout << 
                 "Write your insurance provider:" << std::endl <<
                 MainMenu::SECTION_BREAK;
@@ -192,7 +194,7 @@ std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_
         do // ID number
         {
             MainMenu::clearScreen();
-            MainMenu::header();
+            MainMenu::header(header_content);
             std::cout << "Assign an ID number." << std::endl << MainMenu::SECTION_BREAK;
             std::cin >> idnumber;
 
@@ -211,7 +213,7 @@ std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_
     do // Clearance level
         {
             MainMenu::clearScreen();
-            MainMenu::header();
+            MainMenu::header(header_content);
             std::cout << 
             "Enter a clearance level" << std::endl <<
             "1.\tJanitorial" << std::endl <<
@@ -235,7 +237,7 @@ std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_
         do //Job title
         {
             MainMenu::clearScreen();
-            MainMenu::header();
+            MainMenu::header(header_content);
             std::cout << 
             "Enter job title:" << std::endl <<
             MainMenu::SECTION_BREAK;
@@ -250,7 +252,7 @@ std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_
         do // hire date
         {
             MainMenu::clearScreen();
-            MainMenu::header();
+            MainMenu::header(header_content);
             std::cout << "Enter your hire date (YYYYMMDD): ";
             std::cin >> std::get_time(&timeStruct, "%Y%m%d");
 
@@ -300,8 +302,10 @@ std::string AccountCreation::getUsername()
 {
     short user_choice;
     std::string entered_login;
+    std::string header_content = "Account Creation Menu";
+
     MainMenu::clearScreen();
-    MainMenu::header(); 
+    MainMenu::header(header_content); 
     std::cout <<
     "Enter a username:\t";
     std::cin >> entered_login;
@@ -311,7 +315,7 @@ std::string AccountCreation::getUsername()
     while (DatabaseManagement::userInDatabase(entered_login)) // If username given is found, fix.
     {
         MainMenu::clearScreen();
-        MainMenu::header();
+        MainMenu::header(header_content);
         std::cout <<
         "Username '" << entered_login << "' already exists." << std::endl <<
         "1.\tEnter a different username" << std::endl <<

@@ -689,8 +689,10 @@ CMakeFiles/mylibrary.dir/src/boundary/patientInterface.cpp.obj: C:/Users/Josh/De
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdint.h
 
 CMakeFiles/mylibrary.dir/src/boundary/staffInterface.cpp.obj: C:/Users/Josh/Desktop/CS3321GroupProject/src/boundary/staffInterface.cpp \
+  C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/MainMenu.h \
   C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/staffInterface.h \
   C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/userInterface.h \
+  C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/user.h \
   C:/msys64/mingw64/include/_mingw.h \
   C:/msys64/mingw64/include/_mingw_mac.h \
   C:/msys64/mingw64/include/_mingw_off_t.h \
