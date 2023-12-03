@@ -3,6 +3,10 @@
 
 #include <string>
 #include "userInterface.h"
+#include "patientScheduling.h"
+#include "generateBill.h"
+#include "viewSchedule.h"
+#include "viewPatientProfile.h"
 
 class PatientInterface : public UserInterface {
 
