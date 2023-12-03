@@ -263,11 +263,26 @@ CMakeFiles/mylibrary.dir/src/control/GenerateScheduleReport.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mylibrary.dir/src/control/GenerateScheduleReport.cpp.s"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Josh\Desktop\CS3321GroupProject\src\control\GenerateScheduleReport.cpp -o CMakeFiles\mylibrary.dir\src\control\GenerateScheduleReport.cpp.s
 
+CMakeFiles/mylibrary.dir/src/control/MainMenuLogic.cpp.obj: CMakeFiles/mylibrary.dir/flags.make
+CMakeFiles/mylibrary.dir/src/control/MainMenuLogic.cpp.obj: CMakeFiles/mylibrary.dir/includes_CXX.rsp
+CMakeFiles/mylibrary.dir/src/control/MainMenuLogic.cpp.obj: C:/Users/Josh/Desktop/CS3321GroupProject/src/control/MainMenuLogic.cpp
+CMakeFiles/mylibrary.dir/src/control/MainMenuLogic.cpp.obj: CMakeFiles/mylibrary.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/mylibrary.dir/src/control/MainMenuLogic.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylibrary.dir/src/control/MainMenuLogic.cpp.obj -MF CMakeFiles\mylibrary.dir\src\control\MainMenuLogic.cpp.obj.d -o CMakeFiles\mylibrary.dir\src\control\MainMenuLogic.cpp.obj -c C:\Users\Josh\Desktop\CS3321GroupProject\src\control\MainMenuLogic.cpp
+
+CMakeFiles/mylibrary.dir/src/control/MainMenuLogic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mylibrary.dir/src/control/MainMenuLogic.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Josh\Desktop\CS3321GroupProject\src\control\MainMenuLogic.cpp > CMakeFiles\mylibrary.dir\src\control\MainMenuLogic.cpp.i
+
+CMakeFiles/mylibrary.dir/src/control/MainMenuLogic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mylibrary.dir/src/control/MainMenuLogic.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Josh\Desktop\CS3321GroupProject\src\control\MainMenuLogic.cpp -o CMakeFiles\mylibrary.dir\src\control\MainMenuLogic.cpp.s
+
 CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.obj: CMakeFiles/mylibrary.dir/flags.make
 CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.obj: CMakeFiles/mylibrary.dir/includes_CXX.rsp
 CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.obj: C:/Users/Josh/Desktop/CS3321GroupProject/src/control/ModifyRoomAvailability.cpp
 CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.obj: CMakeFiles/mylibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.obj -MF CMakeFiles\mylibrary.dir\src\control\ModifyRoomAvailability.cpp.obj.d -o CMakeFiles\mylibrary.dir\src\control\ModifyRoomAvailability.cpp.obj -c C:\Users\Josh\Desktop\CS3321GroupProject\src\control\ModifyRoomAvailability.cpp
 
 CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.i: cmake_force
@@ -282,7 +297,7 @@ CMakeFiles/mylibrary.dir/src/control/UpdateSchedule.cpp.obj: CMakeFiles/mylibrar
 CMakeFiles/mylibrary.dir/src/control/UpdateSchedule.cpp.obj: CMakeFiles/mylibrary.dir/includes_CXX.rsp
 CMakeFiles/mylibrary.dir/src/control/UpdateSchedule.cpp.obj: C:/Users/Josh/Desktop/CS3321GroupProject/src/control/UpdateSchedule.cpp
 CMakeFiles/mylibrary.dir/src/control/UpdateSchedule.cpp.obj: CMakeFiles/mylibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/mylibrary.dir/src/control/UpdateSchedule.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/mylibrary.dir/src/control/UpdateSchedule.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylibrary.dir/src/control/UpdateSchedule.cpp.obj -MF CMakeFiles\mylibrary.dir\src\control\UpdateSchedule.cpp.obj.d -o CMakeFiles\mylibrary.dir\src\control\UpdateSchedule.cpp.obj -c C:\Users\Josh\Desktop\CS3321GroupProject\src\control\UpdateSchedule.cpp
 
 CMakeFiles/mylibrary.dir/src/control/UpdateSchedule.cpp.i: cmake_force
@@ -297,7 +312,7 @@ CMakeFiles/mylibrary.dir/src/control/dataManipulation.cpp.obj: CMakeFiles/mylibr
 CMakeFiles/mylibrary.dir/src/control/dataManipulation.cpp.obj: CMakeFiles/mylibrary.dir/includes_CXX.rsp
 CMakeFiles/mylibrary.dir/src/control/dataManipulation.cpp.obj: C:/Users/Josh/Desktop/CS3321GroupProject/src/control/dataManipulation.cpp
 CMakeFiles/mylibrary.dir/src/control/dataManipulation.cpp.obj: CMakeFiles/mylibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/mylibrary.dir/src/control/dataManipulation.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/mylibrary.dir/src/control/dataManipulation.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylibrary.dir/src/control/dataManipulation.cpp.obj -MF CMakeFiles\mylibrary.dir\src\control\dataManipulation.cpp.obj.d -o CMakeFiles\mylibrary.dir\src\control\dataManipulation.cpp.obj -c C:\Users\Josh\Desktop\CS3321GroupProject\src\control\dataManipulation.cpp
 
 CMakeFiles/mylibrary.dir/src/control/dataManipulation.cpp.i: cmake_force
@@ -312,7 +327,7 @@ CMakeFiles/mylibrary.dir/src/control/generateBill.cpp.obj: CMakeFiles/mylibrary.
 CMakeFiles/mylibrary.dir/src/control/generateBill.cpp.obj: CMakeFiles/mylibrary.dir/includes_CXX.rsp
 CMakeFiles/mylibrary.dir/src/control/generateBill.cpp.obj: C:/Users/Josh/Desktop/CS3321GroupProject/src/control/generateBill.cpp
 CMakeFiles/mylibrary.dir/src/control/generateBill.cpp.obj: CMakeFiles/mylibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/mylibrary.dir/src/control/generateBill.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/mylibrary.dir/src/control/generateBill.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylibrary.dir/src/control/generateBill.cpp.obj -MF CMakeFiles\mylibrary.dir\src\control\generateBill.cpp.obj.d -o CMakeFiles\mylibrary.dir\src\control\generateBill.cpp.obj -c C:\Users\Josh\Desktop\CS3321GroupProject\src\control\generateBill.cpp
 
 CMakeFiles/mylibrary.dir/src/control/generateBill.cpp.i: cmake_force
@@ -327,7 +342,7 @@ CMakeFiles/mylibrary.dir/src/control/loginVerification.cpp.obj: CMakeFiles/mylib
 CMakeFiles/mylibrary.dir/src/control/loginVerification.cpp.obj: CMakeFiles/mylibrary.dir/includes_CXX.rsp
 CMakeFiles/mylibrary.dir/src/control/loginVerification.cpp.obj: C:/Users/Josh/Desktop/CS3321GroupProject/src/control/loginVerification.cpp
 CMakeFiles/mylibrary.dir/src/control/loginVerification.cpp.obj: CMakeFiles/mylibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/mylibrary.dir/src/control/loginVerification.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/mylibrary.dir/src/control/loginVerification.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylibrary.dir/src/control/loginVerification.cpp.obj -MF CMakeFiles\mylibrary.dir\src\control\loginVerification.cpp.obj.d -o CMakeFiles\mylibrary.dir\src\control\loginVerification.cpp.obj -c C:\Users\Josh\Desktop\CS3321GroupProject\src\control\loginVerification.cpp
 
 CMakeFiles/mylibrary.dir/src/control/loginVerification.cpp.i: cmake_force
@@ -342,7 +357,7 @@ CMakeFiles/mylibrary.dir/src/control/loginVerificationeddy.cpp.obj: CMakeFiles/m
 CMakeFiles/mylibrary.dir/src/control/loginVerificationeddy.cpp.obj: CMakeFiles/mylibrary.dir/includes_CXX.rsp
 CMakeFiles/mylibrary.dir/src/control/loginVerificationeddy.cpp.obj: C:/Users/Josh/Desktop/CS3321GroupProject/src/control/loginVerificationeddy.cpp
 CMakeFiles/mylibrary.dir/src/control/loginVerificationeddy.cpp.obj: CMakeFiles/mylibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/mylibrary.dir/src/control/loginVerificationeddy.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/mylibrary.dir/src/control/loginVerificationeddy.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylibrary.dir/src/control/loginVerificationeddy.cpp.obj -MF CMakeFiles\mylibrary.dir\src\control\loginVerificationeddy.cpp.obj.d -o CMakeFiles\mylibrary.dir\src\control\loginVerificationeddy.cpp.obj -c C:\Users\Josh\Desktop\CS3321GroupProject\src\control\loginVerificationeddy.cpp
 
 CMakeFiles/mylibrary.dir/src/control/loginVerificationeddy.cpp.i: cmake_force
@@ -357,7 +372,7 @@ CMakeFiles/mylibrary.dir/src/control/modifyInventory.cpp.obj: CMakeFiles/mylibra
 CMakeFiles/mylibrary.dir/src/control/modifyInventory.cpp.obj: CMakeFiles/mylibrary.dir/includes_CXX.rsp
 CMakeFiles/mylibrary.dir/src/control/modifyInventory.cpp.obj: C:/Users/Josh/Desktop/CS3321GroupProject/src/control/modifyInventory.cpp
 CMakeFiles/mylibrary.dir/src/control/modifyInventory.cpp.obj: CMakeFiles/mylibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/mylibrary.dir/src/control/modifyInventory.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/mylibrary.dir/src/control/modifyInventory.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylibrary.dir/src/control/modifyInventory.cpp.obj -MF CMakeFiles\mylibrary.dir\src\control\modifyInventory.cpp.obj.d -o CMakeFiles\mylibrary.dir\src\control\modifyInventory.cpp.obj -c C:\Users\Josh\Desktop\CS3321GroupProject\src\control\modifyInventory.cpp
 
 CMakeFiles/mylibrary.dir/src/control/modifyInventory.cpp.i: cmake_force
@@ -372,7 +387,7 @@ CMakeFiles/mylibrary.dir/src/entity/inventory.cpp.obj: CMakeFiles/mylibrary.dir/
 CMakeFiles/mylibrary.dir/src/entity/inventory.cpp.obj: CMakeFiles/mylibrary.dir/includes_CXX.rsp
 CMakeFiles/mylibrary.dir/src/entity/inventory.cpp.obj: C:/Users/Josh/Desktop/CS3321GroupProject/src/entity/inventory.cpp
 CMakeFiles/mylibrary.dir/src/entity/inventory.cpp.obj: CMakeFiles/mylibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/mylibrary.dir/src/entity/inventory.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/mylibrary.dir/src/entity/inventory.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylibrary.dir/src/entity/inventory.cpp.obj -MF CMakeFiles\mylibrary.dir\src\entity\inventory.cpp.obj.d -o CMakeFiles\mylibrary.dir\src\entity\inventory.cpp.obj -c C:\Users\Josh\Desktop\CS3321GroupProject\src\entity\inventory.cpp
 
 CMakeFiles/mylibrary.dir/src/entity/inventory.cpp.i: cmake_force
@@ -387,7 +402,7 @@ CMakeFiles/mylibrary.dir/src/entity/patient.cpp.obj: CMakeFiles/mylibrary.dir/fl
 CMakeFiles/mylibrary.dir/src/entity/patient.cpp.obj: CMakeFiles/mylibrary.dir/includes_CXX.rsp
 CMakeFiles/mylibrary.dir/src/entity/patient.cpp.obj: C:/Users/Josh/Desktop/CS3321GroupProject/src/entity/patient.cpp
 CMakeFiles/mylibrary.dir/src/entity/patient.cpp.obj: CMakeFiles/mylibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/mylibrary.dir/src/entity/patient.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/mylibrary.dir/src/entity/patient.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylibrary.dir/src/entity/patient.cpp.obj -MF CMakeFiles\mylibrary.dir\src\entity\patient.cpp.obj.d -o CMakeFiles\mylibrary.dir\src\entity\patient.cpp.obj -c C:\Users\Josh\Desktop\CS3321GroupProject\src\entity\patient.cpp
 
 CMakeFiles/mylibrary.dir/src/entity/patient.cpp.i: cmake_force
@@ -402,7 +417,7 @@ CMakeFiles/mylibrary.dir/src/entity/procedure.cpp.obj: CMakeFiles/mylibrary.dir/
 CMakeFiles/mylibrary.dir/src/entity/procedure.cpp.obj: CMakeFiles/mylibrary.dir/includes_CXX.rsp
 CMakeFiles/mylibrary.dir/src/entity/procedure.cpp.obj: C:/Users/Josh/Desktop/CS3321GroupProject/src/entity/procedure.cpp
 CMakeFiles/mylibrary.dir/src/entity/procedure.cpp.obj: CMakeFiles/mylibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/mylibrary.dir/src/entity/procedure.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/mylibrary.dir/src/entity/procedure.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylibrary.dir/src/entity/procedure.cpp.obj -MF CMakeFiles\mylibrary.dir\src\entity\procedure.cpp.obj.d -o CMakeFiles\mylibrary.dir\src\entity\procedure.cpp.obj -c C:\Users\Josh\Desktop\CS3321GroupProject\src\entity\procedure.cpp
 
 CMakeFiles/mylibrary.dir/src/entity/procedure.cpp.i: cmake_force
@@ -417,7 +432,7 @@ CMakeFiles/mylibrary.dir/src/entity/room.cpp.obj: CMakeFiles/mylibrary.dir/flags
 CMakeFiles/mylibrary.dir/src/entity/room.cpp.obj: CMakeFiles/mylibrary.dir/includes_CXX.rsp
 CMakeFiles/mylibrary.dir/src/entity/room.cpp.obj: C:/Users/Josh/Desktop/CS3321GroupProject/src/entity/room.cpp
 CMakeFiles/mylibrary.dir/src/entity/room.cpp.obj: CMakeFiles/mylibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/mylibrary.dir/src/entity/room.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/mylibrary.dir/src/entity/room.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylibrary.dir/src/entity/room.cpp.obj -MF CMakeFiles\mylibrary.dir\src\entity\room.cpp.obj.d -o CMakeFiles\mylibrary.dir\src\entity\room.cpp.obj -c C:\Users\Josh\Desktop\CS3321GroupProject\src\entity\room.cpp
 
 CMakeFiles/mylibrary.dir/src/entity/room.cpp.i: cmake_force
@@ -432,7 +447,7 @@ CMakeFiles/mylibrary.dir/src/entity/schedule.cpp.obj: CMakeFiles/mylibrary.dir/f
 CMakeFiles/mylibrary.dir/src/entity/schedule.cpp.obj: CMakeFiles/mylibrary.dir/includes_CXX.rsp
 CMakeFiles/mylibrary.dir/src/entity/schedule.cpp.obj: C:/Users/Josh/Desktop/CS3321GroupProject/src/entity/schedule.cpp
 CMakeFiles/mylibrary.dir/src/entity/schedule.cpp.obj: CMakeFiles/mylibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/mylibrary.dir/src/entity/schedule.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/mylibrary.dir/src/entity/schedule.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylibrary.dir/src/entity/schedule.cpp.obj -MF CMakeFiles\mylibrary.dir\src\entity\schedule.cpp.obj.d -o CMakeFiles\mylibrary.dir\src\entity\schedule.cpp.obj -c C:\Users\Josh\Desktop\CS3321GroupProject\src\entity\schedule.cpp
 
 CMakeFiles/mylibrary.dir/src/entity/schedule.cpp.i: cmake_force
@@ -447,7 +462,7 @@ CMakeFiles/mylibrary.dir/src/entity/staff.cpp.obj: CMakeFiles/mylibrary.dir/flag
 CMakeFiles/mylibrary.dir/src/entity/staff.cpp.obj: CMakeFiles/mylibrary.dir/includes_CXX.rsp
 CMakeFiles/mylibrary.dir/src/entity/staff.cpp.obj: C:/Users/Josh/Desktop/CS3321GroupProject/src/entity/staff.cpp
 CMakeFiles/mylibrary.dir/src/entity/staff.cpp.obj: CMakeFiles/mylibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/mylibrary.dir/src/entity/staff.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/mylibrary.dir/src/entity/staff.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylibrary.dir/src/entity/staff.cpp.obj -MF CMakeFiles\mylibrary.dir\src\entity\staff.cpp.obj.d -o CMakeFiles\mylibrary.dir\src\entity\staff.cpp.obj -c C:\Users\Josh\Desktop\CS3321GroupProject\src\entity\staff.cpp
 
 CMakeFiles/mylibrary.dir/src/entity/staff.cpp.i: cmake_force
@@ -462,7 +477,7 @@ CMakeFiles/mylibrary.dir/src/entity/user.cpp.obj: CMakeFiles/mylibrary.dir/flags
 CMakeFiles/mylibrary.dir/src/entity/user.cpp.obj: CMakeFiles/mylibrary.dir/includes_CXX.rsp
 CMakeFiles/mylibrary.dir/src/entity/user.cpp.obj: C:/Users/Josh/Desktop/CS3321GroupProject/src/entity/user.cpp
 CMakeFiles/mylibrary.dir/src/entity/user.cpp.obj: CMakeFiles/mylibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/mylibrary.dir/src/entity/user.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/mylibrary.dir/src/entity/user.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylibrary.dir/src/entity/user.cpp.obj -MF CMakeFiles\mylibrary.dir\src\entity\user.cpp.obj.d -o CMakeFiles\mylibrary.dir\src\entity\user.cpp.obj -c C:\Users\Josh\Desktop\CS3321GroupProject\src\entity\user.cpp
 
 CMakeFiles/mylibrary.dir/src/entity/user.cpp.i: cmake_force
@@ -488,6 +503,7 @@ mylibrary_OBJECTS = \
 "CMakeFiles/mylibrary.dir/src/boundary/viewSchedule.cpp.obj" \
 "CMakeFiles/mylibrary.dir/src/control/GenerateRoomAvailabilityReport.cpp.obj" \
 "CMakeFiles/mylibrary.dir/src/control/GenerateScheduleReport.cpp.obj" \
+"CMakeFiles/mylibrary.dir/src/control/MainMenuLogic.cpp.obj" \
 "CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.obj" \
 "CMakeFiles/mylibrary.dir/src/control/UpdateSchedule.cpp.obj" \
 "CMakeFiles/mylibrary.dir/src/control/dataManipulation.cpp.obj" \
@@ -519,6 +535,7 @@ libmylibrary.a: CMakeFiles/mylibrary.dir/src/boundary/viewRoomAvailabilityReport
 libmylibrary.a: CMakeFiles/mylibrary.dir/src/boundary/viewSchedule.cpp.obj
 libmylibrary.a: CMakeFiles/mylibrary.dir/src/control/GenerateRoomAvailabilityReport.cpp.obj
 libmylibrary.a: CMakeFiles/mylibrary.dir/src/control/GenerateScheduleReport.cpp.obj
+libmylibrary.a: CMakeFiles/mylibrary.dir/src/control/MainMenuLogic.cpp.obj
 libmylibrary.a: CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.obj
 libmylibrary.a: CMakeFiles/mylibrary.dir/src/control/UpdateSchedule.cpp.obj
 libmylibrary.a: CMakeFiles/mylibrary.dir/src/control/dataManipulation.cpp.obj
@@ -535,7 +552,7 @@ libmylibrary.a: CMakeFiles/mylibrary.dir/src/entity/staff.cpp.obj
 libmylibrary.a: CMakeFiles/mylibrary.dir/src/entity/user.cpp.obj
 libmylibrary.a: CMakeFiles/mylibrary.dir/build.make
 libmylibrary.a: CMakeFiles/mylibrary.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX static library libmylibrary.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX static library libmylibrary.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\mylibrary.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\mylibrary.dir\link.txt --verbose=$(VERBOSE)
 

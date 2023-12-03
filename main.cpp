@@ -3,10 +3,7 @@
 #include <string>
 #include "entity/schedule.h"
 #include "boundary/MainMenu.h"
-#include "control/LoginVerification.h"
-#include "boundary/patientUI.h"
-#include "boundary/StaffUI.h"
-#include "control/dataManipulation.h"
+#include "control/MainMenuLogic.h"
 //#include "boundary/userLogInUI.h"
 // #include "boundary/inventoryUI.h"
 // #include "boundary/staffInterface.h"
@@ -24,6 +21,7 @@ int main()
 {
     MainMenu::StartMenu();
 
+    
     
    
     // Room testroom1(101, 5, true);

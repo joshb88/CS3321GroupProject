@@ -149,7 +149,8 @@
 				25,
 				26,
 				27,
-				28
+				28,
+				29
 			]
 		}
 	],
@@ -229,6 +230,11 @@
 		{
 			"backtrace" : 2,
 			"path" : "headers/control/GenerateScheduleReport.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "headers/control/MainMenuLogic.h",
 			"sourceGroupIndex" : 1
 		},
 		{

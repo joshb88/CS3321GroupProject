@@ -477,6 +477,30 @@ src/control/GenerateScheduleReport.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/GenerateScheduleReport.cpp.s
 .PHONY : src/control/GenerateScheduleReport.cpp.s
 
+src/control/MainMenuLogic.obj: src/control/MainMenuLogic.cpp.obj
+.PHONY : src/control/MainMenuLogic.obj
+
+# target to build an object file
+src/control/MainMenuLogic.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/MainMenuLogic.cpp.obj
+.PHONY : src/control/MainMenuLogic.cpp.obj
+
+src/control/MainMenuLogic.i: src/control/MainMenuLogic.cpp.i
+.PHONY : src/control/MainMenuLogic.i
+
+# target to preprocess a source file
+src/control/MainMenuLogic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/MainMenuLogic.cpp.i
+.PHONY : src/control/MainMenuLogic.cpp.i
+
+src/control/MainMenuLogic.s: src/control/MainMenuLogic.cpp.s
+.PHONY : src/control/MainMenuLogic.s
+
+# target to generate assembly for a file
+src/control/MainMenuLogic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/MainMenuLogic.cpp.s
+.PHONY : src/control/MainMenuLogic.cpp.s
+
 src/control/ModifyRoomAvailability.obj: src/control/ModifyRoomAvailability.cpp.obj
 .PHONY : src/control/ModifyRoomAvailability.obj
 
@@ -865,6 +889,9 @@ help:
 	@echo ... src/control/GenerateScheduleReport.obj
 	@echo ... src/control/GenerateScheduleReport.i
 	@echo ... src/control/GenerateScheduleReport.s
+	@echo ... src/control/MainMenuLogic.obj
+	@echo ... src/control/MainMenuLogic.i
+	@echo ... src/control/MainMenuLogic.s
 	@echo ... src/control/ModifyRoomAvailability.obj
 	@echo ... src/control/ModifyRoomAvailability.i
 	@echo ... src/control/ModifyRoomAvailability.s

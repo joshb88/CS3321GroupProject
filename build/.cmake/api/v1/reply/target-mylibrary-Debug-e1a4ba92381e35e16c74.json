@@ -97,7 +97,8 @@
 				23,
 				24,
 				25,
-				26
+				26,
+				27
 			]
 		}
 	],
@@ -141,14 +142,14 @@
 				23,
 				24,
 				25,
-				26
+				26,
+				27
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				27,
 				28,
 				29,
 				30,
@@ -175,7 +176,9 @@
 				51,
 				52,
 				53,
-				54
+				54,
+				55,
+				56
 			]
 		}
 	],
@@ -257,6 +260,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/control/GenerateScheduleReport.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/control/MainMenuLogic.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -411,6 +420,11 @@
 		{
 			"backtrace" : 3,
 			"path" : "headers/control/GenerateScheduleReport.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "headers/control/MainMenuLogic.h",
 			"sourceGroupIndex" : 1
 		},
 		{

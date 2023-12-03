@@ -79,6 +79,12 @@
 },
 {
   "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\control\\MainMenuLogic.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\control\\MainMenuLogic.cpp",
+  "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/control/MainMenuLogic.cpp",
+  "output": "CMakeFiles/mylibrary.dir/src/control/MainMenuLogic.cpp.obj"
+},
+{
+  "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\control\\ModifyRoomAvailability.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\control\\ModifyRoomAvailability.cpp",
   "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/control/ModifyRoomAvailability.cpp",
   "output": "CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.obj"

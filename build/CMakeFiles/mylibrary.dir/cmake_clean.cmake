@@ -25,6 +25,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mylibrary.dir/src/control/GenerateRoomAvailabilityReport.cpp.obj.d"
   "CMakeFiles/mylibrary.dir/src/control/GenerateScheduleReport.cpp.obj"
   "CMakeFiles/mylibrary.dir/src/control/GenerateScheduleReport.cpp.obj.d"
+  "CMakeFiles/mylibrary.dir/src/control/MainMenuLogic.cpp.obj"
+  "CMakeFiles/mylibrary.dir/src/control/MainMenuLogic.cpp.obj.d"
   "CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.obj"
   "CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.obj.d"
   "CMakeFiles/mylibrary.dir/src/control/UpdateSchedule.cpp.obj"
