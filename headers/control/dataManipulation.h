@@ -9,23 +9,12 @@
 
 class dataManipulation
 {
-private:
-    /* data */
-public:
-
-    // user stuff
-    static bool userInDatabase(User& user);
-    static bool userInDatabase(const std::string& user_name);
-    static void addUserToFile(User& user);
-    static std::unique_ptr<User> getUserFromFile(const std::string& user_name);
-    void modifyUserFromFile (User);
-
-    // Inventory stuff
-    bool checkForItem(std::string);
-    void wtireToInventoryFile(Inventory);
-    Inventory getInventoryFromFile(std::string);
-    std::vector<Inventory> createList();
-    void writeUpdatedItemToFile (std::vector<Inventory>);
-
+    public:
+        // Inventory stuff
+        bool checkForItem(std::string);
+        void wtireToInventoryFile(Inventory);
+        Inventory getInventoryFromFile(std::string);
+        std::vector<Inventory> createList();
+        void writeUpdatedItemToFile (std::vector<Inventory>);
 };
 

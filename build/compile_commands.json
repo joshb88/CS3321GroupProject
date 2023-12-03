@@ -7,18 +7,6 @@
 },
 {
   "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\boundary\\PatientUI.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\boundary\\PatientUI.cpp",
-  "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/boundary/PatientUI.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/boundary/PatientUI.cpp.obj"
-},
-{
-  "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\boundary\\StaffUI.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\boundary\\StaffUI.cpp",
-  "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/boundary/StaffUI.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/boundary/StaffUI.cpp.obj"
-},
-{
-  "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\boundary\\inventoryOrders.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\boundary\\inventoryOrders.cpp",
   "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/boundary/inventoryOrders.cpp",
   "output": "CMakeFiles/mylibrary.dir/src/boundary/inventoryOrders.cpp.obj"
@@ -40,12 +28,6 @@
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\boundary\\staffInterface.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\boundary\\staffInterface.cpp",
   "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/boundary/staffInterface.cpp",
   "output": "CMakeFiles/mylibrary.dir/src/boundary/staffInterface.cpp.obj"
-},
-{
-  "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\boundary\\userLogInUI.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\boundary\\userLogInUI.cpp",
-  "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/boundary/userLogInUI.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/boundary/userLogInUI.cpp.obj"
 },
 {
   "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
@@ -106,18 +88,6 @@
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\control\\generateBill.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\control\\generateBill.cpp",
   "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/control/generateBill.cpp",
   "output": "CMakeFiles/mylibrary.dir/src/control/generateBill.cpp.obj"
-},
-{
-  "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\control\\loginVerification.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\control\\loginVerification.cpp",
-  "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/control/loginVerification.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/control/loginVerification.cpp.obj"
-},
-{
-  "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\control\\loginVerificationeddy.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\control\\loginVerificationeddy.cpp",
-  "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/control/loginVerificationeddy.cpp",
-  "output": "CMakeFiles/mylibrary.dir/src/control/loginVerificationeddy.cpp.obj"
 },
 {
   "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
