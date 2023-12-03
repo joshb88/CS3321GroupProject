@@ -3,13 +3,12 @@
 
 #include<iostream>
 #include "control/generateBill.h"
+#include "entity/schedule.h"
 
 class viewBill{
-private:
-    generateBill billGenerator;
 
 public:
-    void displayBillInformation();
+    static void displayBillInformation(std::vector<Schedule>);
 };
 
 #endif // VIEW_BILL_H
