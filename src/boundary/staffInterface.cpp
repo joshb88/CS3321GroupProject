@@ -53,80 +53,11 @@ void StaffInterface::displayMainMenu() {
     }
 }
 
-void StaffInterface::viewSchedule() {
-    std::ifstream file("./database/schedules.csv");
-    std::string line;
-    std::vector<std::string> scheduleEntries;
 
-    if (file.is_open()) {
-        while (std::getline(file, line)) {
-            scheduleEntries.push_back(line);
-        }
-        file.close();
 
-        std::cout << "Staff Schedule:\n";
-        if (scheduleEntries.empty()) {
-            std::cout << "No scheduled appointments.\n";
-        } else {
-            for (const auto& entry : scheduleEntries) {
-                std::cout << "- " << entry << "\n";
-            }
-        }
-    } else {
-        std::cout << "Error: Unable to open the schedules file.\n";
-    }
-}
+//myFile.open("./database/schedules.csv");
 
-void StaffInterface::addSchedule() {
-    std::string newEntry;
-    std::cout << "Enter schedule details (Format: Room - Date & Time - Patient - Procedure): ";
-    std::getline(std::cin >> std::ws, newEntry); // Read the full line including spaces
 
-    std::ofstream file("./database/schedules.csv", std::ios::app); // Open in append mode
-    if (file.is_open()) {
-        file << newEntry << "\n";
-        file.close();
-        std::cout << "Schedule added successfully.\n";
-    } else {
-        std::cout << "Error: Unable to open file.\n";
-    }
-}
-    //myFile.open("./database/schedules.csv");
-
-void StaffInterface::removeSchedule() {
-    std::string lineToRemove;
-    std::cout << "Enter the exact schedule details to remove: ";
-    std::getline(std::cin >> std::ws, lineToRemove);
-
-    std::string line;
-    std::vector<std::string> lines;
-    std::ifstream file("./database/schedules.csv");
-    bool found = false;
-
-    if (file.is_open()) {
-        while (getline(file, line)) {
-            if (line != lineToRemove) {
-                lines.push_back(line);
-            } else {
-                found = true;
-            }
-        }
-        file.close();
-
-        if (found) {
-            std::ofstream outFile("./database/schedules.csv");
-            for (const auto& l : lines) {
-                outFile << l << "\n";
-            }
-            outFile.close();
-            std::cout << "Schedule removed successfully.\n";
-        } else {
-            std::cout << "Schedule not found.\n";
-        }
-    } else {
-        std::cout << "Error: Unable to open file.\n";
-    }
-}
 // void StaffInterface::managePatientRecords() {
 //     std::cout << "Managing patient records...\n";
 //     // Implementation for managing patient records
