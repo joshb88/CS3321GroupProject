@@ -10,6 +10,14 @@
 #include "entity/staff.h"
 #include "entity/patient.h"
 
+//Take username, pass to check if its in the database.
+//ALREADY IN DATABASE: control into login
+
+//NOT IN DATABASE: pass username here
+//OR
+//LOGIN WITH UNUSED NAME: create account with that name
+
+
 std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_username, const short& account_type) 
 {
     std::string password, confirmation_password, first_name, last_name;
@@ -511,7 +519,7 @@ void DatabaseManagement::addUserToFile(User& user)
     }
 }
 
-std::unique_ptr<User> DatabaseManagement::readUserFromDatabase(const std::string& username) 
+std::unique_ptr<User> DatabaseManagement::getUserFromFile(const std::string& username) 
 {
     std::fstream file;
     file.open("./database/users.txt", std::ios::in);

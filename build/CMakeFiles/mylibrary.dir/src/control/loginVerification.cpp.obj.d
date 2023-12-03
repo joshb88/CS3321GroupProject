@@ -1,6 +1,6 @@
 CMakeFiles/mylibrary.dir/src/control/loginVerification.cpp.obj: \
  C:\Users\Josh\Desktop\CS3321GroupProject\src\control\loginVerification.cpp \
- C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/loginVerification.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/LoginVerification.h \
  C:/msys64/mingw64/include/c++/11.2.0/fstream \
  C:/msys64/mingw64/include/c++/11.2.0/istream \
  C:/msys64/mingw64/include/c++/11.2.0/ios \

@@ -9,7 +9,14 @@
 #include <thread>
 #include <cstdlib>
 #include <memory>
+// #include "entity/staff.h"
+// #include "entity/patient.h"
+#include "boundary/StaffUI.h"
+#include "boundary/patientUI.h"
+#include "control/dataManipulation.h"
 #include "control/MainMenuLogic.h"
+//#include "control/LoginVerification.h"
+// #include "control/storedata.h"
 
 
 const std::string MainMenu::SECTION_BREAK = "==================================================\n";
@@ -68,7 +75,7 @@ void MainMenu::StartMenu()
     case 2:
         // Login
         std::cout << "You've opted to login." << std::endl;
-        loginMenu(AccountCreation::getUsername());
+        loginMenu();
         break;
     case 0:
         // Exit
@@ -79,15 +86,21 @@ void MainMenu::StartMenu()
         StartMenu();
     }
 }
-void MainMenu::loginMenu(std::string entered_username)
+void MainMenu::loginMenu()
 {
+    std::string entered_username;
     std::string password_input;
     std::unique_ptr<User> user_logged_in;
 
     clearScreen();
     header();
+    
+    std::cout << std::left << std::setw(35) <<
+    "Enter User Login:";
+    std::cin >> entered_username;
+    std::cout << SECTION_BREAK;
 
-    if (DatabaseManagement::userInDatabase(entered_username)) 
+    if (dataManipulation::userInDatabase(entered_username)) 
     {
         do
         {
@@ -99,8 +112,8 @@ void MainMenu::loginMenu(std::string entered_username)
         std::cout << SECTION_BREAK << std::endl;
 
 
-        std::cout << "LOGIN PASSED" << std::endl;
-        user_logged_in = DatabaseManagement::readUserFromDatabase(entered_username);
+        std::cout << "Login Successful!" << std::endl;
+        user_logged_in = dataManipulation::getUserFromFile(entered_username);
         return;
     }
     // User not found, offer to make a new account.
@@ -128,7 +141,64 @@ void MainMenu::loginMenu(std::string entered_username)
             MainMenu::accountCreateMenu(entered_username);
             break;
         case 2:
-            MainMenu::loginMenu(AccountCreation::getUsername());
+            loginMenu();
+            break;
+        default:
+            StartMenu();
+            break;
+        }
+    }
+}
+void MainMenu::loginMenu(std::string entered_username)
+{
+    std::string password_input;
+    std::unique_ptr<User> user_logged_in;
+
+    clearScreen();
+    header();
+
+    if (dataManipulation::userInDatabase(entered_username)) 
+    {
+        do
+        {
+            std::cout << std::left << std::setw(35) <<
+            "Enter User Password:";
+            std::cin >> password_input;
+        } 
+        while (!LoginVerification::checkPassword(entered_username, password_input));
+        std::cout << SECTION_BREAK << std::endl;
+
+
+        std::cout << "LOGIN PASSED" << std::endl;
+        user_logged_in = dataManipulation::getUserFromFile(entered_username);
+        return;
+    }
+    // User not found, offer to make a new account.
+    else 
+    {
+        short make_account;
+        do
+        {
+            std::cout << 
+            "User Not Found." << std::endl <<
+            "Would you like to create a new account with this?" << std::endl << std::endl <<
+            "1.\tYes." << std::endl <<
+            "2.\tTry again." << std::endl <<
+            SECTION_BREAK;
+            std::cin >> make_account;
+            if (std::cin.fail()) { std::cin.clear(); std::cin.ignore(INT_MAX, '\n'); }
+        } 
+        while (!(make_account == 1 || make_account == 2));
+        
+        
+
+        switch (make_account)
+        {
+        case 1:
+            MainMenu::accountCreateMenu(entered_username);
+            break;
+        case 2:
+            loginMenu();
             break;
         default:
             StartMenu();
