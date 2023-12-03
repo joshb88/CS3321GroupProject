@@ -28,6 +28,6 @@ class DatabaseManagement
         static bool userInDatabase(User& user);
         static bool userInDatabase(const std::string& user_name);
         static void addUserToFile(User& user);
-        static std::unique_ptr<User> getUserFromFile(const std::string& user_name);
+        static std::unique_ptr<User> readUserFromDatabase(const std::string& user_name);
         void modifyUserFromFile (User);
 };
