@@ -179,5 +179,5 @@ void MainMenu::accountCreateMenu(std::string entered_username)
         return;                                     // Ensure the function exits after recursion
     }
 
-    AccountCreation::CreateAccount(entered_username, user_type);
+    DatabaseManagement::addUserToFile(std::move(AccountCreation::CreateAccount(entered_username, user_type)));
 }
