@@ -24,32 +24,24 @@ int main()
 {
     MainMenu::StartMenu();
 
-    //PatientUI::accountCreation();1
+    
+   
     // Room testroom1(101, 5, true);
     // Room testroom2(303, 2, true);
-    // User testPatient1("test_login1","test_password1","test_last1","test_first1",19880814,'M');
-    // User testPatient2("test_login2","test_password2","test_last2","test_first2",19880815,'F');
-    // User testPatient3("test_login3","test_password3","test_last3","test_first3",19880816,'X');
-    // User testPatient4("test_login4","test_password4","test_last4","test_first4",19880817,'X');
-    // Patient test_patient1("patient_test1","patient_pw1", "patient_last", "patient_first",20231031,'F',false,"n/a",true,&testroom2);
-    // Patient test_patient2;
+    // Patient test_patient1("ptest1","test","test","test",19880814,'X',true,"blue shield",true,testroom2);
+    // Patient test_patient2("patient_test2","patient_pw2", "patient_last", "patient_first",20231031,'F',false,"n/a",false,Room());
+    // dataManipulation::addUserToFile(test_patient1);
+    // dataManipulation::addUserToFile(test_patient2);
     // Staff test_staff1("staff1","staff1","test","test",19010101,'X',814,1,"RN",20220101);
+    // dataManipulation::addUserToFile(test_staff1);
+    
+    
+    // Patient test_patient2;
     // Staff test_staff2;
 
-    // StoreData::storeUser(testPatient1);
-    // StoreData::storeUser(testPatient2);
-    // StoreData::storeUser(testPatient3);
-    // StoreData::storeUser(testPatient4);
-    // dataManipulation::addUserToFile(test_patient1);
-    // StoreData::storeUser(test_patient2);
-    // dataManipulation::addUserToFile(test_staff1);
+
     // StoreData::storeUser(test_staff2);
 
-    //std::cout << testPatient.getRoom()->getRoomNumber3();
-    // testPatient.setRoom(&testroom1); 
-    // std::cout << testPatient.getRoom()->getRoomNumber() << std::endl;
-    // testPatient.setRoom(&testroom2);
-    // std::cout << testPatient.getRoom()->getRoomNumber();
 
     // bool isStaff = false;
     

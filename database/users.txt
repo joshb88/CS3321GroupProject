@@ -1,11 +1,2 @@
-test_login1 test_password1 test_last1 test_first1 19880814 M 
-test_login2 test_password2 test_last2 test_first2 19880815 F 
-test_login3 test_password3 test_last3 test_first3 19880816 X 
-test_login4 test_password4 test_last4 test_first4 19880817 X 
-test_login test_password test_last test_first 19880814 M
-patient_test1 patient_pw1 patient_last patient_first 20231031 F 0 n/a 12303 
-    19000101 X 0 N/A  
-staff1 staff1 test test 19010101 X 814 1 RN 20220101 
-    19000101 X 0 0  19000101 
-test,test,test,test,19010101,x,0,
-0
+1,ptest1,test,test,test,19880814,X,1,blue shield,1,1,2,303
+1,patient_test2,patient_pw2,patient_last,patient_first,20231031,F,0,n/a,0,0,0,0

@@ -8,6 +8,7 @@
 #include <ctime>
 #include <thread>
 #include <cstdlib>
+#include <memory>
 // #include "entity/staff.h"
 // #include "entity/patient.h"
 #include "boundary/StaffUI.h"
@@ -90,7 +91,7 @@ void MainMenu::loginMenu()
 {
     std::string login_input;
     std::string password_input;
-    User user_logged_in;
+    std::unique_ptr<User> user_logged_in;
 
     clearScreen();
     header();
@@ -112,7 +113,7 @@ void MainMenu::loginMenu()
         std::cout << SECTION_BREAK << std::endl;
 
 
-        std::cout << "LOGIN PASSED" << std::endl;
+        std::cout << "Login Successful!" << std::endl;
         user_logged_in = dataManipulation::getUserFromFile(login_input);
         return;
     }
@@ -152,7 +153,7 @@ void MainMenu::loginMenu()
 void MainMenu::loginMenu(std::string login_input)
 {
     std::string password_input;
-    User user_logged_in;
+    std::unique_ptr<User> user_logged_in;
 
     clearScreen();
     header();
@@ -171,7 +172,6 @@ void MainMenu::loginMenu(std::string login_input)
 
         std::cout << "LOGIN PASSED" << std::endl;
         user_logged_in = dataManipulation::getUserFromFile(login_input);
-        std::cout << user_logged_in.getUserLogin();
         return;
     }
     // User not found, offer to make a new account.
