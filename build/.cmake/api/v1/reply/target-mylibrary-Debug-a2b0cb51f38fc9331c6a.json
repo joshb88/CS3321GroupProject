@@ -97,8 +97,7 @@
 				23,
 				24,
 				25,
-				26,
-				27
+				26
 			]
 		}
 	],
@@ -142,14 +141,14 @@
 				23,
 				24,
 				25,
-				26,
-				27
+				26
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
+				27,
 				28,
 				29,
 				30,
@@ -176,9 +175,7 @@
 				51,
 				52,
 				53,
-				54,
-				55,
-				56
+				54
 			]
 		}
 	],
@@ -302,12 +299,6 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/control/modifyInventory.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/control/storedata.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -455,11 +446,6 @@
 		{
 			"backtrace" : 3,
 			"path" : "headers/control/modifyInventory.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 3,
-			"path" : "headers/control/storedata.h",
 			"sourceGroupIndex" : 1
 		},
 		{

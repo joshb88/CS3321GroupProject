@@ -1,14 +1,13 @@
 #include <ctime>
 #include <iomanip>
-// #include <cctype>
-// #include <iostream>
-// #include <fstream>
-// #include <sstream>
-// #include <string>
+#include <cctype>
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <string>
 #include "boundary/MainMenu.h"
 #include "boundary/patientUI.h"
 #include "entity/patient.h"
-#include "control/loginVerification.h"
 
 Patient PatientUI::accountCreation()
 {
@@ -58,6 +57,8 @@ Patient PatientUI::accountCreation()
         while (provider.empty());
     }
     new_patient.setInsuranceProvider(provider);
+
+    new_patient.setHasRoom(false); // Rooms will be assigned differently
 
     return new_patient;
 }
@@ -110,15 +111,17 @@ Patient PatientUI::accountCreation(std::string entered_username)
     }
     new_patient.setInsuranceProvider(provider);
 
-    std::cout <<
-    new_patient.getUserLogin() << std::endl <<
-    new_patient.getUserPassword() << std::endl <<
-    new_patient.getLastName() << std::endl <<
-    new_patient.getFirstName() << std::endl <<
-    new_patient.getDateOfBirth() << std::endl <<
-    new_patient.getGender() << std::endl <<
-    new_patient.getHasInsurance() << std::endl <<
-    new_patient.getInsuranceProvider() << std::endl;
+    // std::cout <<
+    // new_patient.getUserLogin() << std::endl <<
+    // new_patient.getUserPassword() << std::endl <<
+    // new_patient.getLastName() << std::endl <<
+    // new_patient.getFirstName() << std::endl <<
+    // new_patient.getDateOfBirth() << std::endl <<
+    // new_patient.getGender() << std::endl <<
+    // new_patient.getHasInsurance() << std::endl <<
+    // new_patient.getInsuranceProvider() << std::endl;
+
+    new_patient.setHasRoom(false); // Rooms will be assigned differently
 
     return new_patient;
 }

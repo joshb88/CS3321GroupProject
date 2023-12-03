@@ -3,6 +3,7 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <memory>
 #include "entity/user.h"
 #include "entity/inventory.h"
 
@@ -13,10 +14,11 @@ private:
 public:
 
     // user stuff
-    bool checkForUeser(std::string);
-    User getUserFromFile(std::string);
+    static bool userInDatabase(User& user);
+    static bool userInDatabase(const std::string& user_name);
+    static void addUserToFile(User& user);
+    static std::unique_ptr<User> getUserFromFile(const std::string& user_name);
     void modifyUserFromFile (User);
-    void addUser (User);
 
     // Inventory stuff
     bool checkForItem(std::string);

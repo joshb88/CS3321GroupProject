@@ -158,5 +158,22 @@ CMakeFiles/mylibrary.dir/src/boundary/userLogInUI.cpp.obj: \
  C:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/basic_file.h \
  C:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/c++io.h \
  C:/msys64/mingw64/include/c++/11.2.0/bits/fstream.tcc \
+ C:/msys64/mingw64/include/c++/11.2.0/memory \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/stl_tempbuf.h \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/stl_raw_storage_iter.h \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/align.h \
+ C:/msys64/mingw64/include/c++/11.2.0/bit \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/shared_ptr.h \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/shared_ptr_base.h \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/allocated_ptr.h \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/refwrap.h \
+ C:/msys64/mingw64/include/c++/11.2.0/ext/aligned_buffer.h \
+ C:/msys64/mingw64/include/c++/11.2.0/ext/concurrence.h \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/shared_ptr_atomic.h \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/atomic_base.h \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/atomic_lockfree_defines.h \
+ C:/msys64/mingw64/include/c++/11.2.0/backward/auto_ptr.h \
+ C:/msys64/mingw64/include/c++/11.2.0/pstl/glue_memory_defs.h \
+ C:/msys64/mingw64/include/c++/11.2.0/pstl/execution_defs.h \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/user.h \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/inventory.h
