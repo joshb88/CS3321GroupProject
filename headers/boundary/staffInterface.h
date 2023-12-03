@@ -1,7 +1,7 @@
 #ifndef STAFF_INTERFACE_H
 #define STAFF_INTERFACE_H
 
-#include "userinterface.h"
+#include "boundary/userInterface.h"
 
 class StaffInterface : public UserInterface {
 public:

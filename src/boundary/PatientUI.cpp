@@ -8,7 +8,6 @@
 #include "boundary/MainMenu.h"
 #include "boundary/patientUI.h"
 #include "entity/patient.h"
-//#include "control/LoginVerification.h"
 
 Patient PatientUI::accountCreation()
 {

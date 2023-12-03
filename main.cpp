@@ -3,7 +3,6 @@
 #include <string>
 #include "entity/schedule.h"
 #include "boundary/MainMenu.h"
-#include "control/LoginVerification.h"
 #include "boundary/patientUI.h"
 #include "boundary/StaffUI.h"
 #include "control/dataManipulation.h"
