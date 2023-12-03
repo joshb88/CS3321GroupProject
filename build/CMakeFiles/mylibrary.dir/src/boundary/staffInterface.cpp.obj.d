@@ -1,7 +1,5 @@
 CMakeFiles/mylibrary.dir/src/boundary/staffInterface.cpp.obj: \
  C:\Users\Josh\Desktop\CS3321GroupProject\src\boundary\staffInterface.cpp \
- C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/staffInterface.h \
- C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/userInterface.h \
  C:/msys64/mingw64/include/c++/11.2.0/iostream \
  C:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/os_defines.h \
@@ -140,4 +138,8 @@ CMakeFiles/mylibrary.dir/src/boundary/staffInterface.cpp.obj: \
  C:/msys64/mingw64/include/c++/11.2.0/bits/stl_uninitialized.h \
  C:/msys64/mingw64/include/c++/11.2.0/bits/stl_vector.h \
  C:/msys64/mingw64/include/c++/11.2.0/bits/stl_bvector.h \
- C:/msys64/mingw64/include/c++/11.2.0/bits/vector.tcc
+ C:/msys64/mingw64/include/c++/11.2.0/bits/vector.tcc \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/staffInterface.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/userInterface.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/MainMenu.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/user.h

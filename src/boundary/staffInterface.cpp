@@ -1,21 +1,28 @@
-#include "boundary/staffInterface.h"
 #include <iostream>
 #include <fstream>
 #include <sstream>
 #include <vector>
+#include "boundary/staffInterface.h"
+#include "boundary/MainMenu.h"
 
-void StaffInterface::displayMainMenu() {
+void StaffInterface::displayMainMenu() 
+{
     int choice = 0;
     bool isRunning = true;
+    std::string header_content = "Staff Main Menu";
 
-    while (isRunning) {
-        std::cout << "\nStaff Menu:\n";
-        std::cout << "1. View Schedule\n";
-        std::cout << "2. Manage Patient Records\n";
-        std::cout << "3. Access Inventory\n";
-        std::cout << "4. Process Billing Information\n";
-        std::cout << "5. Log Out\n";
-        std::cout << "Enter your choice: ";
+    while (isRunning) 
+    {
+        MainMenu::clearScreen();
+        MainMenu::header(header_content);
+        std::cout << 
+        "Select an option:" << 
+        "1.\tView Schedule" << std::endl <<
+        "2.\tManage Patient Records" << std::endl <<
+        "3.\tAccess Inventory" << std::endl <<
+        "4.\tProcess Billing Information" << std::endl <<
+        "0.\tLog Out" << std::endl <<
+        MainMenu::SECTION_BREAK;
         std::cin >> choice;
 
         switch (choice) {
