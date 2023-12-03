@@ -1,4 +1,4 @@
-#include "control/LoginVerification.h"
+#include "control/loginVerification.h"
 
 bool LoginVerification::userInDatabase(User& user)
 {
