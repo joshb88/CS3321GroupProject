@@ -189,54 +189,6 @@ src/boundary/MainMenu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/MainMenu.cpp.s
 .PHONY : src/boundary/MainMenu.cpp.s
 
-src/boundary/PatientUI.obj: src/boundary/PatientUI.cpp.obj
-.PHONY : src/boundary/PatientUI.obj
-
-# target to build an object file
-src/boundary/PatientUI.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/PatientUI.cpp.obj
-.PHONY : src/boundary/PatientUI.cpp.obj
-
-src/boundary/PatientUI.i: src/boundary/PatientUI.cpp.i
-.PHONY : src/boundary/PatientUI.i
-
-# target to preprocess a source file
-src/boundary/PatientUI.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/PatientUI.cpp.i
-.PHONY : src/boundary/PatientUI.cpp.i
-
-src/boundary/PatientUI.s: src/boundary/PatientUI.cpp.s
-.PHONY : src/boundary/PatientUI.s
-
-# target to generate assembly for a file
-src/boundary/PatientUI.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/PatientUI.cpp.s
-.PHONY : src/boundary/PatientUI.cpp.s
-
-src/boundary/StaffUI.obj: src/boundary/StaffUI.cpp.obj
-.PHONY : src/boundary/StaffUI.obj
-
-# target to build an object file
-src/boundary/StaffUI.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/StaffUI.cpp.obj
-.PHONY : src/boundary/StaffUI.cpp.obj
-
-src/boundary/StaffUI.i: src/boundary/StaffUI.cpp.i
-.PHONY : src/boundary/StaffUI.i
-
-# target to preprocess a source file
-src/boundary/StaffUI.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/StaffUI.cpp.i
-.PHONY : src/boundary/StaffUI.cpp.i
-
-src/boundary/StaffUI.s: src/boundary/StaffUI.cpp.s
-.PHONY : src/boundary/StaffUI.s
-
-# target to generate assembly for a file
-src/boundary/StaffUI.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/StaffUI.cpp.s
-.PHONY : src/boundary/StaffUI.cpp.s
-
 src/boundary/inventoryOrders.obj: src/boundary/inventoryOrders.cpp.obj
 .PHONY : src/boundary/inventoryOrders.obj
 
@@ -332,30 +284,6 @@ src/boundary/staffInterface.s: src/boundary/staffInterface.cpp.s
 src/boundary/staffInterface.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/staffInterface.cpp.s
 .PHONY : src/boundary/staffInterface.cpp.s
-
-src/boundary/userLogInUI.obj: src/boundary/userLogInUI.cpp.obj
-.PHONY : src/boundary/userLogInUI.obj
-
-# target to build an object file
-src/boundary/userLogInUI.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/userLogInUI.cpp.obj
-.PHONY : src/boundary/userLogInUI.cpp.obj
-
-src/boundary/userLogInUI.i: src/boundary/userLogInUI.cpp.i
-.PHONY : src/boundary/userLogInUI.i
-
-# target to preprocess a source file
-src/boundary/userLogInUI.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/userLogInUI.cpp.i
-.PHONY : src/boundary/userLogInUI.cpp.i
-
-src/boundary/userLogInUI.s: src/boundary/userLogInUI.cpp.s
-.PHONY : src/boundary/userLogInUI.s
-
-# target to generate assembly for a file
-src/boundary/userLogInUI.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/userLogInUI.cpp.s
-.PHONY : src/boundary/userLogInUI.cpp.s
 
 src/boundary/viewBill.obj: src/boundary/viewBill.cpp.obj
 .PHONY : src/boundary/viewBill.obj
@@ -477,6 +405,30 @@ src/control/GenerateScheduleReport.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/GenerateScheduleReport.cpp.s
 .PHONY : src/control/GenerateScheduleReport.cpp.s
 
+src/control/MainMenuLogic.obj: src/control/MainMenuLogic.cpp.obj
+.PHONY : src/control/MainMenuLogic.obj
+
+# target to build an object file
+src/control/MainMenuLogic.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/MainMenuLogic.cpp.obj
+.PHONY : src/control/MainMenuLogic.cpp.obj
+
+src/control/MainMenuLogic.i: src/control/MainMenuLogic.cpp.i
+.PHONY : src/control/MainMenuLogic.i
+
+# target to preprocess a source file
+src/control/MainMenuLogic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/MainMenuLogic.cpp.i
+.PHONY : src/control/MainMenuLogic.cpp.i
+
+src/control/MainMenuLogic.s: src/control/MainMenuLogic.cpp.s
+.PHONY : src/control/MainMenuLogic.s
+
+# target to generate assembly for a file
+src/control/MainMenuLogic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/MainMenuLogic.cpp.s
+.PHONY : src/control/MainMenuLogic.cpp.s
+
 src/control/ModifyRoomAvailability.obj: src/control/ModifyRoomAvailability.cpp.obj
 .PHONY : src/control/ModifyRoomAvailability.obj
 
@@ -572,54 +524,6 @@ src/control/generateBill.s: src/control/generateBill.cpp.s
 src/control/generateBill.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/generateBill.cpp.s
 .PHONY : src/control/generateBill.cpp.s
-
-src/control/loginVerification.obj: src/control/loginVerification.cpp.obj
-.PHONY : src/control/loginVerification.obj
-
-# target to build an object file
-src/control/loginVerification.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/loginVerification.cpp.obj
-.PHONY : src/control/loginVerification.cpp.obj
-
-src/control/loginVerification.i: src/control/loginVerification.cpp.i
-.PHONY : src/control/loginVerification.i
-
-# target to preprocess a source file
-src/control/loginVerification.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/loginVerification.cpp.i
-.PHONY : src/control/loginVerification.cpp.i
-
-src/control/loginVerification.s: src/control/loginVerification.cpp.s
-.PHONY : src/control/loginVerification.s
-
-# target to generate assembly for a file
-src/control/loginVerification.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/loginVerification.cpp.s
-.PHONY : src/control/loginVerification.cpp.s
-
-src/control/loginVerificationeddy.obj: src/control/loginVerificationeddy.cpp.obj
-.PHONY : src/control/loginVerificationeddy.obj
-
-# target to build an object file
-src/control/loginVerificationeddy.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/loginVerificationeddy.cpp.obj
-.PHONY : src/control/loginVerificationeddy.cpp.obj
-
-src/control/loginVerificationeddy.i: src/control/loginVerificationeddy.cpp.i
-.PHONY : src/control/loginVerificationeddy.i
-
-# target to preprocess a source file
-src/control/loginVerificationeddy.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/loginVerificationeddy.cpp.i
-.PHONY : src/control/loginVerificationeddy.cpp.i
-
-src/control/loginVerificationeddy.s: src/control/loginVerificationeddy.cpp.s
-.PHONY : src/control/loginVerificationeddy.s
-
-# target to generate assembly for a file
-src/control/loginVerificationeddy.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/loginVerificationeddy.cpp.s
-.PHONY : src/control/loginVerificationeddy.cpp.s
 
 src/control/modifyInventory.obj: src/control/modifyInventory.cpp.obj
 .PHONY : src/control/modifyInventory.obj
@@ -829,12 +733,6 @@ help:
 	@echo ... src/boundary/MainMenu.obj
 	@echo ... src/boundary/MainMenu.i
 	@echo ... src/boundary/MainMenu.s
-	@echo ... src/boundary/PatientUI.obj
-	@echo ... src/boundary/PatientUI.i
-	@echo ... src/boundary/PatientUI.s
-	@echo ... src/boundary/StaffUI.obj
-	@echo ... src/boundary/StaffUI.i
-	@echo ... src/boundary/StaffUI.s
 	@echo ... src/boundary/inventoryOrders.obj
 	@echo ... src/boundary/inventoryOrders.i
 	@echo ... src/boundary/inventoryOrders.s
@@ -847,9 +745,6 @@ help:
 	@echo ... src/boundary/staffInterface.obj
 	@echo ... src/boundary/staffInterface.i
 	@echo ... src/boundary/staffInterface.s
-	@echo ... src/boundary/userLogInUI.obj
-	@echo ... src/boundary/userLogInUI.i
-	@echo ... src/boundary/userLogInUI.s
 	@echo ... src/boundary/viewBill.obj
 	@echo ... src/boundary/viewBill.i
 	@echo ... src/boundary/viewBill.s
@@ -865,6 +760,9 @@ help:
 	@echo ... src/control/GenerateScheduleReport.obj
 	@echo ... src/control/GenerateScheduleReport.i
 	@echo ... src/control/GenerateScheduleReport.s
+	@echo ... src/control/MainMenuLogic.obj
+	@echo ... src/control/MainMenuLogic.i
+	@echo ... src/control/MainMenuLogic.s
 	@echo ... src/control/ModifyRoomAvailability.obj
 	@echo ... src/control/ModifyRoomAvailability.i
 	@echo ... src/control/ModifyRoomAvailability.s
@@ -877,12 +775,6 @@ help:
 	@echo ... src/control/generateBill.obj
 	@echo ... src/control/generateBill.i
 	@echo ... src/control/generateBill.s
-	@echo ... src/control/loginVerification.obj
-	@echo ... src/control/loginVerification.i
-	@echo ... src/control/loginVerification.s
-	@echo ... src/control/loginVerificationeddy.obj
-	@echo ... src/control/loginVerificationeddy.i
-	@echo ... src/control/loginVerificationeddy.s
 	@echo ... src/control/modifyInventory.obj
 	@echo ... src/control/modifyInventory.i
 	@echo ... src/control/modifyInventory.s

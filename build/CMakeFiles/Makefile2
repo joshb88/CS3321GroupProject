@@ -82,12 +82,12 @@ clean: CMakeFiles/hospital_management.dir/clean
 CMakeFiles/mylibrary.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30 "Built target mylibrary"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26 "Built target mylibrary"
 .PHONY : CMakeFiles/mylibrary.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mylibrary.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles 24
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/mylibrary.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles 0
 .PHONY : CMakeFiles/mylibrary.dir/rule
@@ -113,7 +113,7 @@ CMakeFiles/hospital_management.dir/all: CMakeFiles/mylibrary.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/hospital_management.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles 26
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/hospital_management.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Josh\Desktop\CS3321GroupProject\build\CMakeFiles 0
 .PHONY : CMakeFiles/hospital_management.dir/rule

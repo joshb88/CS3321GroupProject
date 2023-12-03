@@ -145,11 +145,7 @@
 				21,
 				22,
 				23,
-				24,
-				25,
-				26,
-				27,
-				28
+				24
 			]
 		}
 	],
@@ -164,11 +160,6 @@
 		{
 			"backtrace" : 2,
 			"path" : "headers/boundary/MainMenu.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 2,
-			"path" : "headers/boundary/StaffUI.h",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -188,22 +179,12 @@
 		},
 		{
 			"backtrace" : 2,
-			"path" : "headers/boundary/patientUI.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 2,
 			"path" : "headers/boundary/staffInterface.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 2,
 			"path" : "headers/boundary/userInterface.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 2,
-			"path" : "headers/boundary/userLogInUI.h",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -233,6 +214,11 @@
 		},
 		{
 			"backtrace" : 2,
+			"path" : "headers/control/MainMenuLogic.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
 			"path" : "headers/control/ModifyRoomAvailability.h",
 			"sourceGroupIndex" : 1
 		},
@@ -249,16 +235,6 @@
 		{
 			"backtrace" : 2,
 			"path" : "headers/control/generateBill.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 2,
-			"path" : "headers/control/loginVerification.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 2,
-			"path" : "headers/control/loginVerificationeddy.h",
 			"sourceGroupIndex" : 1
 		},
 		{
