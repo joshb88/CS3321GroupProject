@@ -23,6 +23,10 @@ void Schedule::setRoom(Room& roomno)
 {
     this->room = roomno;
 }
+void Schedule::setProcedure(Procedure& pro)
+{
+    procedure = pro;
+}
 
 // Schedule Class Getters
 const TimePoint Schedule::getTime() const

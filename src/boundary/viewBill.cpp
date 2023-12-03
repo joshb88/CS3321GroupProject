@@ -4,7 +4,18 @@ std::string section_break = "|__________________________________________________
 std::string section_break_begining = "________________________________________________________________________________\n";
 std::string section_break_end = "|===============================================================================\n";
 
-void viewBill::displayBillInformation(){
+void viewBill::displayBillInformation(std::vector<Schedule> schedule){
+
+    generateBill myBill;
+
+    for(int i = 0; i < schedule.size(); i++)
+    {
+        if (i < 1)
+        {
+            myBill.setPatientInfo(schedule[i]);
+        }
+        myBill.setProcedureInfo(schedule[i]);
+    }
 
     // Display patient information
     std::cout << section_break_begining;
@@ -14,11 +25,11 @@ void viewBill::displayBillInformation(){
     std::cout << std::setw(40) << std::left << "|" << "|\n";
 
     std::cout << std::setw(40) << std::left << 
-    ("| " + patient_info.getFirstName() + " " + patient_info.getLastName());
-    std::cout << "| " << patient_info.getInsuranceProvider() << "\n| ";
+    ("| " + myBill.getBillPatient().getFirstName() + " " + myBill.getBillPatient().getLastName());
+    std::cout << "| " << myBill.getBillPatient().getInsuranceProvider() << "\n| ";
 
     std::cout << std::setw(38) << std::left <<  
-    patient_info.getDateOfBirth() << "|\n";
+    myBill.getBillPatient().getDateOfBirth() << "|\n";
 
     std::cout << std::setw(40) << std::left << "|" << "|\n";
     std::cout << section_break_end;
@@ -27,13 +38,13 @@ void viewBill::displayBillInformation(){
     std::cout << std::setw(35) << std::left << "|" << "|\n";
 
     // Displaying patient procedures, cost, and total
-    for (int i  = 0; i < procedure_list.size(); i++)
+    for (int i  = 0; i < myBill.getBillProcedureList().size(); i++)
     {
-        std::cout << "| " << std::setw(33) << std::left << procedure_list[i]
-        << "| " << std::setprecision(2) << std::fixed << procedure_cost[i] << std::endl;
+        std::cout << "| " << std::setw(33) << std::left << myBill.getBillProcedureList()[i]
+        << "| " << std::setprecision(2) << std::fixed << myBill.getBillCostList()[i] << std::endl;
     }
 
-    float sum = generateBill::calculateTotal(procedure_cost);
+    float sum = generateBill::calculateTotal(myBill.getBillCostList());
 
     std::cout << std::setw(35) << std::left << "|" << "|\n";
     std::cout << section_break_end;
@@ -42,15 +53,3 @@ void viewBill::displayBillInformation(){
     
 }
 
-void viewBill::getProcedureInfo(Schedule sche)
-{
-    Procedure pro;
-    pro = sche.getProcedure();
-    procedure_list.push_back(pro.getProcedureName());
-    procedure_cost.push_back(pro.getCost());
-}
-
-void viewBill::getPatientInfo(Schedule sche)
-{
-    patient_info = sche.getPatient();
-}

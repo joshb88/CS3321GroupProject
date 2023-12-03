@@ -28,6 +28,7 @@ class Schedule
         void setStaffer(Staff&);
         void setPatient(Patient&);
         void setRoom(Room&);
+        void setProcedure(Procedure&);
         // No need to set the procedure here, because it's instantiated from a seperate class.
         // There will also be implementation of control classes to modify these members.
 
