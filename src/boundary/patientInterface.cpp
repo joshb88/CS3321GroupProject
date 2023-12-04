@@ -7,7 +7,6 @@
 #include <vector>
 
 void PatientInterface::displayMainMenu(Patient& current_patient) {
-    //Patient current_patient = dynamic_cast<Patient*>(&user);
     int choice = 0;
     bool isRunning = true;
     std::string header_content = "Patient Menu";
