@@ -7,7 +7,6 @@
 #include <vector>
 
 void PatientInterface::displayMainMenu(Patient& current_patient) {
-    //Patient current_patient = dynamic_cast<Patient*>(&user);
     int choice = 0;
     bool isRunning = true;
     std::string header_content = "Patient Menu";
@@ -36,7 +35,7 @@ void PatientInterface::displayMainMenu(Patient& current_patient) {
             case 0:
                 std::cout << "Logging out...\n";
                 isRunning = false;
-                MainMenu::StartMenu();
+                break;
             default:
                 std::cout << "Invalid choice. Please try again.\n";
         }

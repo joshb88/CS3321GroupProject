@@ -10,14 +10,7 @@
 #include "entity/staff.h"
 #include "entity/patient.h"
 #include "boundary/patientInterface.h"
-
-//Take username, pass to check if its in the database.
-//ALREADY IN DATABASE: control into login
-
-//NOT IN DATABASE: pass username here
-//OR
-//LOGIN WITH UNUSED NAME: create account with that name
-
+#include "boundary/staffInterface.h"
 
 std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_username, const short& account_type) 
 {
@@ -45,10 +38,7 @@ std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_
         {
             std::cin.clear();                // Clear the error state
             std::cin.ignore(INT_MAX, '\n');  // Discard invalid input
-            MainMenu::clearScreen();
-            AccountCreation::getUsername();
-            std::cout << MainMenu::SECTION_BREAK;
-            continue;                          // Ensure the function exits after recursion
+            continue;                        // Ensure the function exits after recursion
         }
         if (user_choice == 1) { MainMenu::accountCreateMenu(""); break; } // Retry
         else if(user_choice == 2) { MainMenu::loginMenu(entered_username); std::exit(EXIT_SUCCESS); } //Login with name
@@ -400,8 +390,8 @@ void LoginVerification::passUserToCorrectUI(std::unique_ptr<User> user)
     } 
     else if (staffPtr) 
     {
-        Instantiate and run patient UI
-        StaffInterface staffUI(*staffPtr);
+        //Instantiate and run patient UI
+        StaffInterface staffUI;
         staffUI.displayMainMenu(*staffPtr);
     }
 }
@@ -635,6 +625,6 @@ std::unique_ptr<User> DatabaseManagement::getUserFromFile(const std::string& use
         }
     }
 
-    file.close(); // Close the file before returning a default-constructed User object
+    file.close();
     return nullptr;
 }
