@@ -2,7 +2,7 @@
 
 // ROOM CLASS
 // Room Class Default Constructor
-Room::Room() : room_number(0), room_floor_number(0), room_available(false) {}
+Room::Room() : room_number(0), room_floor_number(0), room_available(true) {}
 
 // Room Class Parameterized Constructor
 // Room number, floor number, room availability

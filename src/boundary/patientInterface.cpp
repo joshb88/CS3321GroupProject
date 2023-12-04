@@ -6,17 +6,23 @@
 #include <sstream>
 #include <vector>
 
-void PatientInterface::displayMainMenu() {
+void PatientInterface::displayMainMenu(Patient& current_patient) {
+    //Patient current_patient = dynamic_cast<Patient*>(&user);
     int choice = 0;
     bool isRunning = true;
+    std::string header_content = "Patient Menu";
+
 
     while (isRunning) {
         MainMenu::clearScreen();
-        MainMenu::header();
-        std::cout << "\nPatient Menu:\n";
+        MainMenu::header(header_content);
+        
+        std::cout << "Currently Logged in as " + current_patient.getFirstName() + " " + current_patient.getLastName() + "." << std::endl;
+    
+
         std::cout << "1. View My Profile\n";
         std::cout << "2. View Bills\n";
-        std::cout << "3. Log Out\n";
+        std::cout << "0. Log Out\n";
         std::cout << "Enter your choice: ";
         std::cin >> choice;
 
@@ -27,10 +33,10 @@ void PatientInterface::displayMainMenu() {
             case 2:
                 //viewBill.displayBillInformation();
                 break;
-            case 4:
+            case 0:
                 std::cout << "Logging out...\n";
                 isRunning = false;
-                break;
+                MainMenu::StartMenu();
             default:
                 std::cout << "Invalid choice. Please try again.\n";
         }

@@ -7,6 +7,7 @@
 #include "boundary/MainMenu.h"
 #include "entity/staff.h"
 #include "entity/patient.h"
+#include "boundary/userInterface.h"
 
 class AccountCreation
 {
@@ -21,6 +22,7 @@ class LoginVerification
     public:
         static bool checkPassword(User&);
         static bool checkPassword(const std::string& user_login, const std::string& user_password);
+        static void passUserToCorrectUI(std::unique_ptr<User>);
 };
 
 class DatabaseManagement

@@ -141,6 +141,8 @@ CMakeFiles/mylibrary.dir/src/boundary/staffInterface.cpp.obj: \
  C:/msys64/mingw64/include/c++/11.2.0/bits/vector.tcc \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/staffInterface.h \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/userInterface.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/user.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/staff.h \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/MainMenu.h \
  C:/msys64/mingw64/include/c++/11.2.0/memory \
  C:/msys64/mingw64/include/c++/11.2.0/bits/stl_tempbuf.h \
@@ -165,5 +167,4 @@ CMakeFiles/mylibrary.dir/src/boundary/staffInterface.cpp.obj: \
  C:/msys64/mingw64/include/c++/11.2.0/bits/atomic_lockfree_defines.h \
  C:/msys64/mingw64/include/c++/11.2.0/backward/auto_ptr.h \
  C:/msys64/mingw64/include/c++/11.2.0/pstl/glue_memory_defs.h \
- C:/msys64/mingw64/include/c++/11.2.0/pstl/execution_defs.h \
- C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/user.h
+ C:/msys64/mingw64/include/c++/11.2.0/pstl/execution_defs.h

@@ -9,6 +9,7 @@
 #include "boundary/MainMenu.h"
 #include "entity/staff.h"
 #include "entity/patient.h"
+#include "boundary/patientInterface.h"
 
 //Take username, pass to check if its in the database.
 //ALREADY IN DATABASE: control into login
@@ -386,6 +387,25 @@ bool LoginVerification::checkPassword(const std::string& user_login, const std::
     user_file.close();
     return false;
 }
+void LoginVerification::passUserToCorrectUI(std::unique_ptr<User> user) 
+{
+    Patient* patientPtr = dynamic_cast<Patient*>(user.get());
+    Staff* staffPtr = dynamic_cast<Staff*>(user.get());
+
+    if (patientPtr) 
+    {
+        // Instantiate and run patient UI
+        PatientInterface patientUI(*patientPtr);
+        patientUI.displayMainMenu(*patientPtr);
+    } 
+    else if (staffPtr) 
+    {
+        Instantiate and run patient UI
+        StaffInterface staffUI(*staffPtr);
+        staffUI.displayMainMenu(*staffPtr);
+    }
+}
+
 //******************************************************************************************************************
 //                                          DATABASE MANAGEMENT
 //******************************************************************************************************************

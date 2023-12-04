@@ -4,7 +4,18 @@
 CMakeFiles/hospital_management.dir/main.cpp.obj
  C:/Users/Josh/Desktop/CS3321GroupProject/main.cpp
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/MainMenu.h
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/patientInterface.h
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/patientScheduling.h
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/staffInterface.h
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/userInterface.h
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/viewPatientProfile.h
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/viewSchedule.h
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/GenerateRoomAvailabilityReport.h
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/GenerateScheduleReport.h
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/MainMenuLogic.h
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/ModifyRoomAvailability.h
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/generateBill.h
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/generatePatientProfile.h
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/inventory.h
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/patient.h
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/procedure.h
@@ -39,6 +50,7 @@ CMakeFiles/hospital_management.dir/main.cpp.obj
  C:/msys64/mingw64/include/c++/11.2.0/bits/cpp_type_traits.h
  C:/msys64/mingw64/include/c++/11.2.0/bits/cxxabi_forced.h
  C:/msys64/mingw64/include/c++/11.2.0/bits/cxxabi_init_exception.h
+ C:/msys64/mingw64/include/c++/11.2.0/bits/erase_if.h
  C:/msys64/mingw64/include/c++/11.2.0/bits/exception.h
  C:/msys64/mingw64/include/c++/11.2.0/bits/exception_defines.h
  C:/msys64/mingw64/include/c++/11.2.0/bits/exception_ptr.h
@@ -59,6 +71,7 @@ CMakeFiles/hospital_management.dir/main.cpp.obj
  C:/msys64/mingw64/include/c++/11.2.0/bits/memoryfwd.h
  C:/msys64/mingw64/include/c++/11.2.0/bits/move.h
  C:/msys64/mingw64/include/c++/11.2.0/bits/nested_exception.h
+ C:/msys64/mingw64/include/c++/11.2.0/bits/node_handle.h
  C:/msys64/mingw64/include/c++/11.2.0/bits/ostream.tcc
  C:/msys64/mingw64/include/c++/11.2.0/bits/ostream_insert.h
  C:/msys64/mingw64/include/c++/11.2.0/bits/parse_numbers.h
@@ -80,10 +93,13 @@ CMakeFiles/hospital_management.dir/main.cpp.obj
  C:/msys64/mingw64/include/c++/11.2.0/bits/stl_iterator.h
  C:/msys64/mingw64/include/c++/11.2.0/bits/stl_iterator_base_funcs.h
  C:/msys64/mingw64/include/c++/11.2.0/bits/stl_iterator_base_types.h
+ C:/msys64/mingw64/include/c++/11.2.0/bits/stl_map.h
+ C:/msys64/mingw64/include/c++/11.2.0/bits/stl_multimap.h
  C:/msys64/mingw64/include/c++/11.2.0/bits/stl_pair.h
  C:/msys64/mingw64/include/c++/11.2.0/bits/stl_raw_storage_iter.h
  C:/msys64/mingw64/include/c++/11.2.0/bits/stl_relops.h
  C:/msys64/mingw64/include/c++/11.2.0/bits/stl_tempbuf.h
+ C:/msys64/mingw64/include/c++/11.2.0/bits/stl_tree.h
  C:/msys64/mingw64/include/c++/11.2.0/bits/stl_uninitialized.h
  C:/msys64/mingw64/include/c++/11.2.0/bits/stl_vector.h
  C:/msys64/mingw64/include/c++/11.2.0/bits/streambuf.tcc
@@ -123,6 +139,7 @@ CMakeFiles/hospital_management.dir/main.cpp.obj
  C:/msys64/mingw64/include/c++/11.2.0/istream
  C:/msys64/mingw64/include/c++/11.2.0/limits
  C:/msys64/mingw64/include/c++/11.2.0/locale
+ C:/msys64/mingw64/include/c++/11.2.0/map
  C:/msys64/mingw64/include/c++/11.2.0/memory
  C:/msys64/mingw64/include/c++/11.2.0/new
  C:/msys64/mingw64/include/c++/11.2.0/ostream

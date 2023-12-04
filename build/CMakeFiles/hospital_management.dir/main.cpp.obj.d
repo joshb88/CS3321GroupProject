@@ -181,4 +181,22 @@ CMakeFiles/hospital_management.dir/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/11.2.0/pstl/glue_memory_defs.h \
  C:/msys64/mingw64/include/c++/11.2.0/pstl/execution_defs.h \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/MainMenuLogic.h \
- C:/msys64/mingw64/include/c++/11.2.0/climits
+ C:/msys64/mingw64/include/c++/11.2.0/climits \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/userInterface.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/patientInterface.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/userInterface.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/patientScheduling.h \
+ C:/msys64/mingw64/include/c++/11.2.0/map \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/stl_tree.h \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/node_handle.h \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/stl_map.h \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/stl_multimap.h \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/erase_if.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/ModifyRoomAvailability.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/GenerateRoomAvailabilityReport.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/generateBill.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/viewSchedule.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/GenerateScheduleReport.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/viewPatientProfile.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/generatePatientProfile.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/staffInterface.h

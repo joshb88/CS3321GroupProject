@@ -5,59 +5,59 @@
 #include "boundary/staffInterface.h"
 #include "boundary/MainMenu.h"
 
-void StaffInterface::displayMainMenu() 
+void StaffInterface::displayMainMenu(Staff& user) 
 {
-    int choice = 0;
-    bool isRunning = true;
-    std::string header_content = "Staff Main Menu";
+//     int choice = 0;
+//     bool isRunning = true;
+//     std::string header_content = "Staff Main Menu";
 
-    while (isRunning) 
-    {
-        MainMenu::clearScreen();
-        MainMenu::header(header_content);
-        std::cout << 
-        "Select an option:" << 
-        "1.\tView Schedule" << std::endl <<
-        "2.\tManage Patient Records" << std::endl <<
-        "3.\tAccess Inventory" << std::endl <<
-        "4.\tProcess Billing Information" << std::endl <<
-        "0.\tLog Out" << std::endl <<
-        MainMenu::SECTION_BREAK;
-        std::cin >> choice;
+//     while (isRunning) 
+//     {
+//         MainMenu::clearScreen();
+//         MainMenu::header(header_content);
+//         std::cout << 
+//         "Select an option:" << 
+//         "1.\tView Schedule" << std::endl <<
+//         "2.\tManage Patient Records" << std::endl <<
+//         "3.\tAccess Inventory" << std::endl <<
+//         "4.\tProcess Billing Information" << std::endl <<
+//         "0.\tLog Out" << std::endl <<
+//         MainMenu::SECTION_BREAK;
+//         std::cin >> choice;
 
-        switch (choice) {
-            case 1:
-                int response;
-                while (int running = true){
-                std::cout << "viewSchedule() ran\n";
-                viewSchedule();
+//         switch (choice) {
+//             case 1:
+//                 int response;
+//                 while (int running = true){
+//                 std::cout << "viewSchedule() ran\n";
+//                 viewSchedule();
 
-                std::cout << "1. add to schedule\n";
-                std::cout << "2. remove from schedule\n";
-                std::cout << "3. exit\n";
-                std::cin >> response;
-                if (response == 1){ addSchedule();}
-                if (response == 2) {removeSchedule();}
-                if (response == 3) {break;}
-                }
-                break;
-            case 2:
-                std::cout << "managePatientRecords() ran\n";
-                break;
-            case 3:
-                std::cout << "accessInventory() ran \n";
-                break;
-            case 4:
-                std::cout << "processBillingInformation() ran\n";
-                break;
-            case 5:
-                std::cout << "Logging out...\n";
-                isRunning = false;
-                break;
-            default:
-                std::cout << "Invalid choice. Please try again.\n";
-        }
-    }
+//                 std::cout << "1. add to schedule\n";
+//                 std::cout << "2. remove from schedule\n";
+//                 std::cout << "3. exit\n";
+//                 std::cin >> response;
+//                 if (response == 1){ addSchedule();}
+//                 if (response == 2) {removeSchedule();}
+//                 if (response == 3) {break;}
+//                 }
+//                 break;
+//             case 2:
+//                 std::cout << "managePatientRecords() ran\n";
+//                 break;
+//             case 3:
+//                 std::cout << "accessInventory() ran \n";
+//                 break;
+//             case 4:
+//                 std::cout << "processBillingInformation() ran\n";
+//                 break;
+//             case 5:
+//                 std::cout << "Logging out...\n";
+//                 isRunning = false;
+//                 break;
+//             default:
+//                 std::cout << "Invalid choice. Please try again.\n";
+//         }
+//     }
 }
 
 

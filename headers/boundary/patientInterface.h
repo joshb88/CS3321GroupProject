@@ -14,8 +14,8 @@ private:
     std::string patientName;
 public:
     PatientInterface(const std::string& name) : patientName(name) {}
-
-    void displayMainMenu() override; // Implementation specific to patients
+    PatientInterface(Patient& patient) : patientName(patient.getLastName()) {}
+    void displayMainMenu(Patient& user); // Implementation specific to patients
 };
 
 #endif // PATIENT_INTERFACE_H
