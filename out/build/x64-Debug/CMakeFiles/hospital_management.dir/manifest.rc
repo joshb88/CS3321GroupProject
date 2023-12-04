@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "C:/Users/amp_0/OneDrive/Documents/CS3321GroupProject/out/build/x64-Debug/CMakeFiles/hospital_management.dir/embed.manifest"

@@ -10,6 +10,7 @@ public:
     void addSchedule();
     void removeSchedule();
     void viewSchedule();
+    void openInventory();
 };
 
 #endif // STAFF_INTERFACE_H

@@ -1,0 +1,4 @@
+C:/Users/amp_0/OneDrive/Documents/CS3321GroupProject/out/build/x64-Debug/CMakeFiles/mylibrary.dir
+C:/Users/amp_0/OneDrive/Documents/CS3321GroupProject/out/build/x64-Debug/CMakeFiles/hospital_management.dir
+C:/Users/amp_0/OneDrive/Documents/CS3321GroupProject/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/amp_0/OneDrive/Documents/CS3321GroupProject/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
