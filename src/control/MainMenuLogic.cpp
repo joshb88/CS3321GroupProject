@@ -193,16 +193,6 @@ std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_
         }
         new_patient.setInsuranceProvider(provider);
 
-        // std::cout <<
-        // new_patient.getUserLogin() << std::endl <<
-        // new_patient.getUserPassword() << std::endl <<
-        // new_patient.getLastName() << std::endl <<
-        // new_patient.getFirstName() << std::endl <<
-        // new_patient.getDateOfBirth() << std::endl <<
-        // new_patient.getGender() << std::endl <<
-        // new_patient.getHasInsurance() << std::endl <<
-        // new_patient.getInsuranceProvider() << std::endl;
-
         new_patient.setHasRoom(false);
 
         return std::make_unique<Patient>(new_patient);
@@ -396,6 +386,9 @@ bool LoginVerification::checkPassword(const std::string& user_login, const std::
     user_file.close();
     return false;
 }
+//******************************************************************************************************************
+//                                          DATABASE MANAGEMENT
+//******************************************************************************************************************
 
 bool DatabaseManagement::userInDatabase(User& user) 
 {
