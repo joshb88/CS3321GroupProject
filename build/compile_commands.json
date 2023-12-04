@@ -19,6 +19,12 @@
 },
 {
   "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\boundary\\orderProcedures.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\boundary\\orderProcedures.cpp",
+  "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/boundary/orderProcedures.cpp",
+  "output": "CMakeFiles/mylibrary.dir/src/boundary/orderProcedures.cpp.obj"
+},
+{
+  "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\boundary\\patientInterface.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\boundary\\patientInterface.cpp",
   "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/boundary/patientInterface.cpp",
   "output": "CMakeFiles/mylibrary.dir/src/boundary/patientInterface.cpp.obj"
@@ -34,6 +40,12 @@
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\boundary\\viewBill.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\boundary\\viewBill.cpp",
   "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/boundary/viewBill.cpp",
   "output": "CMakeFiles/mylibrary.dir/src/boundary/viewBill.cpp.obj"
+},
+{
+  "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\boundary\\viewPatientProfile.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\boundary\\viewPatientProfile.cpp",
+  "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/boundary/viewPatientProfile.cpp",
+  "output": "CMakeFiles/mylibrary.dir/src/boundary/viewPatientProfile.cpp.obj"
 },
 {
   "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
@@ -88,6 +100,12 @@
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\control\\generateBill.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\control\\generateBill.cpp",
   "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/control/generateBill.cpp",
   "output": "CMakeFiles/mylibrary.dir/src/control/generateBill.cpp.obj"
+},
+{
+  "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\control\\generatePatientProfile.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\control\\generatePatientProfile.cpp",
+  "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/control/generatePatientProfile.cpp",
+  "output": "CMakeFiles/mylibrary.dir/src/control/generatePatientProfile.cpp.obj"
 },
 {
   "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
