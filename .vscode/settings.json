@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "*.cpp": "cpp",
         "*.rmd": "markdown",
         "__bit_reference": "cpp",
         "__bits": "cpp",
@@ -106,7 +107,24 @@
         "typeindex": "cpp",
         "valarray": "cpp",
         "__verbose_abort": "cpp",
-        "__tree": "cpp"
+        "__tree": "cpp",
+        "queue": "cpp",
+        "xthread": "cpp",
+        "xfacet": "cpp",
+        "xhash": "cpp",
+        "xiosbase": "cpp",
+        "xlocale": "cpp",
+        "xlocinfo": "cpp",
+        "xlocmon": "cpp",
+        "xlocnum": "cpp",
+        "xloctime": "cpp",
+        "xmemory": "cpp",
+        "xmemory0": "cpp",
+        "xstddef": "cpp",
+        "xstring": "cpp",
+        "xtr1common": "cpp",
+        "xtree": "cpp",
+        "xutility": "cpp"
     },
     "C_Cpp.default.compilerPath": "C:\\msys64\\mingw64\\bin\\gcc.exe",
     "C_Cpp.errorSquiggles": "disabled"

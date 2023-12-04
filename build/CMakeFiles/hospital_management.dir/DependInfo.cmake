@@ -8,11 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Josh/Desktop/CS3321GroupProject/main.cpp" "CMakeFiles/hospital_management.dir/main.cpp.obj" "gcc" "CMakeFiles/hospital_management.dir/main.cpp.obj.d"
+  "C:/Users/Adrian/Desktop/CS3321GroupProject-1/main.cpp" "CMakeFiles/hospital_management.dir/main.cpp.obj" "gcc" "CMakeFiles/hospital_management.dir/main.cpp.obj.d"
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  "C:/Users/Adrian/Desktop/CS3321GroupProject-1/build/CMakeFiles/mylibrary.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

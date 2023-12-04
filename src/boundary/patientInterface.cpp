@@ -1,4 +1,6 @@
 #include "boundary/patientInterface.h"
+#include "boundary/MainMenu.h"
+
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -9,32 +11,24 @@ void PatientInterface::displayMainMenu() {
     bool isRunning = true;
 
     while (isRunning) {
+        MainMenu::clearScreen();
+        MainMenu::header();
         std::cout << "\nPatient Menu:\n";
-        std::cout << "1. View My Appointments\n";
-        std::cout << "2. Update My Profile\n";
-        std::cout << "3. View My Medical Records\n";
-        std::cout << "4. Pay Bills\n";
-        std::cout << "5. Log Out\n";
+        std::cout << "1. View My Profile\n";
+        std::cout << "2. View Bills\n";
+        std::cout << "3. Log Out\n";
         std::cout << "Enter your choice: ";
         std::cin >> choice;
 
         switch (choice) {
             case 1:
-                std::cout << "1. viewAppointments() ran\n";
-                viewAppointments();
+                //viewPatientProfile.displayPatientProfile(); // vector of schedules
                 break;
             case 2:
-                std::cout << "2. updateProfile() ran\n";
-                break;
-            case 3:
-                std::cout << "3. view patient profile\n";
-
+                //viewBill.displayBillInformation();
                 break;
             case 4:
-                std::cout << "4. view bill\n";
-                break;
-            case 5:
-                std::cout << "5. Logging out...\n";
+                std::cout << "Logging out...\n";
                 isRunning = false;
                 break;
             default:
@@ -43,18 +37,3 @@ void PatientInterface::displayMainMenu() {
     }
 }
 
-
-// void PatientInterface::updateProfile() {
-//     std::cout << "Updating profile...\n";
-//     // Implementation for updating profile
-// }
-
-// void PatientInterface::viewMedicalRecords() {
-//     std::cout << "Viewing medical records...\n";
-//     // Implementation for viewing medical records
-// }
-
-// void PatientInterface::payBills() {
-//     std::cout << "Paying bills...\n";
-//     // Implementation for paying bills
-// }

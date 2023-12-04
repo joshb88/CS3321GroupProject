@@ -6,7 +6,6 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.15"
@@ -41,14 +40,22 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "hospital_management::@6890427a1f51a3e7e1df",
+<<<<<<< HEAD:build/.cmake/api/v1/reply/codemodel-v2-cda3243e7af081df9663.json
 					"jsonFile" : "target-hospital_management-Debug-292e06be459eb42784bc.json",
+=======
+					"jsonFile" : "target-hospital_management-Debug-d59c3232db78cb5d975a.json",
+>>>>>>> ec5b58714896bbece803c1191646a5beb32e6cee:build/.cmake/api/v1/reply/codemodel-v2-2c495858df17721b420e.json
 					"name" : "hospital_management",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "mylibrary::@6890427a1f51a3e7e1df",
+<<<<<<< HEAD:build/.cmake/api/v1/reply/codemodel-v2-cda3243e7af081df9663.json
 					"jsonFile" : "target-mylibrary-Debug-d840a23b9308f86b9f63.json",
+=======
+					"jsonFile" : "target-mylibrary-Debug-3b43f07ea60c70811e64.json",
+>>>>>>> ec5b58714896bbece803c1191646a5beb32e6cee:build/.cmake/api/v1/reply/codemodel-v2-2c495858df17721b420e.json
 					"name" : "mylibrary",
 					"projectIndex" : 0
 				}
@@ -58,12 +65,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/Josh/Desktop/CS3321GroupProject/build",
-		"source" : "C:/Users/Josh/Desktop/CS3321GroupProject"
+		"build" : "C:/Users/Adrian/Desktop/CS3321GroupProject-1/build",
+		"source" : "C:/Users/Adrian/Desktop/CS3321GroupProject-1"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 2
 	}
 }

@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mylibrary.dir/src/boundary/orderProcedures.cpp.obj.d"
   "CMakeFiles/mylibrary.dir/src/boundary/patientInterface.cpp.obj"
   "CMakeFiles/mylibrary.dir/src/boundary/patientInterface.cpp.obj.d"
+  "CMakeFiles/mylibrary.dir/src/boundary/patientScheduling.cpp.obj"
+  "CMakeFiles/mylibrary.dir/src/boundary/patientScheduling.cpp.obj.d"
   "CMakeFiles/mylibrary.dir/src/boundary/staffInterface.cpp.obj"
   "CMakeFiles/mylibrary.dir/src/boundary/staffInterface.cpp.obj.d"
   "CMakeFiles/mylibrary.dir/src/boundary/viewBill.cpp.obj"

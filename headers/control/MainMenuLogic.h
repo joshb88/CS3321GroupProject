@@ -2,6 +2,7 @@
 #include <memory>
 #include <string>
 #include <ctime>
+#include <climits>
 #include "control/MainMenuLogic.h"
 #include "boundary/MainMenu.h"
 #include "entity/staff.h"

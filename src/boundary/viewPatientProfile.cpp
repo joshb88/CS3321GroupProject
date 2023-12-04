@@ -7,7 +7,7 @@ std::string section_divider = "|================================================
 void viewPatientProfile::displayPatientProfile(std::vector<Schedule> schedule)
 {
     generatePatientProfile myProfile;
-    
+
     for(int i = 0; i < schedule.size(); i++)
     {
         if (i < 1)
