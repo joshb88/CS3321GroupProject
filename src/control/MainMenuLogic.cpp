@@ -10,6 +10,7 @@
 #include "entity/staff.h"
 #include "entity/patient.h"
 #include "boundary/patientInterface.h"
+#include "boundary/staffInterface.h"
 
 //Take username, pass to check if its in the database.
 //ALREADY IN DATABASE: control into login
@@ -400,8 +401,8 @@ void LoginVerification::passUserToCorrectUI(std::unique_ptr<User> user)
     } 
     else if (staffPtr) 
     {
-        Instantiate and run patient UI
-        StaffInterface staffUI(*staffPtr);
+        //Instantiate and run patient UI
+        StaffInterface staffUI;
         staffUI.displayMainMenu(*staffPtr);
     }
 }
@@ -635,6 +636,6 @@ std::unique_ptr<User> DatabaseManagement::getUserFromFile(const std::string& use
         }
     }
 
-    file.close(); // Close the file before returning a default-constructed User object
+    file.close();
     return nullptr;
 }

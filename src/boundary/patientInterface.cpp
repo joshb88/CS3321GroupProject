@@ -36,7 +36,7 @@ void PatientInterface::displayMainMenu(Patient& current_patient) {
             case 0:
                 std::cout << "Logging out...\n";
                 isRunning = false;
-                MainMenu::StartMenu();
+                break;
             default:
                 std::cout << "Invalid choice. Please try again.\n";
         }

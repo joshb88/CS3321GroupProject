@@ -5,7 +5,7 @@
 #include "boundary/staffInterface.h"
 #include "boundary/MainMenu.h"
 
-void StaffInterface::displayMainMenu(Staff& user) 
+void StaffInterface::displayMainMenu(Staff& staff) 
 {
 //     int choice = 0;
 //     bool isRunning = true;

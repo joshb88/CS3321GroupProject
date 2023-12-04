@@ -202,4 +202,5 @@ CMakeFiles/mylibrary.dir/src/control/MainMenuLogic.cpp.obj: \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/viewSchedule.h \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/GenerateScheduleReport.h \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/viewPatientProfile.h \
- C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/generatePatientProfile.h
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/generatePatientProfile.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/staffInterface.h

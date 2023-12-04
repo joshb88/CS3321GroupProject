@@ -112,7 +112,7 @@ std::unique_ptr<User> MainMenu::loginMenu(std::string entered_username)
                 std::cout << "LOGIN PASSED" << std::endl;
                 user_logged_in = DatabaseManagement::getUserFromFile(entered_username);
                 LoginVerification::passUserToCorrectUI(std::move(user_logged_in));
-                //return nullptr;
+                break;
             }
         }
         std::cout << "Too many attempts; Going to Main Menu."; 
