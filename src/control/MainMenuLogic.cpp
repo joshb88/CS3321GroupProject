@@ -49,7 +49,7 @@ std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_
             std::cout << MainMenu::SECTION_BREAK;
             continue;                          // Ensure the function exits after recursion
         }
-        if (user_choice == 1) { MainMenu::accountCreateMenu(AccountCreation::getUsername()); continue; } // Retry
+        if (user_choice == 1) { MainMenu::accountCreateMenu(""); break; } // Retry
         else if(user_choice == 2) { MainMenu::loginMenu(entered_username); std::exit(EXIT_SUCCESS); } //Login with name
         else if (user_choice == 0) { MainMenu::StartMenu(); std::exit(EXIT_SUCCESS); } // Start over
     }
@@ -437,15 +437,15 @@ bool DatabaseManagement::userInDatabase(const std::string& user_login)
             std::istringstream iss(line); // create a string stream to iterate through each token (word)
             std::string token;
 
-            // Split the line using commas as delimiters
-            while (std::getline(iss, token, ','))
+            // Read the first token and (more importantly) the second token.
+            std::getline(iss, token, ',');
+            std::getline(iss, token, ',');
+
+            // Check if the second token is equal to the provided user login
+            if (token == user_login)
             {
-                // Check if the current token is equal to the provided user login
-                if (token == user_login)
-                {
-                    user_file.close();
-                    return true;
-                }
+                user_file.close();
+                return true;
             }
         }
     }

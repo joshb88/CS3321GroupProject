@@ -237,6 +237,30 @@ src/boundary/inventoryUI.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/inventoryUI.cpp.s
 .PHONY : src/boundary/inventoryUI.cpp.s
 
+src/boundary/orderProcedures.obj: src/boundary/orderProcedures.cpp.obj
+.PHONY : src/boundary/orderProcedures.obj
+
+# target to build an object file
+src/boundary/orderProcedures.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/orderProcedures.cpp.obj
+.PHONY : src/boundary/orderProcedures.cpp.obj
+
+src/boundary/orderProcedures.i: src/boundary/orderProcedures.cpp.i
+.PHONY : src/boundary/orderProcedures.i
+
+# target to preprocess a source file
+src/boundary/orderProcedures.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/orderProcedures.cpp.i
+.PHONY : src/boundary/orderProcedures.cpp.i
+
+src/boundary/orderProcedures.s: src/boundary/orderProcedures.cpp.s
+.PHONY : src/boundary/orderProcedures.s
+
+# target to generate assembly for a file
+src/boundary/orderProcedures.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/orderProcedures.cpp.s
+.PHONY : src/boundary/orderProcedures.cpp.s
+
 src/boundary/patientInterface.obj: src/boundary/patientInterface.cpp.obj
 .PHONY : src/boundary/patientInterface.obj
 
@@ -308,6 +332,30 @@ src/boundary/viewBill.s: src/boundary/viewBill.cpp.s
 src/boundary/viewBill.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/viewBill.cpp.s
 .PHONY : src/boundary/viewBill.cpp.s
+
+src/boundary/viewPatientProfile.obj: src/boundary/viewPatientProfile.cpp.obj
+.PHONY : src/boundary/viewPatientProfile.obj
+
+# target to build an object file
+src/boundary/viewPatientProfile.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/viewPatientProfile.cpp.obj
+.PHONY : src/boundary/viewPatientProfile.cpp.obj
+
+src/boundary/viewPatientProfile.i: src/boundary/viewPatientProfile.cpp.i
+.PHONY : src/boundary/viewPatientProfile.i
+
+# target to preprocess a source file
+src/boundary/viewPatientProfile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/viewPatientProfile.cpp.i
+.PHONY : src/boundary/viewPatientProfile.cpp.i
+
+src/boundary/viewPatientProfile.s: src/boundary/viewPatientProfile.cpp.s
+.PHONY : src/boundary/viewPatientProfile.s
+
+# target to generate assembly for a file
+src/boundary/viewPatientProfile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/boundary/viewPatientProfile.cpp.s
+.PHONY : src/boundary/viewPatientProfile.cpp.s
 
 src/boundary/viewRoomAvailabilityReport.obj: src/boundary/viewRoomAvailabilityReport.cpp.obj
 .PHONY : src/boundary/viewRoomAvailabilityReport.obj
@@ -525,6 +573,30 @@ src/control/generateBill.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/generateBill.cpp.s
 .PHONY : src/control/generateBill.cpp.s
 
+src/control/generatePatientProfile.obj: src/control/generatePatientProfile.cpp.obj
+.PHONY : src/control/generatePatientProfile.obj
+
+# target to build an object file
+src/control/generatePatientProfile.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/generatePatientProfile.cpp.obj
+.PHONY : src/control/generatePatientProfile.cpp.obj
+
+src/control/generatePatientProfile.i: src/control/generatePatientProfile.cpp.i
+.PHONY : src/control/generatePatientProfile.i
+
+# target to preprocess a source file
+src/control/generatePatientProfile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/generatePatientProfile.cpp.i
+.PHONY : src/control/generatePatientProfile.cpp.i
+
+src/control/generatePatientProfile.s: src/control/generatePatientProfile.cpp.s
+.PHONY : src/control/generatePatientProfile.s
+
+# target to generate assembly for a file
+src/control/generatePatientProfile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/generatePatientProfile.cpp.s
+.PHONY : src/control/generatePatientProfile.cpp.s
+
 src/control/modifyInventory.obj: src/control/modifyInventory.cpp.obj
 .PHONY : src/control/modifyInventory.obj
 
@@ -739,6 +811,9 @@ help:
 	@echo ... src/boundary/inventoryUI.obj
 	@echo ... src/boundary/inventoryUI.i
 	@echo ... src/boundary/inventoryUI.s
+	@echo ... src/boundary/orderProcedures.obj
+	@echo ... src/boundary/orderProcedures.i
+	@echo ... src/boundary/orderProcedures.s
 	@echo ... src/boundary/patientInterface.obj
 	@echo ... src/boundary/patientInterface.i
 	@echo ... src/boundary/patientInterface.s
@@ -748,6 +823,9 @@ help:
 	@echo ... src/boundary/viewBill.obj
 	@echo ... src/boundary/viewBill.i
 	@echo ... src/boundary/viewBill.s
+	@echo ... src/boundary/viewPatientProfile.obj
+	@echo ... src/boundary/viewPatientProfile.i
+	@echo ... src/boundary/viewPatientProfile.s
 	@echo ... src/boundary/viewRoomAvailabilityReport.obj
 	@echo ... src/boundary/viewRoomAvailabilityReport.i
 	@echo ... src/boundary/viewRoomAvailabilityReport.s
@@ -775,6 +853,9 @@ help:
 	@echo ... src/control/generateBill.obj
 	@echo ... src/control/generateBill.i
 	@echo ... src/control/generateBill.s
+	@echo ... src/control/generatePatientProfile.obj
+	@echo ... src/control/generatePatientProfile.i
+	@echo ... src/control/generatePatientProfile.s
 	@echo ... src/control/modifyInventory.obj
 	@echo ... src/control/modifyInventory.i
 	@echo ... src/control/modifyInventory.s
