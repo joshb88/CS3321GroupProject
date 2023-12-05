@@ -60,6 +60,12 @@ int main()
     "Procedure Name:\t" << ptest.getProcedureName() << std::endl <<
     "Procedure Cost:\t" << ptest.getCost() << std::endl <<
     "Inventory Required:\t" << ptest.getItemsUsed() << std::endl;
+    Procedure ptest2 = ModifyProcedure::createProcedureFromUser();
+
+    std::cout <<
+    "Procedure Name:\t" << ptest2.getProcedureName() << std::endl <<
+    "Procedure Cost:\t" << ptest2.getCost() << std::endl <<
+    "Inventory Required:\t" << ptest2.getItemsUsed() << std::endl;
 
     return 0;
 };

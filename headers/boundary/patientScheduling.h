@@ -3,8 +3,8 @@
 
 #include <string>
 #include <map>
-#include "entity/Patient.h"
-#include "entity/Room.h"
+#include "entity/patient.h"
+#include "entity/room.h"
 #include "control/ModifyRoomAvailability.h"
 #include "control/GenerateRoomAvailabilityReport.h"
 

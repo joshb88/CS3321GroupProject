@@ -173,7 +173,7 @@ std::vector<Inventory> ModifyProcedure::deserializeItemsUsed(const std::string& 
 
     return itemsUsed;
 }
-Procedure ModifyProcedure::createProcedure() 
+Procedure ModifyProcedure::createProcedureFromUser() 
 {
     std::string proc_name, inventory_item, header_content = "Procedure Creation Menu";
     float proc_cost;
@@ -187,9 +187,10 @@ Procedure ModifyProcedure::createProcedure()
     "Enter the cost for the procedure:" << std::endl;
     std::cin >> proc_cost;
 
-    bool finished = false;
     do
     {
+        short choice;
+
         std::cout <<
         "Enter the an inventory item for the procedure:" << std::endl;
         std::cin >> inventory_item;
@@ -199,19 +200,26 @@ Procedure ModifyProcedure::createProcedure()
             item_list.push_back(added_item);
             std::cout << "Added " << added_item.getItemName() << "." << std::endl;
         }
+        else
+        {
+            Inventory created_inventory;
+            //function to make one via input
+        }
         std::cout << 
         "Are there more items?" <<
         "1.\tYes" << std::endl <<
         "2.\tNo" << std::endl <<
-        << std::endl;
-        std::cin >> short choice;
+        MainMenu::SECTION_BREAK; 
+        do
+        {
+            std::cin >> choice;
+            if (!(choice == 1 || choice == 2)) { std::cout << "Invalid Entry; Enter Again:" << std::endl; }
+        } while (choice == 1);
         
+        if(choice == 2) { break; }
     } 
-    while (!finished);
-    
-    std::cout <<
-    "Enter the an inventory item for the procedure:" << std::endl;
-    std::cin >> inventory_item;
-    
-    ModifyInventory::inventoryInDatabase(inventory_item)
+    while (true);
+
+    Procedure new_procedure(proc_name, proc_cost, item_list);
+    return new_procedure;
 }
