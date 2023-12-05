@@ -13,6 +13,7 @@
 //#include "control/GenerateRoomAvailabilityReport.h"
 //#include "control/ModifyRoomAvailability.h"
 #include "control/modifyProcedure.h"
+#include "control/TESTMODINV.h"
 
 /* 
 There is a chain of includes that are all satisfied by calling "schedule.h".
@@ -41,16 +42,24 @@ int main()
     Inventory imaging_fluid("imaging fluid",500,10);
     Inventory iv_bags("iv bags",1000,30);
     Inventory mri_machine("cat scan machine",3,0);
-    std::vector<Inventory> mri_itesm_needed = {imaging_fluid, iv_bags,mri_machine};
-    Procedure mri("mri",5000.75,mri_itesm_needed);
+    // std::vector<Inventory> mri_itesm_needed = {imaging_fluid, iv_bags,mri_machine};
+    // Procedure mri("mri",5000.75,mri_itesm_needed);
 
-    ModifyProcedure::writeProcedureToDatabase(mri);
-    Procedure test = ModifyProcedure::readProcedureFromDatabase("mri");
+    ModifyInventory::writeInventoryToDatabase(imaging_fluid);
+    Inventory test = ModifyInventory::readInventoryFromDatabase("imaging fluid");
 
-    std::cout<<
-    test.getProcedureName() << std::endl <<
-    test.getCost() << std::endl <<
-    test.getItemsUsed() << std::endl;
+    std::cout << 
+    test.getItemName() << std::endl <<
+    test.getItemCount() << std::endl <<
+    test.getItemThreshold() << std::endl;
+
+    // ModifyProcedure::writeProcedureToDatabase(mri);
+    // Procedure test = ModifyProcedure::readProcedureFromDatabase("mri");
+
+    // std::cout<<
+    // test.getProcedureName() << std::endl <<
+    // test.getCost() << std::endl <<
+    // test.getItemsUsed() << std::endl;
 
     return 0;
 };
