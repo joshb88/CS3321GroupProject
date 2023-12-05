@@ -187,9 +187,9 @@ Procedure ModifyProcedure::createProcedureFromUser()
     "Enter the cost for the procedure:" << std::endl;
     std::cin >> proc_cost;
 
+    short choice;
     do
     {
-        short choice;
 
         std::cout <<
         "Enter the an inventory item for the procedure:" << std::endl;
@@ -206,19 +206,22 @@ Procedure ModifyProcedure::createProcedureFromUser()
             //function to make one via input
         }
         std::cout << 
-        "Are there more items?" <<
+        "Are there more items?" << std::endl <<
         "1.\tYes" << std::endl <<
         "2.\tNo" << std::endl <<
         MainMenu::SECTION_BREAK; 
         do
         {
             std::cin >> choice;
-            if (!(choice == 1 || choice == 2)) { std::cout << "Invalid Entry; Enter Again:" << std::endl; }
-        } while (choice == 1);
-        
-        if(choice == 2) { break; }
+            if (!(choice == 1 || choice == 2)) 
+            { 
+                std::cout << "Invalid Entry; Enter Again:" << std::endl; 
+                std::cin.clear();
+                std::cin.ignore(INT_MAX,'\n');
+            }
+        } while (!(choice == 1 || choice == 2));
     } 
-    while (true);
+    while (choice != 2);
 
     Procedure new_procedure(proc_name, proc_cost, item_list);
     return new_procedure;
