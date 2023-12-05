@@ -1,5 +1,2 @@
 1,ptest1,test,test,test,19880814,X,1,blue shield,1,1,2,303
 1,patient_test2,patient_pw2,patient_last,patient_first,20231031,F,0,n/a,0,0,0,0
-2,jboehm,test,boehm,josh,19880814,m,240,4,doctor of science,20231204
-2,test,test,test,test,19010101,x,300,4,idk,20020202
-1,val,1234,jalomo,val,19950624,f,1,blue cross,0,1,0,0

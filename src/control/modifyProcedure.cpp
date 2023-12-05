@@ -1,4 +1,6 @@
+#include "boundary/MainMenu.h"
 #include "control/modifyProcedure.h"
+#include "control/TESTMODINV.h"
 #include <string>
 #include <fstream>
 #include <sstream>
@@ -171,4 +173,45 @@ std::vector<Inventory> ModifyProcedure::deserializeItemsUsed(const std::string& 
 
     return itemsUsed;
 }
-//void ModifyProcedure::changeProcedure(Procedure& procedure) {}
+Procedure ModifyProcedure::createProcedure() 
+{
+    std::string proc_name, inventory_item, header_content = "Procedure Creation Menu";
+    float proc_cost;
+    std::vector<Inventory> item_list;
+    
+    std::cout <<
+    "Enter a name for the procedure:" << std::endl;
+    std::cin >> proc_name;
+
+    std::cout <<
+    "Enter the cost for the procedure:" << std::endl;
+    std::cin >> proc_cost;
+
+    bool finished = false;
+    do
+    {
+        std::cout <<
+        "Enter the an inventory item for the procedure:" << std::endl;
+        std::cin >> inventory_item;
+        if (ModifyInventory::inventoryInDatabase(inventory_item))
+        {
+            Inventory added_item = ModifyInventory::readInventoryFromDatabase(inventory_item);
+            item_list.push_back(added_item);
+            std::cout << "Added " << added_item.getItemName() << "." << std::endl;
+        }
+        std::cout << 
+        "Are there more items?" <<
+        "1.\tYes" << std::endl <<
+        "2.\tNo" << std::endl <<
+        << std::endl;
+        std::cin >> short choice;
+        
+    } 
+    while (!finished);
+    
+    std::cout <<
+    "Enter the an inventory item for the procedure:" << std::endl;
+    std::cin >> inventory_item;
+    
+    ModifyInventory::inventoryInDatabase(inventory_item)
+}
