@@ -132,6 +132,8 @@ CMakeFiles/mylibrary.dir/src/entity/schedule.cpp.obj: \
  C:/msys64/mingw64/include/c++/11.2.0/bits/ostream.tcc \
  C:/msys64/mingw64/include/c++/11.2.0/istream \
  C:/msys64/mingw64/include/c++/11.2.0/bits/istream.tcc \
+ C:/msys64/mingw64/include/c++/11.2.0/sstream \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/sstream.tcc \
  C:/msys64/mingw64/include/c++/11.2.0/iomanip \
  C:/msys64/mingw64/include/c++/11.2.0/locale \
  C:/msys64/mingw64/include/c++/11.2.0/bits/locale_facets_nonio.h \
@@ -148,8 +150,6 @@ CMakeFiles/mylibrary.dir/src/entity/schedule.cpp.obj: \
  C:/msys64/mingw64/include/c++/11.2.0/bits/uses_allocator.h \
  C:/msys64/mingw64/include/c++/11.2.0/bits/invoke.h \
  C:/msys64/mingw64/include/c++/11.2.0/bits/quoted_string.h \
- C:/msys64/mingw64/include/c++/11.2.0/sstream \
- C:/msys64/mingw64/include/c++/11.2.0/bits/sstream.tcc \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/schedule.h \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/staff.h \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/user.h \

@@ -525,6 +525,30 @@ src/control/ModifyRoomAvailability.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/ModifyRoomAvailability.cpp.s
 .PHONY : src/control/ModifyRoomAvailability.cpp.s
 
+src/control/ModifySchedule.obj: src/control/ModifySchedule.cpp.obj
+.PHONY : src/control/ModifySchedule.obj
+
+# target to build an object file
+src/control/ModifySchedule.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/ModifySchedule.cpp.obj
+.PHONY : src/control/ModifySchedule.cpp.obj
+
+src/control/ModifySchedule.i: src/control/ModifySchedule.cpp.i
+.PHONY : src/control/ModifySchedule.i
+
+# target to preprocess a source file
+src/control/ModifySchedule.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/ModifySchedule.cpp.i
+.PHONY : src/control/ModifySchedule.cpp.i
+
+src/control/ModifySchedule.s: src/control/ModifySchedule.cpp.s
+.PHONY : src/control/ModifySchedule.s
+
+# target to generate assembly for a file
+src/control/ModifySchedule.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mylibrary.dir\build.make CMakeFiles/mylibrary.dir/src/control/ModifySchedule.cpp.s
+.PHONY : src/control/ModifySchedule.cpp.s
+
 src/control/TESTMODINV.obj: src/control/TESTMODINV.cpp.obj
 .PHONY : src/control/TESTMODINV.obj
 
@@ -919,6 +943,9 @@ help:
 	@echo ... src/control/ModifyRoomAvailability.obj
 	@echo ... src/control/ModifyRoomAvailability.i
 	@echo ... src/control/ModifyRoomAvailability.s
+	@echo ... src/control/ModifySchedule.obj
+	@echo ... src/control/ModifySchedule.i
+	@echo ... src/control/ModifySchedule.s
 	@echo ... src/control/TESTMODINV.obj
 	@echo ... src/control/TESTMODINV.i
 	@echo ... src/control/TESTMODINV.s

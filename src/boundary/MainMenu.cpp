@@ -164,13 +164,11 @@ void MainMenu::accountCreateMenu(std::string entered_username)
     "Select your account type." << std::endl <<
     "1.\tPatient" << std::endl <<
     "2.\tStaff" << std::endl <<
-    "9.\tGo Back" << std::endl <<
     "0.\tGo to Main Menu" << std::endl <<
     SECTION_BREAK;
-    
+
     std::cin >> user_type;
 
-    if (entered_username.empty()) { entered_username = AccountCreation::getUsername(); }
 
     if (std::cin.fail()) 
     {
@@ -180,6 +178,9 @@ void MainMenu::accountCreateMenu(std::string entered_username)
         return;                                     // Ensure the function exits after recursion
     }
 
+    if (user_type == 0) {MainMenu::StartMenu();}
+
+    if (entered_username.empty()) { entered_username = AccountCreation::getUsername(); }
     std::unique_ptr<User> new_account = AccountCreation::CreateAccount(entered_username, user_type);
     DatabaseManagement::addUserToFile(std::move(new_account));
     LoginVerification::passUserToCorrectUI(std::move(new_account));

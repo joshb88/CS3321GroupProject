@@ -260,16 +260,42 @@ std::unique_ptr<User> AccountCreation::CreateAccount(const std::string& entered_
         {
             MainMenu::clearScreen();
             MainMenu::header(header_content);
-            std::cout << "Enter your hire date (YYYYMMDD): ";
-            std::cin >> std::get_time(&timeStruct, "%Y%m%d");
+            std::cout << "Enter your hire date (YYYYMMDD) " << 
+            std::endl << "You may also type now for today:" << std::endl;
+            std::string answered_hire_date;
+            std::tm timeStruct = {};
 
-            if (std::cin.fail()) 
+            // Read user input
+            std::cin >> answered_hire_date;
+
+            // Check if the user wants to use the current date
+            if (answered_hire_date == "now") 
             {
-                std::cin.clear();
-                std::cin.ignore(INT_MAX, '\n');
-                std::cout << "Invalid entry." << std::endl;
-                continue; // Skip the rest of the loop and start over
+                std::time_t currentTime = std::time(nullptr);
+                timeStruct = *std::localtime(&currentTime);
+            } 
+            else 
+            {
+                // Convert the user input to a std::tm structure
+                std::stringstream ss(answered_hire_date);
+                ss >> std::get_time(&timeStruct, "%Y%m%d");
+
+                if (ss.fail()) {
+                    std::cin.clear();
+                    std::cin.ignore(INT_MAX, '\n');
+                    std::cout << "Invalid entry." << std::endl;
+                    continue; // Skip the rest of the loop and start over
+                }
             }
+            // std::cin >> std::get_time(&timeStruct, "%Y%m%d");
+
+            // if (std::cin.fail()) 
+            // {
+            //     std::cin.clear();
+            //     std::cin.ignore(INT_MAX, '\n');
+            //     std::cout << "Invalid entry." << std::endl;
+            //     continue; // Skip the rest of the loop and start over
+            // }
 
             // Check if the hire data is within a valid range
             std::time_t currentTime = std::time(nullptr);

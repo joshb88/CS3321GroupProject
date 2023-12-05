@@ -74,7 +74,7 @@ void ModifyProcedure::writeProcedureToDatabase(Procedure& procedure)
             procedure_file << 
             procedure.getProcedureName() << ',' <<
             procedure.getCost() << ',' <<
-            serializeItemsUsed(procedure.getItemsUsed()) << std::endl;
+            itemsUsedVectorToString(procedure.getItemsUsed()) << std::endl;
         }
         else
         {
@@ -110,7 +110,7 @@ Procedure ModifyProcedure::readProcedureFromDatabase(const std::string& procedur
 
                 // Read the serialized itemsUsed
                 std::getline(iss, token, ',');
-                itemsUsed = deserializeItemsUsed(token);
+                itemsUsed = itemsUserStringToVector(token);
 
                 // Create and return a Procedure object
                 return Procedure(procedure_name, cost, itemsUsed);
@@ -127,7 +127,7 @@ Procedure ModifyProcedure::readProcedureFromDatabase(const std::string& procedur
     // Return a default-constructed Procedure if not found or an error occurred
     return Procedure();
 }
-std::string ModifyProcedure::serializeItemsUsed(const std::vector<Inventory>& itemsUsed)
+std::string ModifyProcedure::itemsUsedVectorToString(const std::vector<Inventory>& itemsUsed)
 {
     std::string serializedList;
 
@@ -146,7 +146,7 @@ std::string ModifyProcedure::serializeItemsUsed(const std::vector<Inventory>& it
 
     return serializedList;
 }
-std::vector<Inventory> ModifyProcedure::deserializeItemsUsed(const std::string& serializedList)
+std::vector<Inventory> ModifyProcedure::itemsUserStringToVector(const std::string& serializedList)
 {
     std::vector<Inventory> itemsUsed;
 

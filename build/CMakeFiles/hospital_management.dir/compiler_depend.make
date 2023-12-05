@@ -13,6 +13,7 @@ CMakeFiles/hospital_management.dir/main.cpp.obj: C:/Users/Josh/Desktop/CS3321Gro
   C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/GenerateScheduleReport.h \
   C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/MainMenuLogic.h \
   C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/ModifyRoomAvailability.h \
+  C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/ModifySchedule.h \
   C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/TESTMODINV.h \
   C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/generateBill.h \
   C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/generatePatientProfile.h \
@@ -245,6 +246,16 @@ C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/ModifyRoomAvailability.
 
 C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/MainMenuLogic.h:
 
+C:/msys64/mingw64/include/c++/11.2.0/bits/cxxabi_init_exception.h:
+
+C:/msys64/mingw64/include/c++/11.2.0/array:
+
+C:/msys64/mingw64/include/c++/11.2.0/bits/basic_string.h:
+
+C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/room.h:
+
+C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/ModifySchedule.h:
+
 C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/TESTMODINV.h:
 
 C:/msys64/mingw64/include/c++/11.2.0/bits/postypes.h:
@@ -273,14 +284,6 @@ C:/msys64/mingw64/include/c++/11.2.0/sstream:
 
 C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/procedure.h:
 
-C:/msys64/mingw64/include/c++/11.2.0/bits/cxxabi_init_exception.h:
-
-C:/msys64/mingw64/include/c++/11.2.0/array:
-
-C:/msys64/mingw64/include/c++/11.2.0/bits/basic_string.h:
-
-C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/room.h:
-
 C:/msys64/mingw64/include/c++/11.2.0/bits/char_traits.h:
 
 C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/schedule.h:
@@ -296,8 +299,6 @@ C:/msys64/mingw64/include/c++/11.2.0/bits/stringfwd.h:
 C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/user.h:
 
 C:/msys64/mingw64/include/_mingw_off_t.h:
-
-C:/msys64/mingw64/include/c++/11.2.0/bits/locale_facets.h:
 
 C:/msys64/mingw64/include/_mingw_secapi.h:
 
@@ -362,6 +363,8 @@ C:/msys64/mingw64/include/c++/11.2.0/bits/cxxabi_forced.h:
 C:/msys64/mingw64/include/c++/11.2.0/bits/functional_hash.h:
 
 C:/msys64/mingw64/include/c++/11.2.0/bits/istream.tcc:
+
+C:/msys64/mingw64/include/c++/11.2.0/bits/locale_facets.h:
 
 C:/msys64/mingw64/include/c++/11.2.0/typeinfo:
 

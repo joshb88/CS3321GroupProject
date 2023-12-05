@@ -24,10 +24,12 @@ class Schedule
     public:
         // Constructors
         Schedule();
+        Schedule(std::string time) ;
         Schedule(const TimePoint&, const Staff&, const Patient&, const Room&, const Procedure&);
 
         // Setters
         void setTime(TimePoint&);
+        void setTime(const std::string& date_time_str);
         void setStaffer(Staff&);
         void setPatient(Patient&);
         void setRoom(Room&);
@@ -36,9 +38,11 @@ class Schedule
         // There will also be implementation of control classes to modify these members.
 
         // Getters
-        const TimePoint getTime() const;
-        const Staff getStaffer() const;
-        const Patient getPatient() const;
-        const Room getRoom() const;
-        const Procedure getProcedure() const;
+        TimePoint getTime() const;
+        Staff getStaffer() const;
+        Patient getPatient() const;
+        Room getRoom() const;
+        Procedure getProcedure() const;
 };
+
+std::ostream& operator<<(std::ostream& os, const Schedule::TimePoint& tp);

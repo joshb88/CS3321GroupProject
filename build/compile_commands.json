@@ -91,6 +91,12 @@
 },
 {
   "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\control\\ModifySchedule.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\control\\ModifySchedule.cpp",
+  "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/control/ModifySchedule.cpp",
+  "output": "CMakeFiles/mylibrary.dir/src/control/ModifySchedule.cpp.obj"
+},
+{
+  "directory": "C:/Users/Josh/Desktop/CS3321GroupProject/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mylibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\mylibrary.dir\\src\\control\\TESTMODINV.cpp.obj -c C:\\Users\\Josh\\Desktop\\CS3321GroupProject\\src\\control\\TESTMODINV.cpp",
   "file": "C:/Users/Josh/Desktop/CS3321GroupProject/src/control/TESTMODINV.cpp",
   "output": "CMakeFiles/mylibrary.dir/src/control/TESTMODINV.cpp.obj"
