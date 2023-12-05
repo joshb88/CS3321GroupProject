@@ -16,6 +16,7 @@ CMakeFiles/hospital_management.dir/main.cpp.obj
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/ModifyRoomAvailability.h
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/generateBill.h
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/generatePatientProfile.h
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/modifyProcedure.h
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/inventory.h
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/patient.h
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/procedure.h

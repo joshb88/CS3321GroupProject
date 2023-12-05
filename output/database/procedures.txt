@@ -1,0 +1,1 @@
+mri,5000.75,imaging fluid-500-10;iv bags-1000-30;cat scan machine-3-0

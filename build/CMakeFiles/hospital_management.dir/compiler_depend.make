@@ -15,6 +15,7 @@ CMakeFiles/hospital_management.dir/main.cpp.obj: C:/Users/Josh/Desktop/CS3321Gro
   C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/ModifyRoomAvailability.h \
   C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/generateBill.h \
   C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/generatePatientProfile.h \
+  C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/modifyProcedure.h \
   C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/inventory.h \
   C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/patient.h \
   C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/procedure.h \
@@ -257,6 +258,8 @@ C:/msys64/mingw64/include/c++/11.2.0/bits/basic_string.tcc:
 
 C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/generatePatientProfile.h:
 
+C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/modifyProcedure.h:
+
 C:/msys64/mingw64/include/c++/11.2.0/bits/ios_base.h:
 
 C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/inventory.h:
@@ -349,9 +352,9 @@ C:/msys64/mingw64/include/c++/11.2.0/bits/locale_classes.tcc:
 
 C:/msys64/mingw64/include/c++/11.2.0/bits/concept_check.h:
 
-C:/msys64/mingw64/include/c++/11.2.0/bits/cxxabi_forced.h:
-
 C:/msys64/mingw64/include/c++/11.2.0/bits/locale_facets_nonio.h:
+
+C:/msys64/mingw64/include/c++/11.2.0/bits/cxxabi_forced.h:
 
 C:/msys64/mingw64/include/c++/11.2.0/bits/functional_hash.h:
 

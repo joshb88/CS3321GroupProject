@@ -1,5 +1,7 @@
 #pragma once
 #include <string>
+#include <vector>
+#include <iostream>
 
 class Inventory
 {
@@ -21,4 +23,7 @@ class Inventory
         std::string getItemName() const;
         unsigned int getItemCount() const;
         unsigned int getItemThreshold() const;
+
+        friend std::ostream& operator<<(std::ostream& os, const Inventory& inventory);
+        friend std::ostream& operator<<(std::ostream& os, const std::vector<Inventory>& items);
 };

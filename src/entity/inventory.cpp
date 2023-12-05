@@ -1,4 +1,6 @@
 #include "entity/inventory.h"
+#include <iostream>
+#include <vector>
 
 // INVENTORY CLASS
 // Inventory Class Constructors
@@ -28,3 +30,23 @@ void Inventory::setItemThreshold(unsigned int threshold)
 std::string Inventory::getItemName() const { return item_name; }
 unsigned int Inventory::getItemCount() const { return item_count; }
 unsigned int Inventory::getItemThreshold() const { return item_threshold; }
+
+// Overload operator<< for Inventory class
+std::ostream& operator<<(std::ostream& os, const Inventory& inventory)
+{
+    os << inventory.getItemName() << "-" << inventory.getItemCount() << "-" << inventory.getItemThreshold();
+    return os;
+}
+
+// Overload operator<< for vector of Inventory objects
+std::ostream& operator<<(std::ostream& os, const std::vector<Inventory>& items) {
+    for (auto it = items.begin(); it != items.end(); ++it) 
+    {
+        os << *it;
+        if (it != items.end() - 1) 
+        {
+            os << ";";
+        }
+    }
+    return os;
+}

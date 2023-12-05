@@ -39,6 +39,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mylibrary.dir/src/control/generatePatientProfile.cpp.obj.d"
   "CMakeFiles/mylibrary.dir/src/control/modifyInventory.cpp.obj"
   "CMakeFiles/mylibrary.dir/src/control/modifyInventory.cpp.obj.d"
+  "CMakeFiles/mylibrary.dir/src/control/modifyProcedure.cpp.obj"
+  "CMakeFiles/mylibrary.dir/src/control/modifyProcedure.cpp.obj.d"
   "CMakeFiles/mylibrary.dir/src/entity/inventory.cpp.obj"
   "CMakeFiles/mylibrary.dir/src/entity/inventory.cpp.obj.d"
   "CMakeFiles/mylibrary.dir/src/entity/patient.cpp.obj"
