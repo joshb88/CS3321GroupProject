@@ -7,9 +7,12 @@ This software is meant to faciliate the management of a hosptal utilizing an Obj
 The project would not have been possible without a large effort from the 5 students involved. Each member brought something to the table and worked hard to ensure a high quality of implementaion.
 
 - [Adrian Melo](https://github.com/git-adrianM)
+  - Adrian was responsible for several boundary classes (working closely with Alina), including the Patient UI and Staff UI, and a few control classes like Patient Scheduling logic.
 - [Alex Norman](https://github.com/Alexander-Norman)
+  - Alex was responsible for many control classes, including generating reports and modifying availability for Rooms.
 - [Alina Palomino](https://github.com/alinamiap)
+  - Alina was responisble for several boundary classes (working closely with Adrian), including classes designated for displaying bills, Inventory orders, Schedules, etc.
 - [Eduardo Maya](https://github.com/russo08)
-  Eduardo (Eddy) was responsible for the Patient UI and the respective logic class, and several control classes handling 
+  - Eduardo (Eddy) was responsible for several control classes handling generating bills, modifying Inventory, etc. Additionally, he worked closely with Josh on his respective responsibiliies.
 - [Josh Boehm](https://github.com/joshb88)
-  Josh was responsible for the Entity classes, the Main Menu and its logic classes (including Login Verification), and some control classes dealing with the storage of data in textual databases.
+  - Josh was responsible for the Entity classes, the Main Menu and its logic classes (including Login Verification), and some control classes dealing with the storage of data in textual databases.
