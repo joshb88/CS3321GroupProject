@@ -1,4 +1,11 @@
+#include <chrono>
+#include <ctime>
+#include <iostream>
+#include <iomanip>
 #include "entity/schedule.h"
+#include "entity/staff.h"
+#include "entity/patient.h"
+#include "entity/procedure.h"
 
 // SCHEDULE CLASS
 // Schedule Class Constructors

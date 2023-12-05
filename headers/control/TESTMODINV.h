@@ -10,5 +10,6 @@ class ModifyInventory
         static bool inventoryInDatabase(std::string& inventory_name);
         static void writeInventoryToDatabase(Inventory& inventory);
         static Inventory readInventoryFromDatabase(const std::string& inventory_name);
-        //static void changeinventory(inventory& inventory);
+        static Inventory createInventoryFromUser();
+        static Inventory createInventoryFromUser(std::string entered_item_name);
 };

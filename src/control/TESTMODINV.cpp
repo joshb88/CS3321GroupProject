@@ -1,4 +1,5 @@
 #include "control/TESTMODINV.h"
+#include "boundary/MainMenu.h"
 #include <string>
 #include <fstream>
 #include <sstream>
@@ -122,4 +123,136 @@ Inventory ModifyInventory::readInventoryFromDatabase(const std::string& inventor
 
     // Return a default-constructed inventory if not found or an error occurred
     return Inventory();
+}
+
+Inventory ModifyInventory::createInventoryFromUser() 
+{
+    std::string inventory_item, header_content = "Inventory Creation Menu";
+    unsigned int item_count, item_threshold;
+    short choice;
+    
+    MainMenu::clearScreen();
+    MainMenu::header(header_content);
+    std::cout << 
+    "Enter a name for the inventory item:" << std::endl;
+    std::getline(std::cin, inventory_item);
+
+    if (ModifyInventory::inventoryInDatabase(inventory_item))
+    {
+        MainMenu::clearScreen();
+        MainMenu::header(header_content);
+        std::cout << 
+        "This item is already in the database." << std::endl <<
+        "Is this the item you were looking for?" << std::endl <<
+        "1.\tYes" << std::endl <<
+        "2.\tNo" << std::endl <<
+        MainMenu::SECTION_BREAK;
+        std::cin >> choice;
+        while (std::cin.fail()|| !(choice == 1 || choice == 2))
+        {
+            std::cout << "Invalid entry." << std::endl;
+            std::cin.clear();
+            std::cin.ignore(INT_MAX, '\n');
+            std::cin >> choice;
+        };
+        if (choice == 1) { return ModifyInventory::readInventoryFromDatabase(inventory_item); } // if entered item is desired, read from file and return it
+        else { ModifyInventory::createInventoryFromUser(); } //otherwise try again
+    }
+    
+    
+    while (true) // item count
+    {
+        MainMenu::clearScreen();
+        MainMenu::header(header_content);
+        std::cout <<
+        "Enter the current count of the inventory item:" << std::endl;
+        std::cin >> item_count;
+        if (std::cin.fail() || item_count < 0) 
+        {
+            std::cout << "Invalid input; please, enter a non-negative number." << std::endl;
+            std::cin.clear();
+            std::cin.ignore(INT_MAX,'\n');
+        }
+        else { break; }
+    }
+    std::cin.ignore(INT_MAX,'\n');
+
+    while (true) // item threshold
+    {
+        MainMenu::clearScreen();
+        MainMenu::header(header_content);
+        std::cout <<
+        "Enter the fewest allowed of the inventory item:" << std::endl;
+        std::cin >> item_threshold;
+        if (std::cin.fail() || item_threshold < 0) 
+        {
+            std::cout << "Invalid input; please, enter a non-negative number." << std::endl;
+            std::cin.clear();
+            std::cin.ignore(INT_MAX,'\n');
+        }
+        else { break; }
+    }
+    std::cin.ignore(INT_MAX,'\n');
+
+    Inventory new_inventory(inventory_item, item_count, item_threshold);
+    ModifyInventory::writeInventoryToDatabase(new_inventory);
+    return new_inventory;
+}
+
+Inventory ModifyInventory::createInventoryFromUser(std::string entered_item_name) 
+{
+    std::string header_content = "Inventory Creation Menu";
+    unsigned int item_count, item_threshold;
+    short choice;
+
+    MainMenu::clearScreen();
+    MainMenu::header(header_content);
+    std::cout <<
+    "The entered inventory item name is:" << std::endl <<
+    entered_item_name << std::endl <<
+    MainMenu::SECTION_BREAK;
+    
+    while (true) // item count
+    {
+        MainMenu::clearScreen();
+        MainMenu::header(header_content);
+        std::cout <<
+        "Enter the current count of the inventory item:" << std::endl;
+        std::cin >> item_count;
+        if (std::cin.fail() || item_count < 0) 
+        {
+            std::cout << "Invalid input; please, enter a non-negative number." << std::endl;
+            std::cin.clear();
+            std::cin.ignore(INT_MAX,'\n');
+        }
+        else { break; }
+    }
+    std::cin.ignore(INT_MAX,'\n');
+
+    while (true) // item threshold
+    {
+        MainMenu::clearScreen();
+        MainMenu::header(header_content);
+        std::cout <<
+        "Enter the fewest allowed of the inventory item:" << std::endl;
+        std::cin >> item_threshold;
+        if (std::cin.fail() || item_threshold < 0) 
+        {
+            std::cout << "Invalid input; please, enter a non-negative number." << std::endl;
+            std::cin.clear();
+            std::cin.ignore(INT_MAX,'\n');
+        }
+        else if (std::cin.fail() || item_count < item_threshold) 
+        {
+            std::cout << "Threshold cannot be less than the current count." << std::endl;
+            std::cin.clear();
+            std::cin.ignore(INT_MAX,'\n');
+        }
+        else { break; }
+    }
+    std::cin.ignore(INT_MAX,'\n');
+
+    Inventory new_inventory(entered_item_name, item_count, item_threshold);
+    ModifyInventory::writeInventoryToDatabase(new_inventory);
+    return new_inventory;
 }

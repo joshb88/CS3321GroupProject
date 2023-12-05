@@ -178,48 +178,87 @@ Procedure ModifyProcedure::createProcedureFromUser()
     std::string proc_name, inventory_item, header_content = "Procedure Creation Menu";
     float proc_cost;
     std::vector<Inventory> item_list;
-    
-    std::cout <<
-    "Enter a name for the procedure:" << std::endl;
-    std::cin >> proc_name;
-
-    std::cout <<
-    "Enter the cost for the procedure:" << std::endl;
-    std::cin >> proc_cost;
-
     short choice;
+    
+    MainMenu::clearScreen();
+    MainMenu::header(header_content);
+    std::cout << 
+    "Enter a name for the procedure:" << std::endl;
+    std::getline(std::cin, proc_name);
+
+    if (ModifyProcedure::procedureInDatabase(inventory_item))
+    {
+        MainMenu::clearScreen();
+        MainMenu::header(header_content);
+        std::cout << 
+        "This procedure is already in the database." << std::endl <<
+        "Is this the procedure you were looking for?" << std::endl <<
+        "1.\tYes" << std::endl <<
+        "2.\tNo" << std::endl <<
+        MainMenu::SECTION_BREAK;
+        std::cin >> choice;
+        while (std::cin.fail()|| !(choice == 1 || choice == 2))
+        {
+            std::cout << "Invalid entry." << std::endl;
+            std::cin.clear();
+            std::cin.ignore(INT_MAX, '\n');
+            std::cin >> choice;
+        };
+        if (choice == 1) { return ModifyProcedure::readProcedureFromDatabase(inventory_item); } // if entered item is desired, read from file and return it
+        else { ModifyProcedure::createProcedureFromUser(); } //otherwise try again
+    }
+
+    while (true)
+    {
+        MainMenu::clearScreen();
+        MainMenu::header(header_content);
+        std::cout <<
+        "Enter the cost for the procedure:" << std::endl;
+        std::cin >> proc_cost;
+        if (std::cin.fail() || proc_cost < 0) 
+        {
+            std::cout << "Invalid input; please, enter a non-negative number." << std::endl;
+            std::cin.clear();
+            std::cin.ignore(INT_MAX,'\n');
+        }
+        else { break; }
+    }
+    std::cin.ignore(INT_MAX,'\n');  //getline comes next, have to clear '\n'
+
     do
     {
-
+        MainMenu::clearScreen();
+        MainMenu::header(header_content);
         std::cout <<
         "Enter the an inventory item for the procedure:" << std::endl;
-        std::cin >> inventory_item;
+        std::getline(std::cin, inventory_item);
+
         if (ModifyInventory::inventoryInDatabase(inventory_item))
         {
-            Inventory added_item = ModifyInventory::readInventoryFromDatabase(inventory_item);
-            item_list.push_back(added_item);
-            std::cout << "Added " << added_item.getItemName() << "." << std::endl;
+            Inventory added_inventory = ModifyInventory::readInventoryFromDatabase(inventory_item);
+            item_list.push_back(added_inventory);
+            std::cout << "Added " << added_inventory.getItemName() << " to item list." << std::endl;
         }
         else
         {
-            Inventory created_inventory;
-            //function to make one via input
+            std::cout << "Item was not found in database; creating a new item to store." << std::endl;
+            // Item entered not found
+            Inventory created_inventory = ModifyInventory::createInventoryFromUser(inventory_item);
+            item_list.push_back(created_inventory);
+            std::cout << "Added " << created_inventory.getItemName() << " to item list." << std::endl;
         }
-        std::cout << 
+        std::cout << MainMenu::SECTION_BREAK <<
         "Are there more items?" << std::endl <<
         "1.\tYes" << std::endl <<
         "2.\tNo" << std::endl <<
         MainMenu::SECTION_BREAK; 
-        do
+        std::cin >> choice;
+        while (!(choice == 1 || choice == 2))
         {
-            std::cin >> choice;
-            if (!(choice == 1 || choice == 2)) 
-            { 
-                std::cout << "Invalid Entry; Enter Again:" << std::endl; 
-                std::cin.clear();
-                std::cin.ignore(INT_MAX,'\n');
-            }
-        } while (!(choice == 1 || choice == 2));
+            std::cout << "Invalid Entry; Enter Again:" << std::endl; 
+            std::cin.clear();
+            std::cin.ignore(INT_MAX,'\n');
+        };
     } 
     while (choice != 2);
 

@@ -1,9 +1,12 @@
 #include <iostream>
+#include <iomanip>
 #include <fstream>
 #include <sstream>
 #include <vector>
 #include "boundary/staffInterface.h"
 #include "boundary/MainMenu.h"
+#include "control/TESTMODINV.h"
+#include "control/MainMenuLogic.h"
 
 void StaffInterface::displayMainMenu(Staff& staff) 
 {
@@ -39,10 +42,12 @@ void StaffInterface::displayMainMenu(Staff& staff)
                  break;
              case 4:
                  std::cout << "You've opted to Open Inventory\n";
+                 StaffInterface::openInventory(staff);
                  break;
              case 0:
                  std::cout << "Logging out...\n";
                  isRunning = false;
+                 MainMenu::StartMenu();
                  break;
              default:
                  std::cout << "Invalid choice. Please try again.\n";
@@ -66,7 +71,35 @@ void StaffInterface::removeSchedule() {
     //updateSchedule
 }
 
-void StaffInterface::openInventory() {
+void StaffInterface::openInventory(Staff& staff) {
     std::cout << "Opening inventory...\n";
-    //open inventoryUi
+    std::string line, header_content = "Inventory List";
+    std::fstream inventory_file;
+
+    inventory_file.open("./database/inventory.txt", std::ios::in);
+
+    if (inventory_file.is_open())
+    {
+        MainMenu::clearScreen();
+        MainMenu::header("Inventory List");
+        std::cout << std::left << std::setw(17) << "Item Name" << std::left << std::setw(17) << "Current Count" << std::left << std::setw(17) << "Least Allowed" << std::endl << MainMenu::SECTION_BREAK;
+        while (std::getline(inventory_file, line))
+        {
+            std::istringstream iss(line);
+            std::string token;
+            std::getline(iss, token, ',');
+            Inventory displayed_inventory = ModifyInventory::readInventoryFromDatabase(token);
+            std::cout << std::left << std::setw(21) << 
+            displayed_inventory.getItemName() << std::left << std::setw(18) << 
+            displayed_inventory.getItemCount() << std::left << 
+            displayed_inventory.getItemThreshold() << std::endl;
+        }
+        MainMenu::SECTION_BREAK;
+    }
+    inventory_file.close();
+    std::cout << "Press any key to return to Staff Menu" << std::endl;
+    std::cin >> std::ws;
+    std::cin.ignore();
+     std::unique_ptr<User> staffptr = std::make_unique<Staff>(staff);
+    LoginVerification::passUserToCorrectUI(std::move(staffptr));
 }
