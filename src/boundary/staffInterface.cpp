@@ -19,7 +19,7 @@ void StaffInterface::displayMainMenu(Staff& staff)
          "Select an option:\n" << 
          "1.\tView Schedule" << std::endl <<
          "2.\tAdd To Schedule" << std::endl <<
-         "3.\tAccess Inventory" << std::endl <<
+         "3.\tRemove From Schedule" << std::endl <<
          "4.\tOpen Inventory" << std::endl <<
          "0.\tLog Out" << std::endl <<
          MainMenu::SECTION_BREAK;

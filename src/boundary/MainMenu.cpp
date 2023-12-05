@@ -182,4 +182,5 @@ void MainMenu::accountCreateMenu(std::string entered_username)
 
     std::unique_ptr<User> new_account = AccountCreation::CreateAccount(entered_username, user_type);
     DatabaseManagement::addUserToFile(std::move(new_account));
+    LoginVerification::passUserToCorrectUI(std::move(new_account));
 }
