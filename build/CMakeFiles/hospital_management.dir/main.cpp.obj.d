@@ -200,5 +200,12 @@ CMakeFiles/hospital_management.dir/main.cpp.obj: \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/viewPatientProfile.h \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/generatePatientProfile.h \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/staffInterface.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/boundary/inventoryUI.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/modifyInventory.h \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/dataManipulation.h \
+ C:/msys64/mingw64/include/c++/11.2.0/fstream \
+ C:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/basic_file.h \
+ C:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/c++io.h \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/fstream.tcc \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/modifyProcedure.h \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/TESTMODINV.h
