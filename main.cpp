@@ -22,7 +22,8 @@ int main()
     Room room(101,5,true);
 
     Schedule schedule("19880814 15:30");
-    std::cout << schedule.getTime();
+    std::cout << schedule.getTim();
+    std::cout << ":)";
     // schedule.setPatient(patient);
     // schedule.setStaffer(staff);
     // schedule.setProcedure(mri);

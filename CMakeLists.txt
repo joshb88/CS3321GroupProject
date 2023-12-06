@@ -32,7 +32,5 @@ target_link_libraries(hospital_management mylibrary)
 
 # Specify the output directory for the executable.
 set_target_properties(hospital_management PROPERTIES
-    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/output"
+    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}"
 )
-# Copy the users.txt file to the output directory when building the project.
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/database/users.txt ${CMAKE_CURRENT_SOURCE_DIR}/output/database/users.txt COPYONLY)

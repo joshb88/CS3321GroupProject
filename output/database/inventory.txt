@@ -1,6 +1,0 @@
-imaging fluid,500,10
-mri machine,3,1
-hypodermic needle,5000,500
-cotton swab bag,1000,250
-pillow, 500, 50
-gown, 1000, 100

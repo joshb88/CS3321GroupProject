@@ -1,2 +1,0 @@
-1,ptest1,test,test,test,19880814,X,1,blue shield,1,1,2,303
-1,patient_test2,patient_pw2,patient_last,patient_first,20231031,F,0,n/a,0,0,0,0
