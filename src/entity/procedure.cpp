@@ -33,3 +33,11 @@ const std::vector<Inventory>& Procedure::getItemsUsed() const
 {
     return items_used;
 }
+std::ostream& operator<<(std::ostream& os, const Procedure& procedure) 
+{
+    os << 
+    procedure.getProcedureName() << ',' <<
+    procedure.getCost() << ',' <<
+    procedure.getItemsUsed();
+    return os;
+}

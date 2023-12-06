@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 
 class Room
 {
@@ -21,3 +22,5 @@ class Room
         short getRoomFloorNumber() const;
         bool getRoomAvailability() const;
 };
+
+std::ostream& operator<<(std::ostream& os, const Room& room);

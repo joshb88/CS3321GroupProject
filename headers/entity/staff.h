@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 #include "user.h"
 
 class Staff : public User
@@ -28,3 +29,5 @@ class Staff : public User
         short getClearanceLevel() const;
         std::string getJobTitle() const;
 };
+
+std::ostream& operator<<(std::ostream& os, const Staff& staff);

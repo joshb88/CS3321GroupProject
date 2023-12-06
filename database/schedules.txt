@@ -1,1 +1,1 @@
-1988/08/14 15:30|stest1-test-test-test-20010101-x-0-0--19010101|ptest1-test-test-test-19880814-X-0-N/A-0-0-0-1-|101-5-0-|mri-5000.75-imaging fluid-500-10;iv bags-1000-30;cat scan machine-3-0
+1988/08/14 15:30|stest1-test-test-test-20010101-x-0-0--19010101|ptest1-test-test-test-19880814-X-0-0--19010101|101-5-0|mri-5000.75-imaging fluid-500-10;iv bags-1000-30;cat scan machine-3-0

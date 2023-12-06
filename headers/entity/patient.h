@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 #include "user.h"
 #include "room.h"
 
@@ -28,3 +29,5 @@ class Patient : public User
         bool getHasRoom() const;
         Room& getRoom();
 };
+
+std::ostream& operator<<(std::ostream& os, Patient& patient);

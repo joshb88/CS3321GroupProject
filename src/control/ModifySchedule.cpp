@@ -24,41 +24,20 @@ void ModifySchedule::writeScheduleToDatabase(Schedule& schedule)
         // Get the time
         schedule.getTime() <<
 
-        '|' << // Start with general User info
-        schedule.getStaffer().getUserLogin() << '-' <<
-        schedule.getStaffer().getUserPassword() << '-' <<
-        schedule.getStaffer().getLastName() << '-' <<
-        schedule.getStaffer().getFirstName() << '-' <<
-        std::to_string(schedule.getStaffer().getDateOfBirth()) << '-' <<
-        schedule.getStaffer().getGender() << '-' <<
-        std::to_string(schedule.getStaffer().getIdNumber()) << '-' <<
-        std::to_string(schedule.getStaffer().getClearanceLevel()) << '-' <<
-        schedule.getStaffer().getJobTitle() << '-' <<
-        schedule.getStaffer().getDateOfHire() <<
+        '|' << // Store  Staff  info
+        schedule.getStaffer() <<
 
         '|' << // Store Patient Info
-        schedule.getPatient().getUserLogin() << '-' <<
-        schedule.getPatient().getUserPassword() << '-' <<
-        schedule.getPatient().getLastName() << '-' <<
-        schedule.getPatient().getFirstName() << '-' <<
-        schedule.getPatient().getDateOfBirth() << '-' <<
-        schedule.getPatient().getGender() << '-' <<
-        schedule.getPatient().getHasInsurance() << '-' <<
-        schedule.getPatient().getInsuranceProvider() << '-' <<
-        schedule.getPatient().getHasRoom() << '-' <<
-        schedule.getPatient().getRoom().getRoomNumber() << '-' <<
-        schedule.getPatient().getRoom().getRoomFloorNumber() << '-' <<
-        schedule.getPatient().getRoom().getRoomAvailability() << '-' <<
+        schedule.getPatient() <<
 
         '|' << // Store Room for Event
-        schedule.getRoom().getRoomNumber() << '-' <<
-        schedule.getRoom().getRoomFloorNumber() << '-' <<
-        schedule.getRoom().getRoomAvailability() << '-' <<
+        schedule.getRoom() <<
         
         '|' << // Store Procedure
         schedule.getProcedure().getProcedureName() << '-' <<
         schedule.getProcedure().getCost() << '-' <<
-        ModifyProcedure::itemsUsedVectorToString(schedule.getProcedure().getItemsUsed());
+        ModifyProcedure::itemsUsedVectorToString(schedule.getProcedure().getItemsUsed()) <<
+        std::endl;
     }
     else {std::cout << "file not open";};
     schedule_file.close();

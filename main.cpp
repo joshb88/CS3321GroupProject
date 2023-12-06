@@ -27,7 +27,7 @@ int main()
     schedule.setProcedure(mri);
     schedule.setRoom(room);
 
-    // std::cout << schedule.getProcedure().getItemsUsed();
+    //std::cout << schedule.getProcedure();
 
     ModifySchedule::writeScheduleToDatabase(schedule);
     // std::cout <<

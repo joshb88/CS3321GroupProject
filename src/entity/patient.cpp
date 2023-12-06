@@ -1,5 +1,6 @@
-#include "../../headers/entity/user.h"
-#include "../../headers/entity/patient.h"
+#include <iostream>
+#include "entity/user.h"
+#include "entity/patient.h"
 
 // PATIENT CLASS
 // Patient Class Default Constructor
@@ -64,4 +65,21 @@ bool Patient::getHasRoom() const
 Room& Patient::getRoom()
 {
     return room;
+}
+// Overload operator<< for Patient class
+std::ostream& operator<<(std::ostream& os, Patient& patient)
+{
+    os << 
+    patient.getUserLogin() << "-" <<
+    patient.getUserPassword() << "-" <<
+    patient.getLastName()<< "-" <<
+    patient.getFirstName()<< "-" <<
+    patient.getDateOfBirth()<< "-" <<
+    patient.getGender()<< "-" <<
+    patient.getHasInsurance()<< "-" <<
+    patient.getInsuranceProvider()<< "-" <<
+    patient.getHasRoom() << "-" <<
+    patient.getRoom();
+
+    return os;
 }

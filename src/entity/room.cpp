@@ -1,3 +1,4 @@
+#include <iostream>
 #include "entity/room.h"
 
 // ROOM CLASS
@@ -39,4 +40,14 @@ short Room::getRoomFloorNumber() const
 bool Room::getRoomAvailability() const
 {
     return room_available;
+}
+// Overload operator<< for Inventory class
+std::ostream& operator<<(std::ostream& os, const Room& room)
+{
+    os << 
+    room.getRoomNumber() << "-" <<
+    room.getRoomFloorNumber() << "-" <<
+    room.getRoomAvailability();
+
+    return os;
 }

@@ -20,3 +20,5 @@ class Procedure
         float getCost() const;
         const std::vector<Inventory>& getItemsUsed() const;
 };
+
+std::ostream& operator<<(std::ostream& os, const Procedure& procedure);
