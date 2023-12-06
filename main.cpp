@@ -22,16 +22,14 @@ int main()
     Room room(101,5,true);
 
     Schedule schedule("19880814 15:30");
-    std::cout << schedule.getTim();
-    std::cout << ":)";
-    // schedule.setPatient(patient);
-    // schedule.setStaffer(staff);
-    // schedule.setProcedure(mri);
-    // schedule.setRoom(room);
+    schedule.setPatient(patient);
+    schedule.setStaffer(staff);
+    schedule.setProcedure(mri);
+    schedule.setRoom(room);
 
     // std::cout << schedule.getProcedure().getItemsUsed();
 
-    // ModifySchedule::writeScheduleToDatabase(schedule);
+    ModifySchedule::writeScheduleToDatabase(schedule);
     // std::cout <<
 
     //     // Get the time
