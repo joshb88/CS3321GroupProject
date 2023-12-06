@@ -42,3 +42,54 @@ void ModifySchedule::writeScheduleToDatabase(Schedule& schedule)
     else {std::cout << "file not open";};
     schedule_file.close();
 }
+void ModifySchedule::readFromDatabase(std::string schedule_date)
+{
+    std::ifstream schedule_file("./database/schedules.txt");
+    std::string line;
+    std::getline(schedule_file, line, '\n');
+    std::istringstream iss(line);
+
+    if (schedule_file.is_open())
+    {
+        std::string token;
+        iss >> token;
+        if (token == schedule_data)
+        {
+            // Assuming each line in the file represents a Schedule entry
+            while (std::getline(schedule_file, line))
+            {
+                std::istringstream iss(line);
+                std::string time, staffer, patient, room, procedureInfo;
+
+                // Read each field from the line using getline or >>
+                std::getline(iss, time, '|');
+                std::getline(iss, staffer, '|');
+                std::getline(iss, patient, '|');
+                std::getline(iss, room, '|');
+                std::getline(iss, procedureInfo);
+
+                // Process procedureInfo, assuming it is formatted as "ProcedureName-Cost-ItemsUsed"
+                std::istringstream procedureStream(procedureInfo);
+                std::string procedureName, cost, itemsUsedString;
+                std::getline(procedureStream, procedureName, '-');
+                std::getline(procedureStream, cost, '-');
+                std::getline(procedureStream, itemsUsedString);
+
+                // Convert strings to appropriate types and set the fields in the Schedule object
+                schedule.setTime(time);
+                schedule.setStaffer(staffer);
+                schedule.setPatient(patient);
+                schedule.setRoom(room);
+                schedule.setProcedure(Procedure(procedureName, std::stof(cost), ModifyProcedure::stringToItemsUsed(itemsUsedString)));
+
+                // You might want to add the Schedule object to a container (vector, list, etc.) if needed
+                // Example: schedules.push_back(schedule);
+            }
+       
+        }       
+        else
+        {
+            std::cout << "Error: Unable to open the file.\n";
+        }
+    }
+}

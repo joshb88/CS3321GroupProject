@@ -31,3 +31,4 @@ class Staff : public User
 };
 
 std::ostream& operator<<(std::ostream& os, const Staff& staff);
+std::istream& operator>>(std::istream& is, Staff& staff);

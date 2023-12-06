@@ -11,6 +11,7 @@
 #include "control/modifyProcedure.h"
 #include "control/TESTMODINV.h"
 #include "control/ModifySchedule.h"
+#include "control/ModifyUser.h"
 
 int main()
 {
@@ -21,15 +22,22 @@ int main()
     Staff staff = *DatabaseManagement::getUserFromFile("stest1");
     Room room(101,5,true);
 
-    Schedule schedule("19880814 15:30");
-    schedule.setPatient(patient);
-    schedule.setStaffer(staff);
-    schedule.setProcedure(mri);
-    schedule.setRoom(room);
+    // Schedule schedule("19880814 15:30");
+    // schedule.setPatient(patient);
+    // schedule.setStaffer(staff);
+    // schedule.setProcedure(mri);
+    // schedule.setRoom(room);
+
+
+
+    Schedule schedule = ModifySchedule::readFromDatabase("19880814")
+    std::cout << schedule;
+
+    
 
     //std::cout << schedule.getProcedure();
 
-    ModifySchedule::writeScheduleToDatabase(schedule);
+    //ModifySchedule::writeScheduleToDatabase(schedule);
     // std::cout <<
 
     //     // Get the time
