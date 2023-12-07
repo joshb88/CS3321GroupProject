@@ -24,3 +24,4 @@ class Room
 };
 
 std::ostream& operator<<(std::ostream& os, const Room& room);
+std::istream& operator>>(std::istream& is, Room& room);

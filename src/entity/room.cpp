@@ -51,3 +51,21 @@ std::ostream& operator<<(std::ostream& os, const Room& room)
 
     return os;
 }
+std::istream& operator>>(std::istream& is, Room& room)
+{
+    // Read input values from the stream
+    unsigned int roomNumber;
+    short floorNumber;
+    bool availability;
+
+    char dash; // To consume the dashes between values
+
+    is >> roomNumber >> dash >> floorNumber >> dash >> availability;
+
+    // Set the values in the Room object
+    room.setRoomNumber(roomNumber);
+    room.setRoomFloorNumber(floorNumber);
+    room.setRoomAvailability(availability);
+
+    return is;
+}

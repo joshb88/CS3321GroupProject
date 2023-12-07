@@ -11,27 +11,51 @@
 #include "control/modifyProcedure.h"
 #include "control/TESTMODINV.h"
 #include "control/ModifySchedule.h"
-#include "control/ModifyUser.h"
+// #include "control/ModifyUser.h"
 
 int main()
 {
 
     //MainMenu::StartMenu();
-    Procedure mri = ModifyProcedure::readProcedureFromDatabase("mri");
-    Patient patient = *DatabaseManagement::getUserFromFile("ptest1");
-    Staff staff = *DatabaseManagement::getUserFromFile("stest1");
-    Room room(101,5,true);
+    // Procedure mri = ModifyProcedure::readProcedureFromDatabase("mri");
+    // Staff staff = *DatabaseManagement::getUserFromFile("stest1");
+    // Room room(101,5,true);
 
     // Schedule schedule("19880814 15:30");
     // schedule.setPatient(patient);
     // schedule.setStaffer(staff);
     // schedule.setProcedure(mri);
     // schedule.setRoom(room);
+    // Patient patient = *DatabaseManagement::getUserFromFile("ptest1");
+    // std::cout << patient;
+
+    User user("john_doe", "password123", "Doe", "John", 19900101, 'M');
+    User user_copy;
+    std::cout << user << std::endl;
+    std::cout << user_copy << std::endl;
+    std::ostringstream user_stream;
+    user_stream << user;
+    std::string user_string = user_stream.str();
+    std::istringstream iss(user_string);
+    iss >> user_copy;
+    std::cout << user_copy << std::endl;
 
 
+    // Room room(123, 5, false);
+    // Room room_copy;
+    // std::cout << room << std::endl;
+    // std::cout << room_copy << std::endl;
+    // std::ostringstream room_stream;
+    // room_stream << room;
+    // std::string room_string = room_stream.str();
+    // std::istringstream iss(room_string);
+    // iss >> room_copy;
+    // std::cout << room_copy << std::endl;
+    
 
-    Schedule schedule = ModifySchedule::readFromDatabase("19880814")
-    std::cout << schedule;
+
+    // Schedule schedule = ModifySchedule::readFromDatabase("19880814")
+    // std::cout << schedule;
 
     
 

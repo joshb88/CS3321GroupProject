@@ -1,4 +1,5 @@
 #include <string>
+#include <iostream>
 #include "entity/user.h"
 
 // USER CLASS
@@ -76,4 +77,45 @@ unsigned int User::getDateOfBirth() const
 unsigned char User::getGender() const
 {
     return gender;
+}
+std::ostream& operator<<(std::ostream& os, const User& user) 
+{
+    os << 
+    user.getUserLogin() << "-" <<
+    user.getUserPassword() << "-" <<
+    user.getLastName()<< "-" <<
+    user.getFirstName()<< "-" <<
+    user.getDateOfBirth()<< "-" <<
+    user.getGender();
+
+    return os;
+}
+std::istream& operator>>(std::istream& is, User& user) {
+    // Temporary variables to store values read from the stream
+    std::string login, password, last, first;
+    unsigned int dob;
+    char gender;
+
+    // Read data from the input stream
+    std::getline(is, login, '-');
+    std::getline(is, password, '-');
+    std::getline(is, last, '-');
+    std::getline(is, first, '-');
+
+    // Read date_of_birth as an integer
+    is >> dob;
+    is.ignore(); // Ignore the delimiter '-'
+
+    // Read gender as a character
+    is >> gender;
+
+    // Call setter methods to update the User object
+    user.setUserLogin(login);
+    user.setUserPassword(password);
+    user.setLastName(last);
+    user.setFirstName(first);
+    user.setDateOfBirth(dob);
+    user.setGender(gender);
+
+    return is;
 }

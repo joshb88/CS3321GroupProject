@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <iostream>
 
 class User
 {
@@ -37,3 +38,5 @@ class User
         unsigned int getDateOfBirth() const;
         unsigned char getGender() const;
 };
+std::ostream& operator<<(std::ostream& os, const User& user);
+std::istream& operator>>(std::istream& is, User& user);

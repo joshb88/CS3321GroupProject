@@ -69,17 +69,13 @@ Room& Patient::getRoom()
 // Overload operator<< for Patient class
 std::ostream& operator<<(std::ostream& os, Patient& patient)
 {
-    os << 
-    patient.getUserLogin() << "-" <<
-    patient.getUserPassword() << "-" <<
-    patient.getLastName()<< "-" <<
-    patient.getFirstName()<< "-" <<
-    patient.getDateOfBirth()<< "-" <<
-    patient.getGender()<< "-" <<
-    patient.getHasInsurance()<< "-" <<
-    patient.getInsuranceProvider()<< "-" <<
-    patient.getHasRoom() << "-" <<
-    patient.getRoom();
+   os << static_cast<const User&>(patient) << "-";
 
+    // Output the specific members of the Patient class
+    os << patient.getHasInsurance() << "-"
+       << patient.getInsuranceProvider() << "-"
+       << patient.getHasRoom() << "-"
+       << patient.getRoom();
+       
     return os;
 }

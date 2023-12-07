@@ -5,5 +5,5 @@ class ModifySchedule
 {
     public:
     static void writeScheduleToDatabase(Schedule& schedule);
-    static Schedule readFromDatabase(std::string schedule);
+    static Schedule readScheduleFromDatabase(const std::string& schedule);
 };

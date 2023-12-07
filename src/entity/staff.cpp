@@ -67,20 +67,16 @@ std::string Staff::getJobTitle() const
     return job_title;
 }
 
-// // Overload operator<< for Staff class
-// std::ostream& operator<<(std::ostream& os, const Staff& staff)
-// {
-//     os << 
-//     staff.getUserLogin() << "-" <<
-//     staff.getUserPassword() << "-" <<
-//     staff.getLastName()<< "-" <<
-//     staff.getFirstName()<< "-" <<
-//     staff.getDateOfBirth()<< "-" <<
-//     staff.getGender()<< "-" <<
-//     staff.getIdNumber()<< "-" <<
-//     staff.getClearanceLevel()<< "-" <<
-//     staff.getJobTitle()<< "-" <<
-//     staff.getDateOfHire();
+// Overload operator<< for Staff class
+std::ostream& operator<<(std::ostream& os, const Staff& staff)
+{
+    os << static_cast<const User&>(staff) << "-";
 
-//     return os;
-// }
+    os <<
+    staff.getIdNumber()<< "-" <<
+    staff.getClearanceLevel()<< "-" <<
+    staff.getJobTitle()<< "-" <<
+    staff.getDateOfHire();
+
+    return os;
+}
