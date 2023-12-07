@@ -141,4 +141,6 @@ CMakeFiles/mylibrary.dir/src/boundary/orderProcedures.cpp.obj: \
  C:/msys64/mingw64/include/c++/11.2.0/bits/basic_ios.tcc \
  C:/msys64/mingw64/include/c++/11.2.0/bits/ostream.tcc \
  C:/msys64/mingw64/include/c++/11.2.0/istream \
- C:/msys64/mingw64/include/c++/11.2.0/bits/istream.tcc
+ C:/msys64/mingw64/include/c++/11.2.0/bits/istream.tcc \
+ C:/msys64/mingw64/include/c++/11.2.0/sstream \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/sstream.tcc

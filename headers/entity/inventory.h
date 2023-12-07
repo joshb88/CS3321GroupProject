@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <iostream>
+#include <sstream>
 
 class Inventory
 {
@@ -24,6 +25,6 @@ class Inventory
         unsigned int getItemCount() const;
         unsigned int getItemThreshold() const;
 
-        friend std::ostream& operator<<(std::ostream& os, const Inventory& inventory);
-        friend std::ostream& operator<<(std::ostream& os, const std::vector<Inventory>& items);
 };
+std::ostream& operator<<(std::ostream& os, const Inventory& inventory);
+std::ostream& operator<<(std::ostream& os, const std::vector<Inventory>& items);

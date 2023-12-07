@@ -17,9 +17,11 @@ int main()
 {
 
     //MainMenu::StartMenu();
-    // Procedure mri = ModifyProcedure::readProcedureFromDatabase("mri");
+    Procedure mri = ModifyProcedure::readProcedureFromDatabase("mri");
     // Staff staff = *DatabaseManagement::getUserFromFile("stest1");
     // Room room(101,5,true);
+
+    std::cout << mri << std::endl;
 
     // Schedule schedule("19880814 15:30");
     // schedule.setPatient(patient);
@@ -41,15 +43,15 @@ int main()
     // std::cout << room_copy << std::endl;
     
 
-    Patient patient = *DatabaseManagement::getUserFromFile("ptest1");
-    Patient patient_copy;
-    std::cout << patient << std::endl;
-    std::ostringstream patient_stream;
-    patient_stream << patient;
-    std::string patient_string = patient_stream.str();
-    std::istringstream iss(patient_string);
-    iss >> patient_copy;
-    std::cout << patient_copy << std::endl;
+    // Patient patient = *DatabaseManagement::getUserFromFile("ptest1");
+    // Patient patient_copy;
+    // std::cout << patient << std::endl;
+    // std::ostringstream patient_stream;
+    // patient_stream << patient;
+    // std::string patient_string = patient_stream.str();
+    // std::istringstream iss(patient_string);
+    // iss >> patient_copy;
+    // std::cout << patient_copy << std::endl;
     
 
 

@@ -136,6 +136,8 @@ CMakeFiles/mylibrary.dir/src/boundary/inventoryOrders.cpp.obj: \
  C:/msys64/mingw64/include/c++/11.2.0/ctime \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/modifyInventory.h \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/inventory.h \
+ C:/msys64/mingw64/include/c++/11.2.0/sstream \
+ C:/msys64/mingw64/include/c++/11.2.0/bits/sstream.tcc \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/control/dataManipulation.h \
  C:/msys64/mingw64/include/c++/11.2.0/fstream \
  C:/msys64/mingw64/include/c++/11.2.0/bits/codecvt.h \

@@ -1,5 +1,6 @@
 #include "entity/inventory.h"
 #include <iostream>
+#include <sstream>
 #include <vector>
 
 // INVENTORY CLASS
@@ -49,4 +50,54 @@ std::ostream& operator<<(std::ostream& os, const std::vector<Inventory>& items) 
         }
     }
     return os;
+}
+
+// Overload operator>> for Inventory class
+std::istream& operator>>(std::istream& is, Inventory& inventory)
+{
+    std::string name;
+    unsigned int count, threshold;
+
+    // Read data from the input stream
+    char delimiter;
+
+    // Read item name
+    std::getline(is, name, '-');
+
+    // Read item count
+    is >> count;
+    is >> delimiter; // Consume the delimiter '-'
+
+    // Read item threshold
+    is >> threshold;
+
+    // Set values using setter functions
+    inventory.setItemName(name);
+    inventory.setItemCount(count);
+    inventory.setItemThreshold(threshold);
+
+    return is;
+}
+
+// Overload operator>> for vector of Inventory objects
+std::istream& operator>>(std::istream& is, std::vector<Inventory>& items)
+{
+    // Read data from the input stream
+    char delimiter;
+    std::string itemData;
+
+    // Read item data separated by ';'
+    while (std::getline(is, itemData, ';'))
+    {
+        std::istringstream itemStream(itemData);
+        Inventory newItem;
+
+        // Use the overloaded >> operator for Inventory class
+        itemStream >> newItem;
+
+        // Add the new item to the vector
+        items.push_back(newItem);
+    }
+
+    return is;
 }
