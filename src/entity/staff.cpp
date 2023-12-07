@@ -80,3 +80,42 @@ std::ostream& operator<<(std::ostream& os, const Staff& staff)
 
     return os;
 }
+// Overload operator>> for Staff class
+std::istream& operator>>(std::istream& is, Staff& staff) 
+{
+    // Call the >> operator of the base class (User) to read common properties
+    is >> static_cast<User&>(staff);
+
+    // Consume the delimiter after the user part
+    char delimiter;
+    is >> delimiter;
+
+    if (delimiter != '-') {
+        // Handle error: unexpected delimiter
+        std::cerr << "Error: Unexpected delimiter after User part." << std::endl;
+        return is;
+    }
+
+    // Read specific properties of the Staff class
+    unsigned int idNumber;
+    unsigned int clearanceLevel;
+    std::string jobTitle;
+    unsigned int dateOfHire;
+
+    // Read data from the input stream
+    is >> idNumber;
+    is.ignore();
+    is >> clearanceLevel;
+    is.ignore();
+    std::getline(is,jobTitle,'-');
+    is >> dateOfHire;
+    is.ignore();
+
+    // Set the specific properties using setter methods
+    staff.setIdNumber(idNumber);
+    staff.setClearanceLevel(clearanceLevel);
+    staff.setJobTitle(jobTitle);
+    staff.setDateOfHire(dateOfHire);
+
+    return is;
+}

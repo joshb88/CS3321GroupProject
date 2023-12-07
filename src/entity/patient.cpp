@@ -72,10 +72,50 @@ std::ostream& operator<<(std::ostream& os, Patient& patient)
    os << static_cast<const User&>(patient) << "-";
 
     // Output the specific members of the Patient class
-    os << patient.getHasInsurance() << "-"
-       << patient.getInsuranceProvider() << "-"
-       << patient.getHasRoom() << "-"
-       << patient.getRoom();
-       
+    os << "-" 
+    << patient.getHasInsurance() << "-"
+    << patient.getInsuranceProvider() << "-"
+    << patient.getHasRoom() << "-"
+    << patient.getRoom();
+
     return os;
+}
+// Overload operator>> for Patient class
+std::istream& operator>>(std::istream& is, Patient& patient) 
+{
+    // Call the >> operator of the base class (User) to read common properties
+    is >> static_cast<User&>(patient);
+
+    // Consume the delimiter after the user part
+    char delimiter;
+    is >> delimiter;
+
+    if (delimiter != '-') {
+        // Handle error: unexpected delimiter
+        std::cerr << "Error: Unexpected delimiter after User part." << std::endl;
+        return is;
+    }
+
+    // Read specific properties of the Patient class
+    bool hasInsurance;
+    std::string insuranceProvider;
+    bool hasRoom;
+    Room room;
+
+    // Read data from the input stream
+    is >> hasInsurance;
+    is.ignore();
+    std::getline(is, insuranceProvider, '-');
+    is >> hasRoom;
+    is.ignore();
+    is >> room;
+    is.ignore();
+
+    // Set the specific properties using setter methods
+    patient.setHasInsurance(hasInsurance);
+    patient.setInsuranceProvider(insuranceProvider);
+    patient.setHasRoom(hasRoom);
+    patient.setRoom(room);
+
+    return is;
 }
