@@ -16,20 +16,20 @@
 int main()
 {
 
-    //MainMenu::StartMenu();
-    Procedure mri = ModifyProcedure::readProcedureFromDatabase("mri");
+    MainMenu::StartMenu();
+    // Procedure mri = ModifyProcedure::readProcedureFromDatabase("mri");
     // Staff staff = *DatabaseManagement::getUserFromFile("stest1");
     // Room room(101,5,true);
 
-    std::cout << mri << std::endl;
-    Procedure mri_copy;
-    std::ostringstream proc_stream;
-    proc_stream << mri;
-    std::string proc_string = proc_stream.str();
-    std::istringstream iss(proc_string);
-    iss >> mri_copy;
-    std::cout << mri_copy << std::endl;
-    std::cout << mri_copy.getItemsUsed();
+    // std::cout << mri << std::endl;
+    // Procedure mri_copy;
+    // std::ostringstream proc_stream;
+    // proc_stream << mri;
+    // std::string proc_string = proc_stream.str();
+    // std::istringstream iss(proc_string);
+    // iss >> mri_copy;
+    // std::cout << mri_copy << std::endl;
+    // std::cout << mri_copy.getItemsUsed();
 
     // const std::vector<Inventory>& itemsUsed = mri_copy.getItemsUsed();
     // for (const auto& item : itemsUsed) {
