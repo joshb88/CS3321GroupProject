@@ -50,7 +50,6 @@ CMakeFiles/mylibrary.dir/src/boundary/orderProcedures.cpp.obj: \
  C:/msys64/mingw64/include/c++/11.2.0/bits/stl_queue.h \
  C:/msys64/mingw64/include/c++/11.2.0/bits/uses_allocator.h \
  C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/procedure.h \
- C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/inventory.h \
  C:/msys64/mingw64/include/c++/11.2.0/string \
  C:/msys64/mingw64/include/c++/11.2.0/bits/stringfwd.h \
  C:/msys64/mingw64/include/c++/11.2.0/bits/char_traits.h \
@@ -142,5 +141,6 @@ CMakeFiles/mylibrary.dir/src/boundary/orderProcedures.cpp.obj: \
  C:/msys64/mingw64/include/c++/11.2.0/bits/ostream.tcc \
  C:/msys64/mingw64/include/c++/11.2.0/istream \
  C:/msys64/mingw64/include/c++/11.2.0/bits/istream.tcc \
+ C:/Users/Josh/Desktop/CS3321GroupProject/headers/entity/inventory.h \
  C:/msys64/mingw64/include/c++/11.2.0/sstream \
  C:/msys64/mingw64/include/c++/11.2.0/bits/sstream.tcc

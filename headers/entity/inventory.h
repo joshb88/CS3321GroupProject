@@ -3,7 +3,6 @@
 #include <vector>
 #include <iostream>
 #include <sstream>
-
 class Inventory
 {
     private:
@@ -28,3 +27,5 @@ class Inventory
 };
 std::ostream& operator<<(std::ostream& os, const Inventory& inventory);
 std::ostream& operator<<(std::ostream& os, const std::vector<Inventory>& items);
+std::istream& operator>>(std::istream& is, Inventory& inventory);
+std::istream& operator>>(std::istream& is, std::vector<Inventory>& items);

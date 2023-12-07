@@ -22,6 +22,21 @@ int main()
     // Room room(101,5,true);
 
     std::cout << mri << std::endl;
+    Procedure mri_copy;
+    std::ostringstream proc_stream;
+    proc_stream << mri;
+    std::string proc_string = proc_stream.str();
+    std::istringstream iss(proc_string);
+    iss >> mri_copy;
+    std::cout << mri_copy << std::endl;
+    std::cout << mri_copy.getItemsUsed();
+
+    // const std::vector<Inventory>& itemsUsed = mri_copy.getItemsUsed();
+    // for (const auto& item : itemsUsed) {
+    //     std::cout << item << ";";
+    // }
+    // std::cout << std::endl;
+
 
     // Schedule schedule("19880814 15:30");
     // schedule.setPatient(patient);
@@ -31,32 +46,19 @@ int main()
     // Patient patient = *DatabaseManagement::getUserFromFile("ptest1");
     // std::cout << patient;
 
-    // Room room(123, 5, false);
-    // Room room_copy;
-    // std::cout << room << std::endl;
-    // std::cout << room_copy << std::endl;
-    // std::ostringstream room_stream;
-    // room_stream << room;
-    // std::string room_string = room_stream.str();
-    // std::istringstream iss(room_string);
-    // iss >> room_copy;
-    // std::cout << room_copy << std::endl;
-    
+    // Inventory imaging_fluid("imaging fluid",500,10);
+    // Inventory iv_bags("iv bags",1000,30);
+    // Inventory cat_scan("cat scan machine",3,0);
+    // std::vector<Inventory> vec_of_inv = {imaging_fluid,iv_bags,cat_scan};
+    // std::cout << vec_of_inv << std::endl;
+    // std::vector<Inventory> vec_of_inv_copy;
+    // std::ostringstream inv_list_stream;
+    // inv_list_stream << vec_of_inv;
+    // std::string inv_list_string = inv_list_stream.str();
+    // std::istringstream iss(inv_list_string);
+    // iss >> vec_of_inv_copy;
+    // std::cout << vec_of_inv_copy << std::endl;
 
-    // Patient patient = *DatabaseManagement::getUserFromFile("ptest1");
-    // Patient patient_copy;
-    // std::cout << patient << std::endl;
-    // std::ostringstream patient_stream;
-    // patient_stream << patient;
-    // std::string patient_string = patient_stream.str();
-    // std::istringstream iss(patient_string);
-    // iss >> patient_copy;
-    // std::cout << patient_copy << std::endl;
-    
-
-
-    // Schedule schedule = ModifySchedule::readFromDatabase("19880814")
-    // std::cout << schedule;
 
     return 0;
 };

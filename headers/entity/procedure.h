@@ -1,6 +1,8 @@
 #pragma once
 #include <vector>
-#include "inventory.h"
+#include <string>
+#include <iostream>
+#include "entity/inventory.h"
 
 class Procedure
 {
@@ -22,3 +24,4 @@ class Procedure
 };
 
 std::ostream& operator<<(std::ostream& os, const Procedure& procedure);
+std::istream& operator>>(std::istream& is, Procedure& procedure);

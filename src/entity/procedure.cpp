@@ -1,4 +1,7 @@
+#include "entity/inventory.h"
 #include "entity/procedure.h"
+#include <iostream>
+#include <sstream>
 
 // PROCEDURE CLASS
 // Procedure Class Constructors
@@ -40,4 +43,22 @@ std::ostream& operator<<(std::ostream& os, const Procedure& procedure)
     procedure.getCost() << ',' <<
     procedure.getItemsUsed();
     return os;
+}
+std::istream& operator>>(std::istream& is, Procedure& procedure)
+{
+    std::string name, cost;
+    std::vector<Inventory> tempItems;
+
+    // Read procedure name and cost
+    std::getline(is, name, ',');
+    std::getline(is, cost, ',');
+    is >> tempItems;
+    
+
+    // Set values using setter functions
+    procedure.setProcedureName(name);
+    procedure.setCost(std::stof(cost));
+    procedure.setItemsUsed(tempItems);
+
+    return is;
 }
